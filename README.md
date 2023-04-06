@@ -1,2 +1,3 @@
 # Language_Study_Application
-A group project to create a study app for test reading and writing
+A group project for a study app for the testing of reading and writing for variuos languages
+
