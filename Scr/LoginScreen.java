@@ -12,12 +12,14 @@ public class LoginScreen extends JFrame{
 
     HashMap<String, String> LoginInfo = new HashMap<String, String>();
 
-    JLabel userLabel = new JLabel();
-    JLabel passwordLabel = new JLabel();
+    JPanel logiPanel = new JPanel();
+
+    JLabel userLabel = new JLabel("UserName");
+    JLabel passwordLabel = new JLabel("Password");
     
 
-    JTextField userText = new JTextField();
-    JTextField PasswordText = new JTextField();
+    JTextField userText = new JTextField(11);
+    JTextField passwordText = new JTextField(11);
 
     JButton Login = new JButton("Login");
     JButton Reset = new JButton("Reset");
@@ -29,17 +31,23 @@ public class LoginScreen extends JFrame{
     {
         this.LoginInfo = LoginInfo;
         this.setSize(600,600);
+        logiPanel.setSize(500,500);
 
 
             
         userLabel.setBounds(12,12,75,25);
         passwordLabel.setBounds(12,12,75,25);
         userText.setBounds(12,12,75,25);
-        PasswordText.setBounds(12,12,75,25);
+        passwordText.setBounds(12,12,75,25);
         Login.setBounds(12,12,75,25);
         Reset.setBounds(12,12,75,25);
 
 
+        Login.addActionListener(new loginAction());
+
+
+
+        userLabel.setFocusable(false);
 
 
 
@@ -53,19 +61,62 @@ public class LoginScreen extends JFrame{
 
 
 
-        this.add(userLabel);
-        this.add(passwordLabel);
-        this.add(userText);
-        this.add(PasswordText);
-        this.add(Login);
-        this.add(Reset);
 
 
+        logiPanel.add(userLabel);
+        logiPanel.add(passwordLabel);
+        logiPanel.add(userText);
+        logiPanel.add(passwordText);
+        logiPanel.add(Login);
+        logiPanel.add(Reset);
+
+
+        this.getContentPane().add(logiPanel);
         this.pack();
         this.setVisible(true);
 
 
+
+    }/* 
+
+    public void visibleMethod(boolean b) 
+    {
+        this.setVisible(b);
+
+    } 
+
+
+    public void validInfo(String user, String password)
+    {
+        if (LoginInfo.containsKey(user)){
+            if (LoginInfo.get(user).equals(password))
+            {
+                ProfileScreen profileScreen = new ProfileScreen();
+            }
+        }
+
+    }*/
+
+    private class loginAction implements ActionListener
+    {
+
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            // TODO Auto-generated method stub
+
+            
+            //validInfo(userText.getText(), passwordText.getText());
+            //visibleMethod(false);
+            
+        }
+
+    
     }
+
+
+
+
 
 
     
