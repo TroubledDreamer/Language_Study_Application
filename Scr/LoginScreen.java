@@ -77,7 +77,7 @@ public class LoginScreen extends JFrame{
 
 
 
-    }/* 
+    }
 
     public void visibleMethod(boolean b) 
     {
@@ -91,11 +91,17 @@ public class LoginScreen extends JFrame{
         if (LoginInfo.containsKey(user)){
             if (LoginInfo.get(user).equals(password))
             {
+                System.out.println("mim");
+                visibleMethod(false);
                 ProfileScreen profileScreen = new ProfileScreen();
             }
+        }else
+        {
+
+            System.out.println("dfdfdf");
         }
 
-    }*/
+    }
 
     private class loginAction implements ActionListener
     {
@@ -106,8 +112,7 @@ public class LoginScreen extends JFrame{
             // TODO Auto-generated method stub
 
             
-            //validInfo(userText.getText(), passwordText.getText());
-            //visibleMethod(false);
+            validInfo(userText.getText(), passwordText.getText());
             
         }
 
