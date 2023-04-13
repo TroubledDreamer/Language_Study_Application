@@ -7,20 +7,30 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.swing.BorderFactory;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class QuestionPageScreen{
+public class QuestionPageScreen extends JFrame{
+    private ArrayList<Question> questionList;
+    private int score;
+    private int currentQIndex;
     
+    private JLabel questionLabel;
+    private ButtonGroup answerGroup;
+    private JRadioButton[] answerBtons;
     private JPanel ScrGrade;
     JPanel QPanel = new JPanel();
     JPanel ScrScreen = new JPanel();
     JButton submit = new JButton();
 
-    
+    public QuestionPageScreen(ArrayList<Question> questionList){
+        
+    }
     //submit.addActionListener(new SubmitBListener());
 
 
