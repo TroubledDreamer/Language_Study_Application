@@ -20,16 +20,25 @@ public class QuestionPageScreen extends JFrame{
     private int score;
     private int currentQIndex;
     
-    private JLabel questionLabel;
+    private JLabel qLabel;
     private ButtonGroup answerGroup;
     private JRadioButton[] answerBtons;
     private JPanel ScrGrade;
-    JPanel QPanel = new JPanel();
-    JPanel ScrScreen = new JPanel();
-    JButton submit = new JButton();
+    
 
     public QuestionPageScreen(ArrayList<Question> questionList){
-        
+        this.questionList = questionList;
+        currentQIndex =0;
+        score = 0;
+
+        JPanel QPanel = new JPanel();
+        JPanel ScrScreen = new JPanel();
+        JButton submit = new JButton();
+
+        qLabel = new JLabel();
+
+
+        //radio button Answers
     }
     //submit.addActionListener(new SubmitBListener());
 
@@ -50,16 +59,16 @@ public class QuestionPageScreen extends JFrame{
         }
     }
 
-    private class questionDisplay{
+    /*private class questionDisplay{
         for(String question: questionList){
             JPanel questionPanel = new JPanel(new BorderLayout());
             questionPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 
-            // Add question text
+            // 
             JLabel questionLabel = new JLabel(question);
-            questionPanel.add(questionLabel, BorderLayout.NORTH);
+            //questionPanel.add(questionLabel, BorderLayout.NORTH);
 
-            // Add answer choices
+            // 
             ButtonGroup buttonGroup = new ButtonGroup();
             for (String answer : questions.get(question)) {
                 JRadioButton radioButton = new JRadioButton(answer);
@@ -73,6 +82,6 @@ public class QuestionPageScreen extends JFrame{
 
     private class showScore{
 
-    }
+    }*/
 
 }
