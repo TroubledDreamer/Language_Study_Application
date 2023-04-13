@@ -14,7 +14,7 @@ public class QuestionPageScreen{
     JButton submit = new JButton();
 
     
-    submit.addActionListener(new SubmitBListener());
+    //submit.addActionListener(new SubmitBListener());
 
 
 
@@ -33,7 +33,7 @@ public class QuestionPageScreen{
         }
     }
 
-    private class ShowScore{
+    private class showScore{
 
     }
 
