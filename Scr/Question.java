@@ -6,6 +6,7 @@ public class Question {
     private int difficultyLevel;
     private String language;
     private String questionType;
+    private String nextID;
 
     public Question (int IDQuestion, int difficultyLevel, String language, String questionType)
     {
