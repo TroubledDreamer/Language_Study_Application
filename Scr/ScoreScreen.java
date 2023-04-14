@@ -10,21 +10,26 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 
 public class ScoreScreen extends QuestionPageScreen{
-}
+
+
+    JLabel Scr = new JLabel("You got:")
+    JLabel centage = new JLabel("Percentage:")
+    ScrMainMenu = new JButton("Main Menu");
+
+
+
     public ScoreScreen(ArrayList<Question> questionList) {
         super(questionList);
         private String message;
 
-    private JLabel Scr;
-    private JLabel centage
-    private JButton ScrMainMenu;
+        private JLabel Scr;
+        private JLabel centage
+        private JButton ScrMainMenu;
     }
     
     
     
-    JLabel Scr = new JLabel("You got:")
-    JLabel centage = new JLabel("Percentage:")
-    ScrMainMenu = new JButton("Main Menu");
+
 
     ScrScreen.add(ScrMainMenu);
 
@@ -50,3 +55,4 @@ public class ScoreScreen extends QuestionPageScreen{
         }
 
     }
+}

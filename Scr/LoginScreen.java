@@ -93,7 +93,7 @@ public class LoginScreen extends JFrame{
             {
                 System.out.println("mim");
                 visibleMethod(false);
-                ProfileScreen profileScreen = new ProfileScreen();
+                ProfileScreen profileScreen = new ProfileScreen(user, LoginInfo);
             }
         }else
         {
