@@ -9,30 +9,35 @@ import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
-public class ScoreScreen extends QuestionPageScreen{
-}
-    public ScoreScreen(ArrayList<Question> questionList) {
-        super(questionList);
-        private String message;
+public class ScoreScreen extends JPanel{
+
+    private String message;
 
     private JLabel Scr;
-    private JLabel centage
+    private JLabel pcentage;
     private JButton ScrMainMenu;
-    }
-    
-    
-    
-    JLabel Scr = new JLabel("You got:")
-    JLabel centage = new JLabel("Percentage:")
+    JPanel ScrScreen = new JPanel();
+
+    //creation of J//
+    public ScoreScreen(){
+    JLabel Scr = new JLabel("You got:");
+    JLabel pcentage = new JLabel("Percentage:");
     ScrMainMenu = new JButton("Main Menu");
 
+    //Add to panel section
+    ScrScreen.add(Scr);
+    ScrScreen.add(pcentage);
     ScrScreen.add(ScrMainMenu);
+    
+    //Action Listeners//
+    ScrMainMenu.addActionListener(new MenuBActionListener());
 
     private class scoreArea{
 
 
     }
-    private class scoreMessage{
+    
+    public class scoreMessage(int score){
         if(score == 100){
             message ="Excellent!! your on a roll";
         }
@@ -50,3 +55,15 @@ public class ScoreScreen extends QuestionPageScreen{
         }
 
     }
+}
+
+
+    private class MenuBActionListener implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            // TODO Auto-generated method stub
+            throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+        }
+    }
+}
