@@ -10,6 +10,12 @@ public class Driver {
 
 
      
+        StatusUpdater statusUpdater = new StatusUpdater();
+        System.out.println(statusUpdater.getAccuracy());
+
+        statusUpdater.setStatus(620157742, "Carl long" , 0, 21, 0);
+
+        System.out.println(statusUpdater.getAccuracy());
      
 
         Login login = new Login();
