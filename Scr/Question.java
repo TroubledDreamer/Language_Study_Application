@@ -162,4 +162,10 @@ public class Question {
     {
         return correctAnswer;
     }
+
+    public ArrayList<String> getFileList()
+    {
+        return fileList;
+
+    }
 }
