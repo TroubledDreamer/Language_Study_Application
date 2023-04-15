@@ -1,6 +1,8 @@
 package Scr;
 
 import javax.swing.*;
+
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
@@ -37,7 +39,7 @@ public class ProfileScreen extends JFrame{
    
     
 
-    JPanel ProfilePanel = new JPanel(new GridLayout(4,2));
+    JPanel ProfilePanel = new JPanel(); //new GridLayout(2,2));
 
 
     String Name = new String();
