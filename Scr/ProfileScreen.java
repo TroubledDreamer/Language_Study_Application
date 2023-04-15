@@ -14,9 +14,9 @@ public class ProfileScreen extends JFrame{
 
     //Labels
     JLabel Spanish  = new JLabel("Spanish");
-    JButton S = new JButton("enter")
+    JButton S = new JButton("enter");
     JLabel French  = new JLabel("French");
-    JButton F = new JButton("F");
+    JButton F = new JButton("enter");
     JLabel Chinese = new JLabel("Chinese");
     JButton C = new JButton("enter");
 
@@ -118,7 +118,7 @@ public class ProfileScreen extends JFrame{
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
             ///edit to create new question screen
-            QuestionPageScreen fQScreen = new QuestionPageScreen();
+            QuestionPageScreen fQScreen = new QuestionPageScreen("french");
             visibleMethod(false);
         }
     }
@@ -130,7 +130,7 @@ public class ProfileScreen extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
     
-                QuestionPageScreen sQScreen = new QuestionPageScreen();
+                QuestionPageScreen sQScreen = new QuestionPageScreen("spanish");
                 visibleMethod(false);
             }
         }
@@ -142,7 +142,7 @@ public class ProfileScreen extends JFrame{
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
 
-            QuestionPageScreen CQScreen = new QuestionPageScreen();
+            QuestionPageScreen CQScreen = new QuestionPageScreen("chinese");
             visibleMethod(false);
         }
     }

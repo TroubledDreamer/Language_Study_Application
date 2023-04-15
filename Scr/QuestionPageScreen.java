@@ -21,7 +21,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class QuestionPageScreen extends JFrame{
-    private ArrayList<Question> questionList;
+    private String questionList;
     private ArrayList<String[]> answerList;
     private ArrayList<String> correctAnswers;
     private int score;
@@ -33,8 +33,8 @@ public class QuestionPageScreen extends JFrame{
     private JPanel ScrGrade;
     
 
-    public QuestionPageScreen(ArrayList<Question> questionList){
-        this.questionList = questionList;
+    public QuestionPageScreen(String Q){
+        this.questionList = Q;
         currentQIndex =0;
         score = 0;
 
@@ -47,6 +47,7 @@ public class QuestionPageScreen extends JFrame{
 
         //radio button Answers
     }
+    /* 
     //submit.addActionListener(new SubmitBListener());
 
     try (BufferedReader Breader = new BufferedReader(new FileReader(questions))) {
@@ -65,6 +66,7 @@ public class QuestionPageScreen extends JFrame{
     } catch (Exception e) {
         e.printStackTrace();
     }
+    */
 
 
 

@@ -16,7 +16,7 @@ public class Question {
 
 
 
-    public Question (String IDQuestion, String difficultyLevel, String language, String questionType)
+    public Question (String IDQuestion, String difficultyLevel, String language, String questionType, String corectAnswers)
     {
         this.IDQuestion = IDQuestion;
         this.difficultyLevel = difficultyLevel;
