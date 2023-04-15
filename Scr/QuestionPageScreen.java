@@ -11,6 +11,7 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
@@ -21,6 +22,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class QuestionPageScreen extends JFrame{
+    private int numQues;
     private String questionList;
     private ArrayList<String[]> answerList;
     private ArrayList<String> correctAnswers;
@@ -31,7 +33,12 @@ public class QuestionPageScreen extends JFrame{
     private ButtonGroup answerGroup;
     private JRadioButton[] answerBtons;
     private JPanel ScrGrade;
+
+    public ArrayList<Question> frenchQuestions = new ArrayList<>();
+    public ArrayList<Question> spanishQuestions = new ArrayList<>();
+    public ArrayList<Question> chineseQuestions = new ArrayList<>();
     
+
 
     public QuestionPageScreen(String Q){
         this.questionList = Q;
@@ -44,15 +51,36 @@ public class QuestionPageScreen extends JFrame{
 
         qLabel = new JLabel();
 
+        
 
-        //radio button Answers
-    }
-
-    public class addToFile(String Q){
-    }
-    public class ListQues(){
         
     }
+    public void smth(){
+        Scanner filScan = new Scanner("questions.txt");
+
+        while (filScan.hasNexline()){
+            String line = filScan.nextLine();
+
+        if(Q.equals("French")){
+            frenchQuestions.add(question);
+        }
+        else if(Q.equals("Spanish")){
+            spanishQuestions
+
+        }
+        else{
+
+        }
+        }
+    }
+
+        //radio button Answers
+    
+
+    /*public class addToFile(String Q){
+    }*/
+    
+
     /* 
     //submit.addActionListener(new SubmitBListener());
 
@@ -73,10 +101,6 @@ public class QuestionPageScreen extends JFrame{
         e.printStackTrace();
     }
     */
-
-
-
-
 
 
     private class SubmitBListener implements ActionListener{
@@ -112,9 +136,10 @@ public class QuestionPageScreen extends JFrame{
             QPanel.add(questionPanel);
         }
     }
-
-    private class showScore{
-
-    }*/
+*/
+    private int getPercentage(){
+        int pCentage = (score * 100 / numQues);
+        return pCentage;
+    }
 
 }

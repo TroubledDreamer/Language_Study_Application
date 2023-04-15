@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 
 public class ScoreScreen extends JPanel{
 
+    ScoreScreen scoreScreen = new ScoreScreen();
     private String message;
 
     private JLabel Scre;
@@ -20,8 +21,8 @@ public class ScoreScreen extends JPanel{
 
     //creation of J//
     public ScoreScreen(){
-    JLabel Scre = new JLabel("You got:");
-    JLabel pcentage = new JLabel("Percentage:");
+    JLabel Scre = new JLabel("You got:" score);
+    JLabel pcentage = new JLabel("Percentage:" getPercentage());
     ScrMainMenu = new JButton("Main Menu");
 
     //Add to panel section
