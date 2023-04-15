@@ -14,7 +14,7 @@ public class Driver {
 
         System.out.println(statusUpdater.getAccuracy());
 
-        statusUpdater.setStatus(620157742, "Carl long" , 0, 21, 0);
+        statusUpdater.setStatus(620157742, "Carl long" , 0, 41, 0);
 
         System.out.println(statusUpdater.getAccuracy());
      

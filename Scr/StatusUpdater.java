@@ -16,12 +16,16 @@ public class StatusUpdater {
     private int accuracy;
 
     private String[] spitter;
+    private ArrayList<String> fileHolder = new ArrayList<>();
+
     
 
 
     private ArrayList<String> fileList = new ArrayList<>();
 
     public StatusUpdater (int checkID){
+
+        ArrayList<String> FileHolder = new ArrayList<>();
 
         try {
             FileReader fileReader = new FileReader("Status.txt");
@@ -35,11 +39,14 @@ public class StatusUpdater {
                 if (checkID == Integer.parseInt(spitter[0]))
                 {
 
-                fileList.add(spitter[1]);
+                    fileList.add(spitter[1]);
+                }else{
+                    fileHolder.add(line);
                 }
                 }
                 catch(Exception e){
 
+                    fileHolder.add(line);
                 }
             }
 
@@ -84,11 +91,17 @@ public class StatusUpdater {
 
 
             FileWriter fileWriter = new FileWriter("Status.txt", false);
-            fileWriter.write("");
+            
+            for (String m: fileHolder)
+            {
+                fileWriter.append(m + "\n");
+
+            }
+            fileHolder = null;
             fileWriter.close();
 
             FileWriter writer = new FileWriter("Status.txt", true);
-            writer.append(inputID + "-" + inputID + "\n");
+            writer.append( inputID + "-" + inputID + "\n");
             writer.append(inputID + "-" + name + "\n");
             writer.append(inputID + "-" + score + "\n");
             writer.append(inputID + "-" + hrs_Learning + "\n");
