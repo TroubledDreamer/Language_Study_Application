@@ -13,30 +13,43 @@ public class Question {
     private String language;
     private String questionType;
     private String nextID;
+    private String questionString;
+    private String correctAnswer;
+
+    private ArrayList<String> fileList = new ArrayList<>();
+    private ArrayList<String> fileHolder = new ArrayList<>();
 
 
 
-    public Question (String IDQuestion, String difficultyLevel, String language, String questionType)
+
+
+    public Question (String IDQuestion)
     {
-        this.IDQuestion = IDQuestion;
-        this.difficultyLevel = difficultyLevel;
-        this.language = language;
-        this.questionType = questionType;
+        getQuestion(IDQuestion);
+
+        
+        this.IDQuestion = fileList.get(0);
+        this.difficultyLevel = fileList.get(1);
+        this.language = fileList.get(2);
+        this.questionType = fileList.get(3);
+        this.questionString = fileList.get(4);
+        this.correctAnswer = fileList.get(5);
+
+        
 
 
 
     }
 
-    public void addQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questioString, String answersString, String  correctAnswer){
+    public void addQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questionString, String  correctAnswer){
         try {
             FileWriter writer = new FileWriter("Question.txt", true);
             writer.write(IDQuestion + "-" + IDQuestion);
             writer.write(IDQuestion + "-" + difficultyLevel);
             writer.write(IDQuestion + "-" + language);
             writer.write(IDQuestion + "-" + questionType);
-            writer.write(IDQuestion + "-" + questioString);
+            writer.write(IDQuestion + "-" + questionString);
             writer.write(IDQuestion + "-" + correctAnswer);
-            writer.write(IDQuestion + "-" + answersString);
 
             writer.close();
 
@@ -46,11 +59,11 @@ public class Question {
 
     }
 
-    public void removeQuestion(){
+    public void getQuestion(String IDQuestion){
 
 
 
-        ArrayList<String> fileHolder = new ArrayList<>();
+       this.IDQuestion = IDQuestion;
 
         try {
             FileReader fileReader = new FileReader("Qestions.txt");
@@ -64,7 +77,8 @@ public class Question {
 
                     if (IDQuestion.equals(spitter[0]))
                     {
-    
+                        fileList.add(spitter[1]);
+
                     }else{
                         fileHolder.add(line);
                     }
@@ -84,18 +98,19 @@ public class Question {
         }
 
         
-        removeHelper(fileHolder);
 
 
         
     }
 
 
-    public void removeHelper(ArrayList<String> FileHolder){
+    public void removeHelper(){
+
+        getQuestion(IDQuestion);
 
         try {
             FileWriter writer = new FileWriter("Question.txt", true);
-            for (String m : FileHolder){
+            for (String m : fileHolder){
                 writer.write(m);
             }
 
@@ -104,11 +119,19 @@ public class Question {
             // TODO: handle exception
         }
 
+    }
 
 
+
+    public void editQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questionString, String answersString, String  correctAnswer)
+    {
+
+        removeHelper();
+        addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString,  correctAnswer);
 
 
     }
+
 
 
 
@@ -116,6 +139,7 @@ public class Question {
 
 
 
+  
     public String getQuestionID(){
         return IDQuestion;
     }
@@ -128,5 +152,14 @@ public class Question {
     }
     public String getQuestiontype(){
         return questionType;
+    }
+
+    public String getQuestionString(){
+        return questionString;
+    }
+
+    public String getCorrectAnswer()
+    {
+        return correctAnswer;
     }
 }
