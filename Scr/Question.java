@@ -27,7 +27,7 @@ public class Question {
 
     }
 
-    public void addQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questioString, String answerString){
+    public void addQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questioString, String answersString, String  correctAnswer){
         try {
             FileWriter writer = new FileWriter("Question.txt", true);
             writer.write(IDQuestion + "-" + IDQuestion);
@@ -35,7 +35,8 @@ public class Question {
             writer.write(IDQuestion + "-" + language);
             writer.write(IDQuestion + "-" + questionType);
             writer.write(IDQuestion + "-" + questioString);
-            writer.write(IDQuestion + "-" + answerString);
+            writer.write(IDQuestion + "-" + correctAnswer);
+            writer.write(IDQuestion + "-" + answersString);
 
             writer.close();
 
