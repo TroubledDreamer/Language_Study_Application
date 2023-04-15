@@ -32,7 +32,12 @@ public class MenuScreen extends JPanel {
     JLabel profile = new JLabel("Profile");
     JButton p = new JButton("enter");
 
-    mFrame.add
+    mPanel.add(questions);
+    mPanel.add(q);
+    mPanel.add(edit);
+    mPanel.add(e);
+    mPanel.add(proile);
+    mPanel.add(p);
 
     }
     
