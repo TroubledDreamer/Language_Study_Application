@@ -57,12 +57,15 @@ public class ProfileScreen extends JFrame{
         ProfilePanel.add(name);
         ProfilePanel.add(Logout);
         ProfilePanel.add(Spanish);
+        ProfilePanel.add(S);
         ProfilePanel.add(SpanishBar);
 
         ProfilePanel.add(French);
+        ProfilePanel.add(F);
         ProfilePanel.add(FrenchBar);
 
         ProfilePanel.add(Chinese);
+        ProfilePanel.add(C);
         ProfilePanel.add(ChineseBar);
 
         ProfilePanel.add(Menu);
@@ -107,5 +110,41 @@ public class ProfileScreen extends JFrame{
 
     }
     
+    private class FActionListener implements ActionListener
+    {
+
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            // TODO Auto-generated method stub
+            ///edit to create new question screen
+            QuestionPageScreen fQScreen = new QuestionPageScreen();
+            visibleMethod(false);
+        }
+    }
+        private class SActionListener implements ActionListener
+        {
+    
+    
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+    
+                QuestionPageScreen sQScreen = new QuestionPageScreen();
+                visibleMethod(false);
+            }
+        }
+        private class CActionListener implements ActionListener
+    {
+
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            // TODO Auto-generated method stub
+
+            QuestionPageScreen CQScreen = new QuestionPageScreen();
+            visibleMethod(false);
+        }
+    }
 
 }
