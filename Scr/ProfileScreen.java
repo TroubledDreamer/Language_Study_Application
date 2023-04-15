@@ -37,7 +37,7 @@ public class ProfileScreen extends JFrame{
    
     
 
-    JPanel ProfilePanel = new JPanel();
+    JPanel ProfilePanel = new JPanel(new GridLayout(4,2));
 
 
     String Name = new String();
