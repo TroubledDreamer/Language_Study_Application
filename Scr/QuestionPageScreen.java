@@ -47,6 +47,12 @@ public class QuestionPageScreen extends JFrame{
 
         //radio button Answers
     }
+
+    public class addToFile(String Q){
+    }
+    public class ListQues(){
+        
+    }
     /* 
     //submit.addActionListener(new SubmitBListener());
 
