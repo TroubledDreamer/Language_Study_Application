@@ -8,14 +8,12 @@ public class Question {
     private String questionType;
     private String nextID;
 
-    public Question (int IDQuestion, int difficultyLevel, String language, String questionType)
+    public Question (int IDQuestion, int difficultyLevel, String language, String questionType, String answers, String correctAnswer)
     {
         this.IDQuestion = IDQuestion;
         this.difficultyLevel = difficultyLevel;
         this.language = language;
         this.questionType = questionType;
-
-
 
 
 

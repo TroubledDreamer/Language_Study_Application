@@ -8,6 +8,8 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 import javax.swing.BorderFactory;
 import javax.swing.ButtonGroup;
@@ -16,7 +18,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class QuestionPageScreen extends JFrame{
-    private ArrayList<Question> questionList;
+    private ArrayList<String> questionList;
+    private ArrayList<String[]> answerList;
+    private ArrayList<String> correctAnswers;
     private int score;
     private int currentQIndex;
     
@@ -41,6 +45,23 @@ public class QuestionPageScreen extends JFrame{
         //radio button Answers
     }
     //submit.addActionListener(new SubmitBListener());
+
+    try (BufferedReader Breader = new BufferedReader(new FileReader(questions))) {
+        String line;
+        while ((line = br.readLine()) != null) {
+            String[] data = line.split(",");
+            int id = Integer.parseInt(data[0]);
+            int difficulty = Integer.parseInt(data[1]);
+            String language = data[2];
+            String type = data[3];
+            String question = data[4];
+            String[] answers = new String[] { data[5], data[6], data[7], data[8] };
+            String correctAnswer = data[5];
+            questions.add(new Question(id, difficulty, language, type, question, answers, correctAnswer));
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
 
 
 

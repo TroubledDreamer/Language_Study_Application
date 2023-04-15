@@ -20,22 +20,22 @@ public class ScoreScreen extends JPanel{
 
     //creation of J//
     public ScoreScreen(){
-    JLabel Scr = new JLabel("You got:");
+    JLabel Scre = new JLabel("You got:");
     JLabel pcentage = new JLabel("Percentage:");
     ScrMainMenu = new JButton("Main Menu");
 
     //Add to panel section
-    ScrScreen.add(Scr);
+    ScrScreen.add(Scre);
     ScrScreen.add(pcentage);
     ScrScreen.add(ScrMainMenu);
 
     //Action Listeners//
     ScrMainMenu.addActionListener(new MenuBActionListener());
 
-    private class scoreArea{
+    //private class scoreArea{
 
 
-    }
+   // }
     public class scoreMessage(int score){
         if(score == 100){
             message ="Excellent!! your on a roll";
@@ -62,6 +62,7 @@ public class ScoreScreen extends JPanel{
         @Override
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
+            System
             throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
         }
     }
