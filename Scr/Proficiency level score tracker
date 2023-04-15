@@ -1,0 +1,6 @@
+package Scr;
+
+public class Proficiency level extends Question {
+
+
+}
