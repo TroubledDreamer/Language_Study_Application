@@ -10,7 +10,7 @@ public class Login {
     public Login ()
     {
         loginInfo.put("Carl long", "12345678");
-        loginInfo.put("Trist tong", "9934959");
+        loginInfo.put("Tris tall", "9934959");
         loginInfo.put("Can This", "34242593");
         loginInfo.put("nick gan", "50600302");
 
