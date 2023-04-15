@@ -21,7 +21,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class QuestionPageScreen extends JFrame{
-    private ArrayList<String> questionList;
+    private ArrayList<Question> questionList;
     private ArrayList<String[]> answerList;
     private ArrayList<String> correctAnswers;
     private int score;
