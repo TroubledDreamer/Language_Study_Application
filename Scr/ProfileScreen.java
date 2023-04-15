@@ -48,6 +48,7 @@ public class ProfileScreen extends JFrame{
 
 
         Logout.addActionListener(new logoutAction());
+        Menu.addActionListener(new MenuBActionListener());
 
 
         ProfilePanel.add(name);
@@ -93,7 +94,15 @@ public class ProfileScreen extends JFrame{
         }
 
     }
+    public class MenuBActionListener implements ActionListener
+    {
+        public void actionPerformed(ActionEvent e){
+                System.out.println("im in");
+                visibleMethod(false);
+                MenuScreen menuScreen = new MenuScreen(); 
+            }
 
-
+    }
+    
 
 }
