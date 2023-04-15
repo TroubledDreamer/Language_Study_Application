@@ -20,7 +20,17 @@ public class Question {
 
 
     }
+    public int getQuestionID(){
+        return IDQuestion;
+    }
 
- 
-
+    public int getDifficultyLevel(){
+        return difficultyLevel;
+    }
+    public String getLanguage(){
+        return language;
+    }
+    public String getQuestiontype(){
+        return questionType;
+    }
 }
