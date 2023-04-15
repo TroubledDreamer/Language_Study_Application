@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
-public class ScoreScreen extends JPanel implements ActionListener{
+public class ScoreScreen extends JPanel{
 
     private String message;
 
