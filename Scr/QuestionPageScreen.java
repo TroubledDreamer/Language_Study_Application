@@ -1,6 +1,9 @@
 package Scr;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+
+import org.w3c.dom.events.EventException;
+
 import javax.swing.JPanel;
 import java.awt.event.ActionListener;
 import java.awt.BorderLayout;
@@ -53,7 +56,8 @@ public class QuestionPageScreen extends JFrame{
                 //////
 
             }
-            catch(){
+            catch(Exception e){
+                dffdff
                 
             }
         }
