@@ -13,7 +13,7 @@ public class ScoreScreen extends JPanel implements ActionListener{
 
     private String message;
 
-    private JLabel Score;
+    private JLabel Scre;
     private JLabel pcentage;
     private JButton ScrMainMenu;
     JPanel ScrScreen = new JPanel();
