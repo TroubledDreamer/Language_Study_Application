@@ -19,6 +19,9 @@ public class ProfileScreen extends JFrame{
     JButton F = new JButton("enter");
     JLabel Chinese = new JLabel("Chinese");
     JButton C = new JButton("enter");
+    ImageIcon menuPic = new ImageIcon("pic.jpg");
+    JLabel label = new JLabel(menuPic);
+    
 
 
     JButton Menu = new JButton("Menu");
@@ -29,7 +32,9 @@ public class ProfileScreen extends JFrame{
     JProgressBar FrenchBar = new JProgressBar();
     JProgressBar ChineseBar = new JProgressBar();
 
-
+    
+   
+    
 
     JPanel ProfilePanel = new JPanel();
 
@@ -53,9 +58,10 @@ public class ProfileScreen extends JFrame{
         Logout.addActionListener(new logoutAction());
         Menu.addActionListener(new MenuBActionListener());
 
-
+        ProfilePanel.add(label);
         ProfilePanel.add(name);
         ProfilePanel.add(Logout);
+        
         ProfilePanel.add(Spanish);
         ProfilePanel.add(S);
         ProfilePanel.add(SpanishBar);

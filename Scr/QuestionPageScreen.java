@@ -54,7 +54,8 @@ public class QuestionPageScreen extends JFrame{
         
 
         
-    }
+    } 
+    ///////to be fixed
     public void smth(){
         Scanner filScan = new Scanner("questions.txt");
 
