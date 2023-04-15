@@ -1,0 +1,240 @@
+
+Spanish - Easy level
+
+
+1001-1001
+1001-0
+1001-Spanish
+1001-Blank
+1001-____ madres
+1001-las
+
+1002-1002
+1002-0
+1002-Spanish
+1002-Blank
+1002-____ trenes
+1002-los
+
+1003-1003
+1003-0
+1003-Spanish
+1003-Blank
+1003-____ profesor de mi clase se llama Juan Pérez.
+1003-El
+
+
+1004-1004
+1004-0
+1004-Spanish
+1004-Blank
+1004-¿______ mesas tienes? - How many tables do you have?
+1004-Cuántas
+
+
+1005-1005
+1005-0
+1005-Spanish
+1005-Blank
+1005-¿Dónde ____ un hotel?    ¿Dónde ____ el hotel?
+1005-hay está
+
+1006-1006
+1006-0
+1006-Spanish
+1006-Blank
+1006-¿Dónde ____ un taxi? ¿Dónde ____ el taxi?
+1006-hay están
+
+1017-1017
+1017-0
+1017-Spanish
+1017-Blank
+1017-Family: Tía is to Tío, as prima is to-Primè,prímas,Primo,priman  
+1017-Primo
+
+
+10180-10180
+10180-0
+10180-Spanish
+10180-Blank
+10180-Food: Alguien come una_____-burguesa,jamon,burgera,Hamburguesa
+10180-Hamburguesa
+
+
+10190-1019
+10190-0
+10190-Spanish
+10190-Blank
+10190-Clothing: __________ sombreros-Nuestra,Nuestro,Nuestras,Nuestros 
+10190-Nuestros
+
+10111-Adjectives: Carro ___
+Limpia
+Limpio  answer
+Cleano
+limpios
+5. Food: Tú pides_______
+Leche   ANSWER
+Milko
+lecha
+lecho
+6. Feelings: Yo estoy ____
+contente
+contentemos
+Contento  ANSWER
+contenta
+7. Adverbs affirmative:  Nosotros ______vamos al colegio.
+tambièn ANSWER
+abajo
+hoy 
+soy
+
+
+8.Adjectives Yo prefiero los libros españoles
+vieja
+viejo
+viejas
+Viejos ANSWER
+
+
+
+Spanish - Begginer level
+
+1101-1101
+1101-1
+1101-Spanish
+1101-Blank
+1101-Nosotros _____ una paella de pescado
+1101-comemos
+
+1102-1102
+1102-1
+1102-Spanish
+1102-Blank
+1102-En mi clase ____ veinte (20) estudiantes
+1102-hay
+
+1103-1103
+1103-1
+1103-Spanish
+1103-Blank
+1103-Los hermanos de mi madre, son ____ tíos
+1103-mis
+
+1104-1104
+1104-1
+1104-Spanish
+1104-Blank
+1104-Rafael no compra la comida en el supermercado, _____ compra en las tiendas de su barrio
+1104-la
+
+
+1105-1105
+1105-1
+1105-Spanish
+1105-Blank
+1105-How do you say "Good morning" _____?
+1105-Buenos días
+
+
+
+1105-1105
+1105-1
+1105-Spanish
+1105-Blank
+1105-Hola, me llamo Pablo. ¿Cómo te______ tú? 
+1105-llamas
+
+
+1106-1106
+1106-1
+1106-Spanish
+1106-Blank
+1106-Quién  ____  Marc Anthony?
+1106-es
+
+1107-1107
+1107-1
+1107-Spanish
+1107-Blank
+1107-Pablo es_____ muchacho,
+1107-un
+
+1108-1108
+1108-1
+1108-Spanish
+1108-Blank
+1108-¿Qué número es: ______?
+1108-noventa y seis
+
+
+1109-1109
+1109-1
+1109-Spanish
+1109-Blank
+1109-_____ levanto a las ocho de la mañana todos los días.
+1109-Me
+
+
+11010-11010
+11010-1
+11010-Spanish
+11010-Blank
+11010-____ cafè.(beber)
+11010-bebo
+
+
+Spanish - level Intermediate
+
+1201-1201
+1201-2
+1201-Spanish
+1201-Blank
+1201-¿ _____________ es el país más pequeño de Hispanoamérica?
+1201-cuál
+
+
+1202-1202
+1202-2
+1202-Spanish
+1202-Blank
+1202-El dueño del bar dice que se _____ el vino. ( acabó, quemó, dañó, quedó)
+1202-acabó
+
+1203-1203
+1203-2
+1203-Spanish
+1203-Blank
+1203-El opuesto de más pequeño (smaller) es más _____. ( cómodo, interesante, caro, grande)
+1203-grande
+
+
+1204-1204
+1204-2
+1204-Spanish
+1204-Blank
+1204-El equivalente de 'Can you...?' para hablar con un amigo en español es _____ (Puedo, Puede, Puedes, Poder)
+1204-Puedes
+
+1205-1205
+1205-2
+1205-Spanish
+1205-Blank
+1205-El subjuntivo conozca es para el verbo: _____ (comprender, contratar, conocer, conjugar)
+1205-conocer
+
+1206-1206
+1206-2
+1206-Spanish
+1206-Blank
+1206-En las montañas, veo ______ (la nieve, la playa)
+1206-la nieve
+
+
+1207-1207
+1207-2
+1207-Spanish
+1207-Blank
+1207-Siempre _____ despierto a las 6 de la mañana. (me, te, se, nos, se, le)
+1207-me
