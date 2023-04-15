@@ -12,10 +12,11 @@ public class LoginScreen extends JFrame{
 
     HashMap<String, String> LoginInfo = new HashMap<String, String>();
 
-    JPanel logiPanel = new JPanel();
-
-    JLabel userLabel = new JLabel("UserName");
-    JLabel passwordLabel = new JLabel("Password");
+    JPanel logiPanel = new JPanel(new GridLayout(4,2));
+    //userLabel.setPreferredSize(textField.getPreferredSize());
+    //JFrame.setTitle("LSA");
+    JLabel userLabel = new JLabel("UserName :");
+    JLabel passwordLabel = new JLabel("Password :");
     
 
     JTextField userText = new JTextField(11);
@@ -49,14 +50,20 @@ public class LoginScreen extends JFrame{
 
         userLabel.setFocusable(false);
 
+        
+        //add(logiPanel, BorderLayout.CENTER);
+        
 
+
+        logiPanel.setBackground(Color.CYAN);
         logiPanel.add(userLabel);
-        logiPanel.add(passwordLabel);
         logiPanel.add(userText);
+        logiPanel.add(passwordLabel);
         logiPanel.add(passwordText);
         logiPanel.add(Login);
         logiPanel.add(Reset);
 
+        
 
         this.getContentPane().add(logiPanel);
         this.pack();
