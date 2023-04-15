@@ -50,19 +50,6 @@ public class LoginScreen extends JFrame{
         userLabel.setFocusable(false);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         logiPanel.add(userLabel);
         logiPanel.add(passwordLabel);
         logiPanel.add(userText);
@@ -118,11 +105,6 @@ public class LoginScreen extends JFrame{
 
     
     }
-
-
-
-
-
 
     
 }
