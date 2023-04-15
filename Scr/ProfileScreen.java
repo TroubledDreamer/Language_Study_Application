@@ -12,10 +12,13 @@ public class ProfileScreen extends JFrame{
 
     JLabel name = new JLabel();
 
-
+    //Labels
     JLabel Spanish  = new JLabel("Spanish");
+    JButton S = new JButton("enter")
     JLabel French  = new JLabel("French");
+    JButton F = new JButton("F");
     JLabel Chinese = new JLabel("Chinese");
+    JButton C = new JButton("enter");
 
 
     JButton Menu = new JButton("Menu");
