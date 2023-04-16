@@ -2,14 +2,16 @@ package Scr;
 import javax.swing.JPanel;
 import javax.swing.JPanel;
 import java.awt.event.ActionListener;
+import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
+import javax.swing.JFrame;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
-public class ScoreScreen extends JPanel{
+public class ScoreScreen extends JFrame{
 
     //ScoreScreen scoreScreen = new ScoreScreen();
     private String message;
@@ -19,12 +21,11 @@ public class ScoreScreen extends JPanel{
     JPanel ScorePanel;
 
     //creation of J//
-    public ScoreScreen(int score, int Length){
+    public ScoreScreen(int score, int length){
         
-        JLabel Scre = new JLabel("You got:" + score);
-        JLabel pcentage = new JLabel("Percentage:" + percentage(score, totalQuestions) + "%");
+        JLabel Score = new JLabel("You got:" + score);
+        JLabel pcentage = new JLabel("Percentage:" + percentage(score, length) + "%");
         ScrMainMenu = new JButton("Main Menu");
-
 
 
         JButton Menu = new JButton("Menu");
@@ -32,13 +33,25 @@ public class ScoreScreen extends JPanel{
         JButton Edit = new JButton("Edit");
         JLabel message = new JLabel(scoreMessage(score));
 
+        Menu.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        Logout.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
         JPanel scoreMenu = new JPanel();
 
         scoreMenu.add(Menu);
         scoreMenu.add(Logout);
         scoreMenu.add(Edit);
         // horizontal
-        scoreMenu.setLayout(new java.awt.GridLayout(1, 0));
+        scoreMenu.setLayout(new java.awt.GridLayout(2, 0));
         ScorePanel.add(scoreMenu);
 
 
@@ -47,26 +60,28 @@ public class ScoreScreen extends JPanel{
         ScorePanel.add(Edit);
 
 
-
-        ScoreScreen.add(Score);
-        ScoreScreen.add(message);
-        ScoreScreen.add(percentage);
-
-
-
-
         //Add to panel section
-        ScrScreen.add(Scre);
-        ScrScreen.add(pcentage);
-        ScrScreen.add(ScrMainMenu);
+        ScoreScreen.add(Score);
+        ScoreScreen.add(pcentage);
+        ScoreScreen.add(ScrMainMenu);
+
+        // stacked on top of each other
+        ScorePanel.setLayout(new java.awt.GridLayout(0, 1));
+
+        //sjhow the panel
+        this.getContentPane().add(ScorePanel);
+        this.setSize(500, 500);
+        this.pack();
+        this.setVisible(true);
 
         //Action Listeners//
-        ScrMainMenu.addActionListener(new MenuBActionListener());
+       // ScrMainMenu.addActionListener(new MenuBActionListener());
 
         //private class scoreArea{
 
 
    }
+    
     public String scoreMessage(int score){
         if(score == 100){
             message ="Excellent!! your on a roll";
@@ -93,7 +108,7 @@ public class ScoreScreen extends JPanel{
     }
 
 
-
+/* 
 
     private class MenuBActionListener implements ActionListener{
 
@@ -104,4 +119,5 @@ public class ScoreScreen extends JPanel{
             throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
         }
     }
+    */
 }
