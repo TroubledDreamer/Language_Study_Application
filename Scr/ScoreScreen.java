@@ -20,23 +20,24 @@ public class ScoreScreen extends JPanel{
     JPanel ScrScreen = new JPanel();
 
     //creation of J//
-    public ScoreScreen(){
-    JLabel Scre = new JLabel("You got:" score);
-    JLabel pcentage = new JLabel("Percentage:" getPercentage());
-    ScrMainMenu = new JButton("Main Menu");
+    public ScoreScreen(int score, int Length){
+        
+        JLabel Scre = new JLabel("You got:" score);
+        JLabel pcentage = new JLabel("Percentage:" getPercentage));
+        ScrMainMenu = new JButton("Main Menu");
 
-    //Add to panel section
-    ScrScreen.add(Scre);
-    ScrScreen.add(pcentage);
-    ScrScreen.add(ScrMainMenu);
+        //Add to panel section
+        ScrScreen.add(Scre);
+        ScrScreen.add(pcentage);
+        ScrScreen.add(ScrMainMenu);
 
-    //Action Listeners//
-    ScrMainMenu.addActionListener(new MenuBActionListener());
+        //Action Listeners//
+        ScrMainMenu.addActionListener(new MenuBActionListener());
 
-    //private class scoreArea{
+        //private class scoreArea{
 
 
-   // }
+   }
     public class scoreMessage(int score){
         if(score == 100){
             message ="Excellent!! your on a roll";
