@@ -77,7 +77,7 @@ public class ProfileScreen extends JFrame{
         ProfilePanel.add(C);
         ProfilePanel.add(ChineseBar);
 
-        ProfilePanel.add(Menu);
+        //ProfilePanel.add(Menu);
         ProfilePanel.add(Edit);
 
 
