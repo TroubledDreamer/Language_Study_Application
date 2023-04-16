@@ -70,111 +70,114 @@ Spanish - Easy level
 10190-Nuestros
 
 10111-Adjectives: Carro ___
-Limpia
-Limpio  answer
-Cleano
-limpios
-5. Food: Tú pides_______
-Leche   ANSWER
-Milko
-lecha
-lecho
-6. Feelings: Yo estoy ____
-contente
-contentemos
-Contento  ANSWER
-contenta
-7. Adverbs affirmative:  Nosotros ______vamos al colegio.
-tambièn ANSWER
-abajo
-hoy 
-soy
+10112-Limpia
+10113-Limpio  answer
+10114-Cleano
+10115-limpios
+
+10116-Food: Tú pides_______
+10117-Leche   ANSWER
+10118-Milko
+10119-lecha
+10120lecho
+
+10121-Feelings: Yo estoy ____
+10122-contente
+10123-contentemos
+10124-Contento  ANSWER
+10125-contenta
+
+10126-Adverbs affirmative:  Nosotros ______vamos al colegio.
+10127-tambièn ANSWER
+10128-abajo
+10129-hoy 
+10130-soy
 
 
-8.Adjectives Yo prefiero los libros españoles
-vieja
-viejo
-viejas
-Viejos ANSWER
+10131-Adjectives Yo prefiero los libros españoles
+10132-vieja
+10133-viejo
+10134-viejas
+10135-Viejos ANSWER
 
 
 
 Spanish - Begginer level
 
-1101-1101
-1101-1
-1101-Spanish
-1101-Blank
-1101-Nosotros _____ una paella de pescado
-1101-comemos
+11010-1101
+11010-1
+11010-Spanish
+11010-Blank
+11010-Nosotros _____ una paella de pescado
+11010-comemos
 
-1102-1102
-1102-1
-1102-Spanish
-1102-Blank
-1102-En mi clase ____ veinte (20) estudiantes
-1102-hay
+11020-1102
+11020-1
+11020-Spanish
+11020-Blank
+11020-En mi clase ____ veinte (20) estudiantes
+11020-hay
 
-1103-1103
-1103-1
-1103-Spanish
-1103-Blank
-1103-Los hermanos de mi madre, son ____ tíos
-1103-mis
+11030-1103
+11030-1
+11030-Spanish
+11030-Blank
+11030-Los hermanos de mi madre, son ____ tíos
+11030-mis
 
-1104-1104
-1104-1
-1104-Spanish
-1104-Blank
-1104-Rafael no compra la comida en el supermercado, _____ compra en las tiendas de su barrio
-1104-la
-
-
-1105-1105
-1105-1
-1105-Spanish
-1105-Blank
-1105-How do you say "Good morning" _____?
-1105-Buenos días
+11040-1104
+11040-1
+11040-Spanish
+11040-Blank
+11040-Rafael no compra la comida en el supermercado, _____ compra en las tiendas de su barrio
+11040-la
 
 
-
-1105-1105
-1105-1
-1105-Spanish
-1105-Blank
-1105-Hola, me llamo Pablo. ¿Cómo te______ tú? 
-1105-llamas
-
-
-1106-1106
-1106-1
-1106-Spanish
-1106-Blank
-1106-Quién  ____  Marc Anthony?
-1106-es
-
-1107-1107
-1107-1
-1107-Spanish
-1107-Blank
-1107-Pablo es_____ muchacho,
-1107-un
-
-1108-1108
-1108-1
-1108-Spanish
-1108-Blank
-1108-¿Qué número es: ______?
-1108-noventa y seis
+11050-1105
+11050-1
+11050-Spanish
+11050-Blank
+11050-How do you say "Good morning" _____?
+11050-Buenos días
 
 
-1109-1109
-1109-1
-1109-Spanish
-1109-Blank
-1109-_____ levanto a las ocho de la mañana todos los días.
-1109-Me
+
+11050-1105
+11050-1
+11050-Spanish
+11050-Blank
+11050-Hola, me llamo Pablo. ¿Cómo te______ tú? 
+11050-llamas
+
+
+11060-1106
+11060-1
+11060-Spanish
+11060-Blank
+11060-Quién  ____  Marc Anthony?
+11060-es
+
+11070-1107
+11070-1
+11070-Spanish
+11070-Blank
+11070-Pablo es_____ muchacho,
+11070-un
+
+11080-1108
+11080-1
+11080-Spanish
+11080-Blank
+11080-¿Qué número es: ______?
+11080-noventa y seis
+
+
+11090-1109
+11090-1
+11090-Spanish
+11090-Blank
+11090-_____ levanto a las ocho de la mañana todos los días.
+11090-Me
 
 
 11010-11010
@@ -187,54 +190,301 @@ Spanish - Begginer level
 
 Spanish - level Intermediate
 
-1201-1201
-1201-2
-1201-Spanish
-1201-Blank
-1201-¿ _____________ es el país más pequeño de Hispanoamérica?
-1201-cuál
+12010-1201
+12010-2
+12010-Spanish
+12010-Blank
+12010-¿ _____________ es el país más pequeño de Hispanoamérica?
+12010-cuál
 
 
-1202-1202
-1202-2
-1202-Spanish
-1202-Blank
-1202-El dueño del bar dice que se _____ el vino. ( acabó, quemó, dañó, quedó)
-1202-acabó
+12020-1202
+12020-2
+12020-Spanish
+12020-Blank
+12020-El dueño del bar dice que se _____ el vino. ( acabó, quemó, dañó, quedó)
+12020-acabó
 
-1203-1203
-1203-2
-1203-Spanish
-1203-Blank
-1203-El opuesto de más pequeño (smaller) es más _____. ( cómodo, interesante, caro, grande)
-1203-grande
-
-
-1204-1204
-1204-2
-1204-Spanish
-1204-Blank
-1204-El equivalente de 'Can you...?' para hablar con un amigo en español es _____ (Puedo, Puede, Puedes, Poder)
-1204-Puedes
-
-1205-1205
-1205-2
-1205-Spanish
-1205-Blank
-1205-El subjuntivo conozca es para el verbo: _____ (comprender, contratar, conocer, conjugar)
-1205-conocer
-
-1206-1206
-1206-2
-1206-Spanish
-1206-Blank
-1206-En las montañas, veo ______ (la nieve, la playa)
-1206-la nieve
+12030-1203
+12030-2
+12030-Spanish
+12030-Blank
+12030-El opuesto de más pequeño (smaller) es más _____. ( cómodo, interesante, caro, grande)
+12030-grande
 
 
-1207-1207
-1207-2
-1207-Spanish
-1207-Blank
-1207-Siempre _____ despierto a las 6 de la mañana. (me, te, se, nos, se, le)
-1207-me
+12040-1204
+12040-2
+12040-Spanish
+12040-Blank
+12040-El equivalente de 'Can you...?' para hablar con un amigo en español es _____ (Puedo, Puede, Puedes, Poder)
+12040-Puedes
+
+12050-1205
+12050-2
+12050-Spanish
+12050-Blank
+12050-El subjuntivo conozca es para el verbo: _____ (comprender, contratar, conocer, conjugar)
+12050-conocer
+
+12060-1206
+12060-2
+12060-Spanish
+12060-Blank
+12060-En las montañas, veo ______ (la nieve, la playa)
+12060-la nieve
+
+
+12070-12070
+12070-2
+12070-Spanish
+12070-Blank
+12070-Siempre _____ despierto a las 6 de la mañana. (me, te, se, nos, se, le)
+12070-me
+
+French - Easy level
+20010-20010
+20010-0
+20010-Blank
+20010-Quel est ton _____? 
+20010-nom
+
+
+Où ___________ ? (Where are you from?)
+Answer: habites-tu? (do you live?)
+
+Comment ___________ ? (How old are you?)
+Answer: ça va ? (are you doing?)
+
+Quand ___________ ? (When is your birthday?)
+Answer: es-tu né(e) ? (were you born?)
+
+Tu parles ___________ ? (Do you speak English?)
+Answer: anglais? (English?)
+
+___________ à la plage hier. (I went to the beach yesterday.)
+Answer: Je suis allé(e)
+
+J'aime jouer au ___________. (I like to play soccer.)
+Answer: football ; (soccer)
+
+Il y a ___________ étudiants dans la classe. (There are 20 students in the class.)
+Answer: vingt ; (twenty)
+
+Je vais ___________ aujourd'hui. (I'm going shopping today.)
+Answer: faire du shopping ; (go shopping)
+
+Merci ___________ . (Thank you very much.)
+Answer: beaucoup ; (a lot)
+
+210 Intermediate French
+Combien ___________ ? (How much does it cost?)
+Answer: ça coûte? ; (does it cost?)
+Quel est ton ___________ préféré ? (What is your favorite food?)
+Answer: plat ; (dish)
+Quand est-ce que tu ___________ ? (When do you usually wake up?)
+Answer: te réveilles? ; (wake up?)
+Comment ___________ ? (How was your day?)
+Answer: s'est passée ta journée ? ; (did your day go?)
+Je ___________ à Paris il y a deux ans. (I moved to Paris two years ago.)
+Answer: suis déménagé(e) ; (moved)
+Je suis ___________ à apprendre le français. (I am determined to learn French.)
+Answer: déterminé(e) ; (determined)
+J'aime écouter de la musique ___________ . (I like listening to music while I work.)
+Answer: en travaillant ; (while working)
+J'aimerais ___________ plus de temps libre. (I would like to have more free time.)
+Answer: avoir ; (have)
+Quand est-ce que tu ___________ ? (When are you going on vacation?)
+Answer: pars en vacances? ; (are you leaving for vacation?)
+___________ est-ce que tu as commencé à apprendre le français ? (When did you start learning French?)
+Answer: Quand
+Advanced French
+Quel est ___________ principal de cette entreprise ? (What is the main activity of this company?)
+Answer: le domaine ; (field)
+Pourquoi est-ce que tu ___________ français ? (Why do you want to learn French?)
+Answer: apprends ; (learn)
+Que ___________ si tu gagnais à la loterie ? (What would you do if you won the lottery?)
+Answer: ferais-tu ; (would you do?)
+Comment ___________ les Français ? (What are French people like?)
+Answer: sont ; (are)
+___________ est-ce que tu as réussi à trouver une solution à ce problème ? (How did you manage to find a solution to this problem?)
+Answer: Comment
+6
+
+
+French-Ea
+201 Quel est le mot pour "chair" en français?
+a) Table
+b) Chaise
+c) Lit
+d) Chair
+Answer: d) Chair
+Comment dit-on "grand" en français?
+a) Petit
+b) Grand
+c) Moyen
+d) Haut
+Answer: b) Grand
+Quel est le mot pour "pomme de terre" en français?
+a) Pomme
+b) Poisson
+c) Pomme de terre
+d) Fromage
+Answer: c) Pomme de terre
+Comment dit-on "parapluie" en français?
+a) Parapluie
+b) Pluie
+c) Soleil
+d) Vent
+Answer: a) Parapluie
+Quel est le mot pour "chapeau" en français?
+a) Chapeau
+b) Chaussures
+c) Chemise
+d) Vêtements
+Answer: a) Chapeau
+Comment dit-on "manger" en français?
+a) Boire
+b) Manger
+c) Dormir
+d) Lire
+Answer: b) Manger
+Quel est le mot pour "vélo" en français?
+a) Moto
+b) Voiture
+c) Vélo
+d) Bus
+Answer: c) Vélo
+Comment dit-on "je suis" en français?
+a) Il est
+b) Elle est
+c) Je suis
+d) Nous sommes
+Answer: c) Je suis
+Quel est le mot pour "voiture" en français?
+a) Bus
+b) Train
+c) Avion
+d) Voiture
+Answer: d) Voiture
+Comment dit-on "chien" en français?
+a) Chat
+b) Chien
+c) Oiseau
+d) Poisson
+Answer: b) Chien
+Intermediate French Multiple Choice:
+Quel est le mot pour "ordinateur" en français?
+a) Table
+b) Chaise
+c) Lit
+d) Ordinateur
+Answer: d) Ordinateur
+Comment dit-on "cuisine" en français?
+a) Cuisine
+b) Repas
+c) Nourriture
+d) Manger
+Answer: a) Cuisine
+Quel est le mot pour "école" en français?
+a) Bureau
+b) Salle de classe
+c) École
+d) Professeur
+Answer: c) École
+Comment dit-on "demain" en français?
+a) Hier
+b) Aujourd'hui
+c) Demain
+d) Après-demain
+Answer: c) Demain
+Quel est le mot pour "livre" en français?
+a) Livre
+b) Cahier
+c) Feuille
+d) Stylo
+Answer: a) Livre
+Comment dit-on "ordinateur portable" en français?
+a) Ordinateur
+b) Portable
+c) Ordinateur portable
+d) Téléphone portable
+Answer: c) Ordinateur portable
+Quel est le mot pour "ville" en français?
+a) Campagne
+b) Ville
+c) Quartier
+d) Banlieue
+Answer: b) Ville
+Comment dit-on "femme" en français?
+a) Homme
+b) Femme
+c) Garçon
+d) Fille
+Answer: b)
+
+
+
+
+Advanced French Multiple Choice:
+Quel est le mot pour "inflation" en français?
+a) Expansion
+b) Déflation
+c) Inflation
+d) Dépression
+Answer: c) Inflation
+Comment dit-on "réchauffement climatique" en français?
+a) Réchauffement global
+b) Changement climatique
+c) Pollution atmosphérique
+d) Désertification
+Answer: b) Changement climatique
+Quel est le mot pour "mécanique quantique" en français?
+a) Mécanique classique
+b) Mécanique quantique
+c) Physique quantique
+d) Physique des particules
+Answer: b) Mécanique quantique
+Comment dit-on "séisme" en français?
+a) Tremblement de terre
+b) Éruption volcanique
+c) Ouragan
+d) Tsunami
+Answer: a) Tremblement de terre
+Quel 
+est le mot pour "biodiversité" en français?
+a) Biodiversité
+b) Écosystème
+c) Développement durable
+d) Énergie renouvelable
+Answer: a) Biodiversité
+Comment dit-on "travailleur indépendant" en français?
+a) Entrepreneur
+b) Travailleur autonome
+c) Pigiste
+d) Freelance
+Answer: b) Travailleur autonome
+Quel est le mot pour "développement économique" en français?
+a) Économie
+b) Commerce international
+c) Développement économique
+d) Croissance économique
+Answer: d) Croissance économique
+Comment dit-on "l'intelligence artificielle" en français?
+a) Intelligence artificielle
+b) Robotique
+c) Automatisation
+d) Programmation
+Answer: a) Intelligence artificielle
+Quel est le mot pour "néolibéralisme" en français?
+a) Capitalisme
+b) Socialisme
+c) Libéralisme économique
+d) Néolibéralisme
+Answer: d) Néolibéralisme
+Comment dit-on "mondialisation" en français?
+a) Internationalisation
+b) Globalisation
+c) Transnationalisation
+d) Multinationalisation
+Answer: b) Globalisation
