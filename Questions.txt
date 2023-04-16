@@ -2,56 +2,56 @@
 Spanish - Easy level
 
 
-1001-1001
-1001-0
-1001-Spanish
-1001-Blank
-1001-____ madres
-1001-las
+10010-1001
+10010-0
+10010-Spanish
+10010-Blank
+10010-____ madres
+10010-las
 
-1002-1002
-1002-0
-1002-Spanish
-1002-Blank
-1002-____ trenes
-1002-los
+10020-1002
+10020-0
+10020-Spanish
+10020-Blank
+10020-____ trenes
+10020-los
 
-1003-1003
-1003-0
-1003-Spanish
-1003-Blank
-1003-____ profesor de mi clase se llama Juan Pérez.
-1003-El
-
-
-1004-1004
-1004-0
-1004-Spanish
-1004-Blank
-1004-¿______ mesas tienes? - How many tables do you have?
-1004-Cuántas
+10030-1003
+10030-0
+10030-Spanish
+10030-Blank
+10030-____ profesor de mi clase se llama Juan Pérez.
+10030-El
 
 
-1005-1005
-1005-0
-1005-Spanish
-1005-Blank
-1005-¿Dónde ____ un hotel?    ¿Dónde ____ el hotel?
-1005-hay está
+10040-1004
+10040-0
+10040-Spanish
+10040-Blank
+10040-¿______ mesas tienes? - How many tables do you have?
+10040-Cuántas
 
-1006-1006
-1006-0
-1006-Spanish
-1006-Blank
-1006-¿Dónde ____ un taxi? ¿Dónde ____ el taxi?
-1006-hay están
 
-1017-1017
-1017-0
-1017-Spanish
-1017-Blank
-1017-Family: Tía is to Tío, as prima is to-Primè,prímas,Primo,priman  
-1017-Primo
+10050-1005
+10050-0
+10050-Spanish
+10050-Blank
+10050-¿Dónde ____ un hotel?    ¿Dónde ____ el hotel?
+10050-hay está
+
+10060-1006
+10060-0
+10060-Spanish
+10060-Blank
+10060-¿Dónde ____ un taxi? ¿Dónde ____ el taxi?
+10060-hay están
+
+10170-1017
+10170-0
+10170-Spanish
+10170-Blank
+10170-Family: Tía is to Tío, as prima is to-Primè,prímas,Primo,priman  
+10170-Primo
 
 
 10180-10180
