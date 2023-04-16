@@ -201,14 +201,14 @@ Spanish - level Intermediate
 12020-1202
 12020-2
 12020-Spanish
-12020-Blank
+12020-Multi
 12020-El dueño del bar dice que se _____ el vino. ( acabó, quemó, dañó, quedó)
 12020-acabó
 
 12030-1203
 12030-2
 12030-Spanish
-12030-Blank
+12030-Multi
 12030-El opuesto de más pequeño (smaller) es más _____. ( cómodo, interesante, caro, grande)
 12030-grande
 
@@ -216,21 +216,21 @@ Spanish - level Intermediate
 12040-1204
 12040-2
 12040-Spanish
-12040-Blank
+12040-Multi
 12040-El equivalente de 'Can you...?' para hablar con un amigo en español es _____ (Puedo, Puede, Puedes, Poder)
 12040-Puedes
 
 12050-1205
 12050-2
 12050-Spanish
-12050-Blank
+12050-Multi
 12050-El subjuntivo conozca es para el verbo: _____ (comprender, contratar, conocer, conjugar)
 12050-conocer
 
 12060-1206
 12060-2
 12060-Spanish
-12060-Blank
+12060-Multi
 12060-En las montañas, veo ______ (la nieve, la playa)
 12060-la nieve
 
@@ -238,7 +238,7 @@ Spanish - level Intermediate
 12070-12070
 12070-2
 12070-Spanish
-12070-Blank
+12070-Multi
 12070-Siempre _____ despierto a las 6 de la mañana. (me, te, se, nos, se, le)
 12070-me
 
@@ -315,20 +315,6 @@ Advanced French
 21030-(What would you do if you won the lottery?)Que ___________ si tu gagnais à la loterie ? 
 21030-ferais-tu
 
-(What are French people like?)Comment ___________ les Français ? 
-Answer: sont
-
-(How did you manage to find a solution to this problem?)___________ est-ce que tu as réussi à trouver une solution à ce problème ? 
-Answer: Comment
-
-//////////////////////////////////////////////////////////////////
-10180-10180
-10180-0
-10180-Spanish
-10180-Blank
-10180-Food: Alguien come una_____-burguesa,jamon,burgera,Hamburguesa
-10180-Hamburguesa 
-
 French-Ea
 22110-22110
 22110-0
@@ -347,23 +333,13 @@ French-Ea
 
 
 
-Quel est le mot pour "pomme de terre" en français?
-a) Pomme
-b) Poisson
-c) Pomme de terre
-d) Fromage
+Quel est le mot pour "pomme de terre" en français?-Pomme,Poisson,Pomme de terre,Fromage
 Answer: c) Pomme de terre
-Comment dit-on "parapluie" en français?
-a) Parapluie
-b) Pluie
-c) Soleil
-d) Vent
+
+Comment dit-on "parapluie" en français?-Parapluie,Pluie,Soleil,Vent
 Answer: a) Parapluie
-Quel est le mot pour "chapeau" en français?
-a) Chapeau
-b) Chaussures
-c) Chemise
-d) Vêtements
+
+Quel est le mot pour "chapeau" en français?-Chapeau,Chaussures,Chemise,Vêtements
 Answer: a) Chapeau
 Comment dit-on "manger" en français?
 
@@ -383,21 +359,21 @@ Advanced French Multiple Choice:
 23120-Comment dit-on "réchauffement climatique" en français?-Réchauffement global,Changement climatique,Pollution atmosphérique,Désertification
 23120-Changement climatique
 
+23130-23130
+23130-2
+23130-Multi
+23130-Quel est le mot pour "mécanique quantique" en français?-Mécanique classique,Mécanique quantique,Physique quantique,Physique des particules
+23130-Mécanique quantique
 
-Quel est le mot pour "mécanique quantique" en français?
-a) Mécanique classique
-b) Mécanique quantique
-c) Physique quantique
-d) Physique des particules
-Answer: b) Mécanique quantique
+23140-23140
+23140-2
+23140-Multi
+23140-Comment dit-on "séisme" en français?-Tremblement de terre,Éruption volcanique,Ouragan,Tsunami
+23140-Tremblement de terre
 
-Comment dit-on "séisme" en français?
-a) Tremblement de terre
-b) Éruption volcanique
-c) Ouragan
-d) Tsunami
-Answer: a) Tremblement de terre
-
-Quel est le mot pour "biodiversité" en français?-Biodiversité,Écosystème,Développement durable,Énergie renouvelable
-Answer: a) Biodiversité
+23140-23140
+23140-2
+23140-Multi
+23140-Quel est le mot pour "biodiversité" en français?-Biodiversité,Écosystème,Développement durable,Énergie renouvelable
+23140-Biodiversité
 
