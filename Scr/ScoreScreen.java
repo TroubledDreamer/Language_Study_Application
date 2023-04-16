@@ -15,7 +15,7 @@ public class ScoreScreen extends JPanel{
     private String message;
 
     private JButton ScrMainMenu;
-    JPanel ScrScreen = new JPanel();
+    JPanel ScoreScreen = new JPanel();
     JPanel ScorePanel;
 
     //creation of J//
@@ -48,9 +48,9 @@ public class ScoreScreen extends JPanel{
 
 
 
-        ScorePanel.add(Score);
-        ScorePanel.add(message);
-        ScorePanel.add(percentage);
+        ScoreScreen.add(Score);
+        ScoreScreen.add(message);
+        ScoreScreen.add(percentage);
 
 
 
