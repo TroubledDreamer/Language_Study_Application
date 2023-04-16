@@ -11,20 +11,49 @@ import javax.swing.JLabel;
 
 public class ScoreScreen extends JPanel{
 
-    ScoreScreen scoreScreen = new ScoreScreen();
+    //ScoreScreen scoreScreen = new ScoreScreen();
     private String message;
 
-    private JLabel Scre;
-    private JLabel pcentage;
     private JButton ScrMainMenu;
     JPanel ScrScreen = new JPanel();
+    JPanel ScorePanel;
 
     //creation of J//
     public ScoreScreen(int score, int Length){
         
-        JLabel Scre = new JLabel("You got:" score);
-        JLabel pcentage = new JLabel("Percentage:" getPercentage);
+        JLabel Scre = new JLabel("You got:" + score);
+        JLabel pcentage = new JLabel("Percentage:" + percentage(score, totalQuestions) + "%");
         ScrMainMenu = new JButton("Main Menu");
+
+
+
+        JButton Menu = new JButton("Menu");
+        JButton Logout = new JButton("Logout");
+        JButton Edit = new JButton("Edit");
+        JLabel message = new JLabel(scoreMessage(score));
+
+        JPanel scoreMenu = new JPanel();
+
+        scoreMenu.add(Menu);
+        scoreMenu.add(Logout);
+        scoreMenu.add(Edit);
+        // horizontal
+        scoreMenu.setLayout(new java.awt.GridLayout(1, 0));
+        ScorePanel.add(scoreMenu);
+
+
+        ScorePanel.add(Menu);
+        ScorePanel.add(Logout);
+        ScorePanel.add(Edit);
+
+
+
+        ScorePanel.add(Score);
+        ScorePanel.add(message);
+        ScorePanel.add(percentage);
+
+
+
 
         //Add to panel section
         ScrScreen.add(Scre);
@@ -38,7 +67,7 @@ public class ScoreScreen extends JPanel{
 
 
    }
-    public class scoreMessage(int score){
+    public String scoreMessage(int score){
         if(score == 100){
             message ="Excellent!! your on a roll";
         }
@@ -54,9 +83,16 @@ public class ScoreScreen extends JPanel{
         else{
             message = "Wheel and come again, only your best is good enough!!";
         }
+        return message;
 
     }
-}
+
+    public int percentage(int score, int total) {
+        int percentage = (score / total) * 100;
+        return percentage;
+    }
+
+
 
 
     private class MenuBActionListener implements ActionListener{
