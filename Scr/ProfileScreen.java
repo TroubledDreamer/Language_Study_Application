@@ -2,6 +2,7 @@ package Scr;
 
 import javax.swing.*;
 
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,11 +18,11 @@ public class ProfileScreen extends JFrame{
 
     //Labels
     JLabel Spanish  = new JLabel("Spanish");
-    JButton S = new JButton("enter");
+    JButton S = new JButton("practice");
     JLabel French  = new JLabel("French");
-    JButton F = new JButton("enter");
+    JButton F = new JButton("practice");
     JLabel Chinese = new JLabel("Chinese");
-    JButton C = new JButton("enter");
+    JButton C = new JButton("practice");
     ImageIcon menuPic = new ImageIcon("pic.jpg");
     JLabel label = new JLabel(menuPic);
     
@@ -40,6 +41,7 @@ public class ProfileScreen extends JFrame{
     
 
     JPanel ProfilePanel = new JPanel(); //new GridLayout(2,2));
+    JPanel profilePanel1 = new JPanel(new GridLayout(4,3));
 
 
     String Name = new String();
@@ -61,24 +63,31 @@ public class ProfileScreen extends JFrame{
         Logout.addActionListener(new logoutAction());
         Menu.addActionListener(new MenuBActionListener());
 
+        Color customColor = new Color(68, 65, 242);
+        Color customColor1 = new Color(117, 115, 145);
+
+
+        ProfilePanel.setBackground(customColor);
+        profilePanel1.setBackground(customColor1);
         ProfilePanel.add(label);
         ProfilePanel.add(name);
         ProfilePanel.add(Logout);
+        ProfilePanel.add(profilePanel1);
         
-        ProfilePanel.add(Spanish);
-        ProfilePanel.add(S);
-        ProfilePanel.add(SpanishBar);
+        profilePanel1.add(Spanish);
+        profilePanel1.add(S);
+        profilePanel1.add(SpanishBar);
 
-        ProfilePanel.add(French);
-        ProfilePanel.add(F);
-        ProfilePanel.add(FrenchBar);
+        profilePanel1.add(French);
+        profilePanel1.add(F);
+        profilePanel1.add(FrenchBar);
 
-        ProfilePanel.add(Chinese);
-        ProfilePanel.add(C);
-        ProfilePanel.add(ChineseBar);
+        profilePanel1.add(Chinese);
+        profilePanel1.add(C);
+        profilePanel1.add(ChineseBar);
 
         //ProfilePanel.add(Menu);
-        ProfilePanel.add(Edit);
+        profilePanel1.add(Edit);
 
 
 
