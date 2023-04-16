@@ -23,7 +23,7 @@ public class ScoreScreen extends JPanel{
     public ScoreScreen(int score, int Length){
         
         JLabel Scre = new JLabel("You got:" score);
-        JLabel pcentage = new JLabel("Percentage:" getPercentage));
+        JLabel pcentage = new JLabel("Percentage:" getPercentage);
         ScrMainMenu = new JButton("Main Menu");
 
         //Add to panel section
