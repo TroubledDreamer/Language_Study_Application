@@ -246,85 +246,107 @@ French - Easy level
 20010-20010
 20010-0
 20010-Blank
-20010-Quel est ton _____? 
+20010-(What is your name?)Quel est ton _____? 
 20010-nom
 
+20020-20020
+20020-0
+20020-Blank
+20020-(Where are you from?)Où ___________ ? 
+20020-habites-tu
 
-Où ___________ ? (Where are you from?)
-Answer: habites-tu? (do you live?)
+20030-20030
+20030-0
+20030-Blank
+20030-(How old are you?)Comment ___________ ? 
+20030-ça va
 
-Comment ___________ ? (How old are you?)
-Answer: ça va ? (are you doing?)
+20040-20040
+20040-0
+20040-Blank
+20040-(When is your birthday?)Quand ___________ ? 
+20040-es-tu né
 
-Quand ___________ ? (When is your birthday?)
-Answer: es-tu né(e) ? (were you born?)
-
-Tu parles ___________ ? (Do you speak English?)
+20050-20050
+20050-0
+20050-Blank
+20050-(Do you speak English?)Tu parles ___________ ? 
 Answer: anglais? (English?)
 
-___________ à la plage hier. (I went to the beach yesterday.)
-Answer: Je suis allé(e)
-
-J'aime jouer au ___________. (I like to play soccer.)
-Answer: football ; (soccer)
-
-Il y a ___________ étudiants dans la classe. (There are 20 students in the class.)
-Answer: vingt ; (twenty)
-
-Je vais ___________ aujourd'hui. (I'm going shopping today.)
-Answer: faire du shopping ; (go shopping)
-
-Merci ___________ . (Thank you very much.)
-Answer: beaucoup ; (a lot)
-
 210 Intermediate French
-Combien ___________ ? (How much does it cost?)
-Answer: ça coûte? ; (does it cost?)
-Quel est ton ___________ préféré ? (What is your favorite food?)
-Answer: plat ; (dish)
-Quand est-ce que tu ___________ ? (When do you usually wake up?)
-Answer: te réveilles? ; (wake up?)
-Comment ___________ ? (How was your day?)
-Answer: s'est passée ta journée ? ; (did your day go?)
-Je ___________ à Paris il y a deux ans. (I moved to Paris two years ago.)
-Answer: suis déménagé(e) ; (moved)
-Je suis ___________ à apprendre le français. (I am determined to learn French.)
-Answer: déterminé(e) ; (determined)
-J'aime écouter de la musique ___________ . (I like listening to music while I work.)
-Answer: en travaillant ; (while working)
-J'aimerais ___________ plus de temps libre. (I would like to have more free time.)
-Answer: avoir ; (have)
-Quand est-ce que tu ___________ ? (When are you going on vacation?)
-Answer: pars en vacances? ; (are you leaving for vacation?)
-___________ est-ce que tu as commencé à apprendre le français ? (When did you start learning French?)
-Answer: Quand
-Advanced French
-Quel est ___________ principal de cette entreprise ? (What is the main activity of this company?)
-Answer: le domaine ; (field)
-Pourquoi est-ce que tu ___________ français ? (Why do you want to learn French?)
-Answer: apprends ; (learn)
-Que ___________ si tu gagnais à la loterie ? (What would you do if you won the lottery?)
-Answer: ferais-tu ; (would you do?)
-Comment ___________ les Français ? (What are French people like?)
-Answer: sont ; (are)
-___________ est-ce que tu as réussi à trouver une solution à ce problème ? (How did you manage to find a solution to this problem?)
-Answer: Comment
-6
 
+21010-21010
+21010-1
+21010-Blank
+21010-(How much does it cost?)Combien ___________ ? 
+21010-ça coûte
+
+21020-21020
+21020-1
+21020-Blank
+21020-(What is your favorite food?)Quel est ton ___________ préféré ? 
+21020-plat 
+
+21030-21030
+21030-1
+21030-Blank
+21030-(When do you usually wake up?)Quand est-ce que tu ___________ ? 
+21030-te réveilles
+
+
+Answer: Quand
+
+Advanced French
+21010-21010
+21010-2
+21010-Blank
+21010-(What is the main activity of this company?)Quel est ___________ principal de cette entreprise ? 
+21010-le domaine
+
+21020-21020
+21020-2
+21020-Blank
+21020-(Why do you want to learn French?)Pourquoi est-ce que tu ___________ français ?
+21020-apprends
+
+21030-21030
+21030-2
+21030-Blank
+21030-(What would you do if you won the lottery?)Que ___________ si tu gagnais à la loterie ? 
+21030-ferais-tu
+
+(What are French people like?)Comment ___________ les Français ? 
+Answer: sont
+
+(How did you manage to find a solution to this problem?)___________ est-ce que tu as réussi à trouver une solution à ce problème ? 
+Answer: Comment
+
+//////////////////////////////////////////////////////////////////
+10180-10180
+10180-0
+10180-Spanish
+10180-Blank
+10180-Food: Alguien come una_____-burguesa,jamon,burgera,Hamburguesa
+10180-Hamburguesa 
 
 French-Ea
-201 Quel est le mot pour "chair" en français?
-a) Table
-b) Chaise
-c) Lit
-d) Chair
-Answer: d) Chair
-Comment dit-on "grand" en français?
-a) Petit
-b) Grand
-c) Moyen
-d) Haut
-Answer: b) Grand
+22110-22110
+22110-0
+22110-French
+22110-Multi
+20110-Quel est le mot pour "chair" en français?-Table,Chaise,Lit,Chair
+20110-Chair
+
+22120-22120
+22120-0
+22120-French
+22120-Multi
+22120-Comment dit-on "grand" en français?-Petit,Grand,Moyen,Haut
+22120-Grand
+
+
+
+
 Quel est le mot pour "pomme de terre" en français?
 a) Pomme
 b) Poisson
@@ -344,147 +366,38 @@ c) Chemise
 d) Vêtements
 Answer: a) Chapeau
 Comment dit-on "manger" en français?
-a) Boire
-b) Manger
-c) Dormir
-d) Lire
-Answer: b) Manger
-Quel est le mot pour "vélo" en français?
-a) Moto
-b) Voiture
-c) Vélo
-d) Bus
-Answer: c) Vélo
-Comment dit-on "je suis" en français?
-a) Il est
-b) Elle est
-c) Je suis
-d) Nous sommes
-Answer: c) Je suis
-Quel est le mot pour "voiture" en français?
-a) Bus
-b) Train
-c) Avion
-d) Voiture
-Answer: d) Voiture
-Comment dit-on "chien" en français?
-a) Chat
-b) Chien
-c) Oiseau
-d) Poisson
-Answer: b) Chien
-Intermediate French Multiple Choice:
-Quel est le mot pour "ordinateur" en français?
-a) Table
-b) Chaise
-c) Lit
-d) Ordinateur
-Answer: d) Ordinateur
-Comment dit-on "cuisine" en français?
-a) Cuisine
-b) Repas
-c) Nourriture
-d) Manger
-Answer: a) Cuisine
-Quel est le mot pour "école" en français?
-a) Bureau
-b) Salle de classe
-c) École
-d) Professeur
-Answer: c) École
-Comment dit-on "demain" en français?
-a) Hier
-b) Aujourd'hui
-c) Demain
-d) Après-demain
-Answer: c) Demain
-Quel est le mot pour "livre" en français?
-a) Livre
-b) Cahier
-c) Feuille
-d) Stylo
-Answer: a) Livre
-Comment dit-on "ordinateur portable" en français?
-a) Ordinateur
-b) Portable
-c) Ordinateur portable
-d) Téléphone portable
-Answer: c) Ordinateur portable
-Quel est le mot pour "ville" en français?
-a) Campagne
-b) Ville
-c) Quartier
-d) Banlieue
-Answer: b) Ville
-Comment dit-on "femme" en français?
-a) Homme
-b) Femme
-c) Garçon
-d) Fille
-Answer: b)
 
 
 
 
 Advanced French Multiple Choice:
-Quel est le mot pour "inflation" en français?
-a) Expansion
-b) Déflation
-c) Inflation
-d) Dépression
-Answer: c) Inflation
-Comment dit-on "réchauffement climatique" en français?
-a) Réchauffement global
-b) Changement climatique
-c) Pollution atmosphérique
-d) Désertification
-Answer: b) Changement climatique
+23110-23110
+23110-2
+23110-Multi
+23110-Quel est le mot pour "inflation" en français?-Expansion,Déflation,Inflation,Dépression
+23110-Inflation
+
+23120-23120
+23120-2
+23120-Multi
+23120-Comment dit-on "réchauffement climatique" en français?-Réchauffement global,Changement climatique,Pollution atmosphérique,Désertification
+23120-Changement climatique
+
+
 Quel est le mot pour "mécanique quantique" en français?
 a) Mécanique classique
 b) Mécanique quantique
 c) Physique quantique
 d) Physique des particules
 Answer: b) Mécanique quantique
+
 Comment dit-on "séisme" en français?
 a) Tremblement de terre
 b) Éruption volcanique
 c) Ouragan
 d) Tsunami
 Answer: a) Tremblement de terre
-Quel 
-est le mot pour "biodiversité" en français?
-a) Biodiversité
-b) Écosystème
-c) Développement durable
-d) Énergie renouvelable
+
+Quel est le mot pour "biodiversité" en français?-Biodiversité,Écosystème,Développement durable,Énergie renouvelable
 Answer: a) Biodiversité
-Comment dit-on "travailleur indépendant" en français?
-a) Entrepreneur
-b) Travailleur autonome
-c) Pigiste
-d) Freelance
-Answer: b) Travailleur autonome
-Quel est le mot pour "développement économique" en français?
-a) Économie
-b) Commerce international
-c) Développement économique
-d) Croissance économique
-Answer: d) Croissance économique
-Comment dit-on "l'intelligence artificielle" en français?
-a) Intelligence artificielle
-b) Robotique
-c) Automatisation
-d) Programmation
-Answer: a) Intelligence artificielle
-Quel est le mot pour "néolibéralisme" en français?
-a) Capitalisme
-b) Socialisme
-c) Libéralisme économique
-d) Néolibéralisme
-Answer: d) Néolibéralisme
-Comment dit-on "mondialisation" en français?
-a) Internationalisation
-b) Globalisation
-c) Transnationalisation
-d) Multinationalisation
-Answer: b) Globalisation
+
