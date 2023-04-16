@@ -53,14 +53,12 @@ Spanish - Easy level
 10170-Family: Tía is to Tío, as prima is to-Primè,prímas,Primo,priman  
 10170-Primo
 
-
 10180-10180
 10180-0
 10180-Spanish
 10180-Blank
 10180-Food: Alguien come una_____-burguesa,jamon,burgera,Hamburguesa
 10180-Hamburguesa
-
 
 10190-1019
 10190-0
@@ -71,12 +69,12 @@ Spanish - Easy level
 
 10111-Adjectives: Carro ___
 10112-Limpia
-10113-Limpio  answer
+10113-Limpio
 10114-Cleano
 10115-limpios
 
 10116-Food: Tú pides_______
-10117-Leche   ANSWER
+10117-Leche 
 10118-Milko
 10119-lecha
 10120lecho
@@ -84,23 +82,20 @@ Spanish - Easy level
 10121-Feelings: Yo estoy ____
 10122-contente
 10123-contentemos
-10124-Contento  ANSWER
+10124-Contento  
 10125-contenta
 
 10126-Adverbs affirmative:  Nosotros ______vamos al colegio.
-10127-tambièn ANSWER
+10127-tambièn 
 10128-abajo
 10129-hoy 
 10130-soy
-
 
 10131-Adjectives Yo prefiero los libros españoles
 10132-vieja
 10133-viejo
 10134-viejas
-10135-Viejos ANSWER
-
-
+10135-Viejos 
 
 Spanish - Begginer level
 
@@ -140,15 +135,12 @@ Spanish - Begginer level
 11050-How do you say "Good morning" _____?
 11050-Buenos días
 
-
-
 11050-1105
 11050-1
 11050-Spanish
 11050-Blank
 11050-Hola, me llamo Pablo. ¿Cómo te______ tú? 
 11050-llamas
-
 
 11060-1106
 11060-1
@@ -179,7 +171,6 @@ Spanish - Begginer level
 11090-_____ levanto a las ocho de la mañana todos los días.
 11090-Me
 
-
 11010-11010
 11010-1
 11010-Spanish
@@ -187,8 +178,7 @@ Spanish - Begginer level
 11010-____ cafè.(beber)
 11010-bebo
 
-
-Spanish - level Intermediate
+Spanish - Intermediate level
 
 12010-1201
 12010-2
@@ -196,7 +186,6 @@ Spanish - level Intermediate
 12010-Blank
 12010-¿ _____________ es el país más pequeño de Hispanoamérica?
 12010-cuál
-
 
 12020-1202
 12020-2
@@ -211,7 +200,6 @@ Spanish - level Intermediate
 12030-Multi
 12030-El opuesto de más pequeño (smaller) es más _____. ( cómodo, interesante, caro, grande)
 12030-grande
-
 
 12040-1204
 12040-2
@@ -234,7 +222,6 @@ Spanish - level Intermediate
 12060-En las montañas, veo ______ (la nieve, la playa)
 12060-la nieve
 
-
 12070-12070
 12070-2
 12070-Spanish
@@ -243,6 +230,8 @@ Spanish - level Intermediate
 12070-me
 
 French - Easy level
+
+
 20010-20010
 20010-0
 20010-Blank
@@ -273,7 +262,7 @@ French - Easy level
 20050-(Do you speak English?)Tu parles ___________ ? 
 Answer: anglais? (English?)
 
-210 Intermediate French
+French - Begginer level
 
 21010-21010
 21010-1
@@ -293,10 +282,7 @@ Answer: anglais? (English?)
 21030-(When do you usually wake up?)Quand est-ce que tu ___________ ? 
 21030-te réveilles
 
-
-Answer: Quand
-
-Advanced French
+French - Intermediate level
 21010-21010
 21010-2
 21010-Blank
@@ -315,7 +301,6 @@ Advanced French
 21030-(What would you do if you won the lottery?)Que ___________ si tu gagnais à la loterie ? 
 21030-ferais-tu
 
-French-Ea
 22110-22110
 22110-0
 22110-French
@@ -330,23 +315,29 @@ French-Ea
 22120-Comment dit-on "grand" en français?-Petit,Grand,Moyen,Haut
 22120-Grand
 
+French - Easy level
+22130-22130
+22130-0
+22130-French
+22130-Multi
+22130-Quel est le mot pour "pomme de terre" en français?-Pomme,Poisson,Pomme de terre,Fromage
+22130-Pomme de terre
 
+22140-22140
+22140-0
+22140-French
+22140-Multi
+22140-Comment dit-on "parapluie" en français?-Parapluie,Pluie,Soleil,Vent
+22140-Parapluie
 
+22150-22150
+22150-0
+22150-French
+22150-Multi
+22150-Quel est le mot pour "chapeau" en français?-Chapeau,Chaussures,Chemise,Vêtements
+22150-Chapeau
 
-Quel est le mot pour "pomme de terre" en français?-Pomme,Poisson,Pomme de terre,Fromage
-Answer: c) Pomme de terre
-
-Comment dit-on "parapluie" en français?-Parapluie,Pluie,Soleil,Vent
-Answer: a) Parapluie
-
-Quel est le mot pour "chapeau" en français?-Chapeau,Chaussures,Chemise,Vêtements
-Answer: a) Chapeau
-Comment dit-on "manger" en français?
-
-
-
-
-Advanced French Multiple Choice:
+French - Intermediate level
 23110-23110
 23110-2
 23110-Multi
@@ -376,4 +367,3 @@ Advanced French Multiple Choice:
 23140-Multi
 23140-Quel est le mot pour "biodiversité" en français?-Biodiversité,Écosystème,Développement durable,Énergie renouvelable
 23140-Biodiversité
-
