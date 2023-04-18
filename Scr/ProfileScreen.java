@@ -29,7 +29,7 @@ public class ProfileScreen extends JFrame{
    
     
     JPanel ProfilePanel = new JPanel(); //new GridLayout(2,2));
-   JPanel profilePanel1 = new JPanel(new GridLayout(4,3));
+   JPanel profilePanel1 = new JPanel(new GridLayout(3,3));
    //JPanel profilePanel1 = new JPanel(new BorderLayout());   
     String Name = new String();
     HashMap<String, String> LoginInfo = new HashMap<String, String>();
@@ -59,9 +59,9 @@ public class ProfileScreen extends JFrame{
         profilePanel1.add(French);
         profilePanel1.add(F);
         profilePanel1.add(FrenchBar);
-        profilePanel1.add(Chinese);
-        profilePanel1.add(C);
-        profilePanel1.add(ChineseBar);
+        //profilePanel1.add(Chinese);
+        //profilePanel1.add(C);
+        //profilePanel1.add(ChineseBar);
         //ProfilePanel.add(Menu);
         profilePanel1.add(Edit);
         setSize(800,400);
