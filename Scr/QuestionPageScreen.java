@@ -19,7 +19,6 @@ import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -91,6 +90,15 @@ public class QuestionPageScreen extends JFrame {
 
         JPanel FooterPanel = new JPanel();
 
+        //Add to ActionListeners
+        BackB.addActionListener(new BackBAction());
+        Skip.addActionListener(new SkipBAction());
+        Submit.addActionListener(new SubmitAction());
+        OptionA.addActionListener(new OptionAAction());
+        OptionB.addActionListener(new OptionBAction());
+        OptionC.addActionListener(new OptionCAction());
+        OptionD.addActionListener(new OptionDAction());
+
 
         //Screen view for MCQs
         //Panel1.add(Panel1);
@@ -153,5 +161,65 @@ public class QuestionPageScreen extends JFrame {
     private void showScore(){
         ScoreScreen ScoreScreen = new ScoreScreen(score, Qlength);
     }
-    
+    public int isCorrect(){
+        return (Integer) null;
+    }
+
+    private class BackBAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+
+        }
+
+    }
+    private class SkipBAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+
+    }
+    private class SubmitAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+
+    }
+    private class OptionAAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+
+    }
+    private class OptionBAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+
+    }
+    private class OptionCAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+
+    }
+    private class OptionDAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+
+    }
 }
