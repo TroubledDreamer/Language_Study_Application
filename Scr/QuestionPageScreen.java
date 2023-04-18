@@ -123,6 +123,7 @@ public class QuestionPageScreen extends JFrame {
         OptionB.addActionListener(new OptionBAction());
         OptionC.addActionListener(new OptionCAction());
         OptionD.addActionListener(new OptionDAction());
+        
 
 
         if (question.getQuestiontype() == "Multi")
