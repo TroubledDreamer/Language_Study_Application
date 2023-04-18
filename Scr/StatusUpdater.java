@@ -17,12 +17,13 @@ public class StatusUpdater {
     private int checkID;
 
     private String[] spitter;
+    private String[] fileList;
     private ArrayList<String> fileHolder = new ArrayList<>();
 
     
 
 
-    private ArrayList<String> fileList = new ArrayList<>();
+    //private ArrayList<String> fileList = new ArrayList<>();
 
     public StatusUpdater (){
         setID();
@@ -42,7 +43,10 @@ public class StatusUpdater {
                 if (checkID == Integer.parseInt(spitter[0]))
                 {
 
-                    fileList.add(spitter[1]);
+
+                    fileList = spitter[1].split("|");
+
+
                 }else{
                     fileHolder.add(line);
                 }
@@ -75,12 +79,14 @@ public class StatusUpdater {
         hrs_Learning;
         accuracy;
          */
+        System.out.print("lollldsld");
 
-        inputID = Integer.parseInt(fileList.get(0));
-        name = fileList.get(1);
-        score = Integer.parseInt(fileList.get(2));
-        hrs_Learning = Integer.parseInt(fileList.get(3));
-        accuracy = Integer.parseInt(fileList.get(4));
+        inputID = Integer.parseInt(fileList[0]);
+        name = fileList[1];
+        score = Integer.parseInt(fileList[2]);
+        hrs_Learning = Integer.parseInt(fileList[3]);
+        accuracy = Integer.parseInt(fileList[4]);
+
 
 
 
@@ -104,11 +110,11 @@ public class StatusUpdater {
             fileWriter.close();
 
             FileWriter writer = new FileWriter("Status.txt", true);
-            writer.append( inputID + "-" + inputID + "\n");
-            writer.append(inputID + "-" + name + "\n");
-            writer.append(inputID + "-" + score + "\n");
-            writer.append(inputID + "-" + hrs_Learning + "\n");
-            writer.append(inputID + "-" + accuracy + "\n");
+            writer.append( inputID + "|" + inputID);
+            writer.append("|" + name);
+            writer.append("|" + score);
+            writer.append("|" + hrs_Learning);
+            writer.append("|" + accuracy);
             writer.close();
             
             

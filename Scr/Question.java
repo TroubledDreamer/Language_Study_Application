@@ -22,9 +22,12 @@ public class Question {
 
 
 
+  
+
 
     public Question (String IDQuestion)
     {
+        this.IDQuestion = IDQuestion;
         getQuestion(IDQuestion);
 
         
@@ -134,6 +137,12 @@ public class Question {
 
     }
 
+    public String getFileQuestionID (String line)
+    {
+
+        return line.split("-")[0];
+    }
+
 
 
 
@@ -170,4 +179,6 @@ public class Question {
         return fileList;
 
     }
+
+
 }
