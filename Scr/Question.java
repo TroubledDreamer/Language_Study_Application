@@ -1,4 +1,4 @@
-package scr;
+package Scr;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
