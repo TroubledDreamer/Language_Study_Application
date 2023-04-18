@@ -161,8 +161,13 @@ public class ProfileScreen extends JFrame{
     }
 
 
-        private class CActionListener implements ActionListener
- 
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+            EditScreen EQScreen = new EditScreen();
+            visibleMethod(false);
+        }
+    }
 
     {
 
@@ -177,7 +182,7 @@ public class ProfileScreen extends JFrame{
 
     }
 
-    
+
 
 
 
