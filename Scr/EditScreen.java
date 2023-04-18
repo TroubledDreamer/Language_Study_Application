@@ -12,6 +12,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridBagLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -40,14 +41,22 @@ public class EditScreen extends JFrame {
     JLabel idLabel = new JLabel("Question ID:");
     JTextField idTextField = new JTextField(10);
     JButton deleteButton = new JButton("Delete Question");
+    JLabel note = new JLabel("<html>(Please Note: enter question in format for MCQ question-optionA,OptionB,optionC,optionD<br>" +
+    "and for fill in Blank question|answer<br>" +
+    "To delete an existing question, just enter ID and click delete)</html>");
     JLabel questionLabel = new JLabel("Question:");
-    JTextField questionTextField = new JTextField(20);
+    JTextField questionTextField = new JTextField(10);
+    JLabel qType = new JLabel("MCQ/Fill in Blank");
+    JTextField qTypField = new JTextField(10);
     JLabel difficultyLabel = new JLabel("Difficulty:");
     JTextField difficultyTextField = new JTextField(10);
     JLabel languageLabel = new JLabel("Language:");
     JTextField languageTextField = new JTextField(10);
     JLabel answerLabel = new JLabel("Answer:");
-    JTextField answerTextField = new JTextField(20);
+    JTextField answerTextField = new JTextField(10);
+    JLabel correctAnswer = new JLabel("CorrectAnswer");
+    JTextField cAnswerField = new JTextField(10);
+
 
     JPanel mainPanel = new JPanel(); // Move the declaration of mainPanel outside of the constructor
 
@@ -56,12 +65,19 @@ public class EditScreen extends JFrame {
         mainPanel.setSize(400, 300);
 
         JPanel mainPanel1 = new JPanel();
-        mainPanel1.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
+        JPanel footerPanel = new JPanel();
+        JPanel headerPanel = new JPanel();
+        mainPanel1.setLayout(new GridLayout(10,2));//FlowLayout(FlowLayout.CENTER, 10, 10));
+        
+        mainPanel.add(headerPanel);
         mainPanel.add(mainPanel1);
+        mainPanel.add(footerPanel);
+        headerPanel.add(note);
         mainPanel1.add(idLabel);
         mainPanel1.add(idTextField);
         deleteButton.addActionListener(new DelAction());
-        mainPanel1.add(deleteButton);
+        mainPanel1.add(qType);
+        mainPanel1.add(qTypField);
         mainPanel1.add(questionLabel);
         mainPanel1.add(questionTextField);
         mainPanel1.add(difficultyLabel);
@@ -70,15 +86,19 @@ public class EditScreen extends JFrame {
         mainPanel1.add(languageTextField);
         mainPanel1.add(answerLabel);
         mainPanel1.add(answerTextField);
+        mainPanel1.add(correctAnswer);
+        mainPanel1.add(cAnswerField);
+        footerPanel.add(deleteButton);
         editButton.addActionListener(new EditBAction());
-        mainPanel1.add(editButton);
+        footerPanel.add(editButton);
         newQButton.addActionListener(new NewQBAction());
-        mainPanel1.add(newQButton);
+        footerPanel.add(newQButton);
 
         this.add(mainPanel); // Add mainPanel to the JFrame
-
+        this.setSize(700, 500);
         this.setVisible(true);
     }
+
 
     private class DelAction implements ActionListener {
 
@@ -87,16 +107,26 @@ public class EditScreen extends JFrame {
             String id = idTextField.getText();
             // Perform deletion of question using the ID
             // and other validations as needed
-            JOptionPane.showMessageDialog(mainPanel, "Question with ID " + id + " deleted successfully.");
-
+            JOptionPane.showMessageDialog(null, "Question with ID " + id + " deleted successfully.");
+    
         }
     }
+    
 
     private class NewQBAction implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
             // Implement action for creating new question
+            String IDQuestion = idTextField.getText();
+            String questionString = questionTextField.getText();
+            String difficultyLevel = difficultyTextField.getText();
+            String language = languageTextField.getText();
+            String answer = answerTextField.getText();
+            String correctAnswer = cAnswerField.getText();
+            String questionType = qTypField.getText();
+            addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
+            JOptionPane.showMessageDialog(null, "Question with ID " + IDQuestion + " edded successfully.");
         }
     }
 
@@ -111,7 +141,7 @@ public class EditScreen extends JFrame {
             String answer = answerTextField.getText();
             // Perform editing of existing question using the values in the fields
             // and other validations as needed
-            JOptionPane.showMessageDialog(mainPanel, "Question with ID " + id + " edited successfully.");
-        }
+            JOptionPane.showMessageDialog(null, "Question with ID " + id + " edited successfully.");
+    }
     }
 }

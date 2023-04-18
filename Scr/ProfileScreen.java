@@ -170,7 +170,7 @@ public class ProfileScreen extends JFrame{
             visibleMethod(false);
         }
     }
-
+/* 
     {
 
 
@@ -183,7 +183,7 @@ public class ProfileScreen extends JFrame{
         }
 
     }
-
+*/
 
 
 
