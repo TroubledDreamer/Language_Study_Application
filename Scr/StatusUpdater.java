@@ -25,9 +25,21 @@ public class StatusUpdater {
 
     //private ArrayList<String> fileList = new ArrayList<>();
 
-    public StatusUpdater (){
+    public StatusUpdater(){
         setID();
+        
+        coll();System.out.print("ssss");
 
+
+   
+
+
+        dataAssigner();
+
+    }
+
+    public void coll()
+    {
 
         ArrayList<String> FileHolder = new ArrayList<>();
 
@@ -39,12 +51,14 @@ public class StatusUpdater {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] spitter = line.split("-");
+                System.out.println(line.split("-")[0]);
                 try{
                 if (checkID == Integer.parseInt(spitter[0]))
                 {
 
 
-                    fileList = spitter[1].split("|");
+                    fileList = spitter;
+                    
 
 
                 }else{
@@ -64,10 +78,6 @@ public class StatusUpdater {
         } catch (IOException e) {
             // TODO: handle exception
         }
-
-
-        dataAssigner();
-
     }
 
     public void dataAssigner ()
@@ -79,13 +89,18 @@ public class StatusUpdater {
         hrs_Learning;
         accuracy;
          */
-        System.out.print("lollldsld");
 
-        inputID = Integer.parseInt(fileList[0]);
-        name = fileList[1];
-        score = Integer.parseInt(fileList[2]);
-        hrs_Learning = Integer.parseInt(fileList[3]);
-        accuracy = Integer.parseInt(fileList[4]);
+       
+
+        
+         System.out.println(fileList);
+        
+        inputID = Integer.parseInt(fileList[1]);
+        name = fileList[2];
+        score = Integer.parseInt(fileList[3]);
+        hrs_Learning = Integer.parseInt(fileList[4]);
+        accuracy = Integer.parseInt(fileList[5]);
+        
 
 
 
@@ -110,11 +125,11 @@ public class StatusUpdater {
             fileWriter.close();
 
             FileWriter writer = new FileWriter("Status.txt", true);
-            writer.append( inputID + "|" + inputID);
-            writer.append("|" + name);
-            writer.append("|" + score);
-            writer.append("|" + hrs_Learning);
-            writer.append("|" + accuracy);
+            writer.append( inputID + "-" + inputID);
+            writer.append("-" + name);
+            writer.append("-" + score);
+            writer.append("-" + hrs_Learning);
+            writer.append("-" + accuracy);
             writer.close();
             
             
@@ -127,6 +142,7 @@ public class StatusUpdater {
 
     public void setStatus(int inputID, String name, int score, int hrs_Learning, int accuracy)
     {
+        System.out.print("sddsdaaaaaaaaaa");
         this.inputID = inputID;
         this.score = score;
         this.name = name;
@@ -166,7 +182,9 @@ public class StatusUpdater {
     public void setID()
     {
 
-    try (BufferedReader user = new BufferedReader(new FileReader("user.txt"))) {
+
+    try {
+        BufferedReader user = new BufferedReader(new FileReader("user.txt"));
         checkID = Integer.parseInt(user.readLine());
         user.close();
     } catch (IOException e) {
@@ -175,6 +193,7 @@ public class StatusUpdater {
         e.printStackTrace();
     }
     }
+    
 
     
 

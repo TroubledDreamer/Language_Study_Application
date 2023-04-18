@@ -23,6 +23,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 
@@ -41,19 +42,11 @@ public class QuestionPageScreen extends JFrame {
     private StatusUpdater statusUpdater = new StatusUpdater();
 
 
-    private int Qlength;
     private ArrayList<String> questionList = new ArrayList<>();
-    private ArrayList<String[]> answerList;
-    private ArrayList<String> correctAnswers;
     private ArrayList<String> holder;
     private int score;
-    private int currentQIndex;
     private String language;
 
-    private JLabel qLabel;
-    private ButtonGroup answerGroup;
-    private JRadioButton[] answerBtons;
-    private JPanel ScrGrade;
 
 
 
@@ -85,15 +78,18 @@ public class QuestionPageScreen extends JFrame {
  
 
     public QuestionPageScreen(String language) {
+        System.out.print(language);
         this.language = language;
-        currentQIndex = 0;
-        score = 0;
-        Qlength = 0;
+     
+
 
 
 
         AddCurrentQuestions();
+
         holder = getFile("CurrentQuestion.txt");
+
+
         Collections.shuffle(holder);
         overideCurrentQuestion("CurrentQuestion.txt",  holder);
         getQuestion();
@@ -115,6 +111,7 @@ public class QuestionPageScreen extends JFrame {
 
         JPanel FooterPanel = new JPanel();
 
+
         //Add to ActionListeners
         BackB.addActionListener(new BackBAction());
         Skip.addActionListener(new SkipBAction());
@@ -125,11 +122,16 @@ public class QuestionPageScreen extends JFrame {
         OptionD.addActionListener(new OptionDAction());
 
 
+        question.getQuestiontype();
+        System.out.println( "hhhhhh" +  question.getQuestionID());
+       
         if (question.getQuestiontype() == "Multi")
         {
+
             
             MultipleChoiceQuestion multipleChoiceQuestion = new MultipleChoiceQuestion(question.getQuestionID());
             QuestionStr.setText(multipleChoiceQuestion.getQuestionString());
+            System.out.println( "hhhhhh" +  multipleChoiceQuestion.getQuestionID());
 
             Ans1.setText(multipleChoiceQuestion.getOption1());
             Ans1.setText(multipleChoiceQuestion.getOption1());
@@ -170,7 +172,8 @@ public class QuestionPageScreen extends JFrame {
         
         }
 
-        
+        System.out.print("love------------------");
+
         MainPanel.add(FooterPanel);
         FooterPanel.add(Skip);
         FooterPanel.add(Submit);
@@ -235,12 +238,15 @@ public class QuestionPageScreen extends JFrame {
                  try{
                     Question question = new Question(getFileQuestionID(line));
                     
-                   
+                   //leveQualified(question) && question.getLanguage().equals(language)  &&
 
  
-                    if (leveQualified(question) && question.getLanguage().equals(language)  && !getFile(unwantedDups).contains(line))
+                    if ( !getFile(unwantedDups).contains(line))
                     {
                          questionList.add(line);
+                         System.out.println("dfffffffffffffffffffffffffff");
+
+
  
                      }
                      /*else{
@@ -269,13 +275,23 @@ public class QuestionPageScreen extends JFrame {
             FileWriter writer;
             /*  = new FileWriter(fileOut, false);
             writer.write("");
+            
             writer.close();*/
 
 
             writer = new FileWriter(fileIn, true);
+            BufferedWriter write1 = new BufferedWriter(writer);
+
+
             for (String m : questionList){
-                writer.write(m);
+                
+
+             
+                write1.newLine();
+                write1.append(m + "\n");
             }
+            System.out.println("dfffffffffffffffffffffffffff");
+
             writer.close();
 
 
@@ -295,10 +311,16 @@ public class QuestionPageScreen extends JFrame {
             writer.write("");
             writer.close();
 
+            writer = new FileWriter(fileIn, true);
+            BufferedWriter write1 = new BufferedWriter(writer);
 
-            writer = new FileWriter(file, true);
+
             for (String m : questionList){
-                writer.write(m);
+                
+
+             
+                write1.newLine();
+                write1.append(m + "\n");
             }
             writer.close();
 
@@ -329,9 +351,6 @@ public class QuestionPageScreen extends JFrame {
 
 
 
-    private void showScore(){
-        ScoreScreen ScoreScreen = new ScoreScreen(score, Qlength);
-    }
     public int isCorrect(){
         return (Integer) null;
     }

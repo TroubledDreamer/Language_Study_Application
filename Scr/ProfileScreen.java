@@ -63,9 +63,9 @@ public class ProfileScreen extends JFrame{
         Logout.addActionListener(new logoutAction());
         Menu.addActionListener(new MenuBActionListener());
 
-        S.addActionListener(new);
-        F.addActionListener(new);
-        C.addActionListener(new);
+        S.addActionListener(new SActionListener());
+        F.addActionListener(new FActionListener());
+        C.addActionListener(new CActionListener());
         
 
         Color customColor = new Color(68, 65, 242);
@@ -141,34 +141,28 @@ public class ProfileScreen extends JFrame{
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
             ///edit to create new question screen
-            QuestionPageScreen fQScreen = new QuestionPageScreen("french");
+            QuestionPageScreen fQScreen = new QuestionPageScreen("French");
             visibleMethod(false);
         }
     }
-        private class SActionListener implements ActionListener
-        {
-    
-    
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
-    
-                QuestionPageScreen sQScreen = new QuestionPageScreen("spanish");
-                visibleMethod(false);
-            }
+
+
+    private class SActionListener implements ActionListener
+    {
+
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            
+
+            QuestionPageScreen sQScreen = new QuestionPageScreen("Spanish");
+            visibleMethod(false);
         }
+    }
+
+
         private class CActionListener implements ActionListener
-    {
-
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            // TODO Auto-generated method stub
-
-            QuestionPageScreen CQScreen = new QuestionPageScreen("chinese");
-            visibleMethod(false);
-        }
-    }
+ 
 
     {
 
@@ -177,11 +171,14 @@ public class ProfileScreen extends JFrame{
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
 
-            LoginScreen loginScreen = new LoginScreen(LoginInfo);
+            QuestionPageScreen sQScreen = new QuestionPageScreen("Spanish");
             visibleMethod(false);
         }
 
     }
+
+    
+
 
 
 
