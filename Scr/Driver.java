@@ -10,9 +10,7 @@ public class Driver {
 
 
      
-       StatusUpdater statusUpdater = new StatusUpdater();
-       statusUpdater.setStatus(620157742,"Carl long",0,1,0);
-
+        
 
      
         Login login = new Login();

@@ -34,12 +34,12 @@ public class FillBlankQuestion extends Question {
 
     }
 
-    public String frontString ()
+    public String getFrontString ()
     {
         return questionSplitter()[0];
     }
 
-    public String backString ()
+    public String getBackString ()
     {
         return questionSplitter()[1];
     }

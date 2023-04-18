@@ -2,16 +2,19 @@
 Spanish - Easy level
 
 
-10010-1001|0|Spanish|Blank|_ madres|las
+10010-10010|0|Spanish|Blank|_ madres|las
+22150-22150|0|French|Multi|Quel est le mot pour "chapeau" en français?-Chapeau,Chaussures,Chemise,Vêtements|Chapeau
 
-10020-1002
+
+
+10020-10020
 10020-0
 10020-Spanish
 10020-Blank
-10020-____ trenes
+10020-_ trenes
 10020-los
 
-10030-1003
+10030-10030
 10030-0
 10030-Spanish
 10030-Blank
@@ -19,11 +22,11 @@ Spanish - Easy level
 10030-El
 
 
-10040-1004
+10040-10040
 10040-0
 10040-Spanish
 10040-Blank
-10040-¿______ mesas tienes? - How many tables do you have?
+10040-¿______ mesas tienes? How many tables do you have?
 10040-Cuántas
 
 
@@ -59,7 +62,7 @@ Spanish - Easy level
 10190-0
 10190-Spanish
 10190-Blank
-10190-Clothing: __________ sombreros-Nuestra,Nuestro,Nuestras,Nuestros 
+10190-Clothing: __________ sombreros Nuestra,Nuestro,Nuestras,Nuestros 
 10190-Nuestros
 
 10111-Adjectives: Carro ___
@@ -214,14 +217,14 @@ Spanish - Intermediate level
 12060-2
 12060-Spanish
 12060-Multi
-12060-En las montañas, veo ______ (la nieve, la playa)
+12060-En las montañas, veo _ (la nieve, la playa)
 12060-la nieve
 
 12070-12070
 12070-2
 12070-Spanish
 12070-Multi
-12070-Siempre _____ despierto a las 6 de la mañana. (me, te, se, nos, se, le)
+12070-Siempre _ despierto a las 6 de la mañana. (me, te, se, nos, se, le)
 12070-me
 
 French - Easy level
@@ -325,12 +328,7 @@ French - Easy level
 22140-Comment dit-on "parapluie" en français?-Parapluie,Pluie,Soleil,Vent
 22140-Parapluie
 
-22150-22150
-22150-0
-22150-French
-22150-Multi
-22150-Quel est le mot pour "chapeau" en français?-Chapeau,Chaussures,Chemise,Vêtements
-22150-Chapeau
+22150-22150|0|French|Multi|Quel est le mot pour "chapeau" en français?-Chapeau,Chaussures,Chemise,Vêtements|Chapeau
 
 French - Intermediate level
 23110-23110

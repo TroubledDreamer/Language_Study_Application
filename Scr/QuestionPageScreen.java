@@ -64,6 +64,8 @@ public class QuestionPageScreen extends JFrame {
 
      //Labels
      JLabel QuestionStr  = new JLabel();
+     JLabel QuestionStrBack  = new JLabel();
+
      JButton Submit = new JButton("Submit");
      JLabel Ans1  = new JLabel();
      JLabel Ans2 = new JLabel();
@@ -147,23 +149,32 @@ public class QuestionPageScreen extends JFrame {
             MultiPanel.add(FooterPanel);
             FooterPanel.add(Skip);
             FooterPanel.add(Submit);
+        }
 
 
 
         else{
-            FillBlankQuestion fillBlankQuestion = new FillBlankQuestion(language, language, language, language)
+            FillBlankQuestion fillBlankQuestion = new FillBlankQuestion(question.getQuestionID());
             
 
-        //Screen view for Fill in Blank
-        MainPanel.add(FillBlankPanel);
-        FillBlankPanel.add(BackB);
-        FillBlankPanel.add(QuestionStr);
-        JTextField AnsInput = new JTextField(getAnsInput());
+            QuestionStrBack.setText(fillBlankQuestion.getFrontString());
+            QuestionStr.setText(fillBlankQuestion.getBackString());
+
+            //Screen view for Fill in Blank
+            MainPanel.add(FillBlankPanel);
+            FillBlankPanel.add(QuestionStr);
+            JTextField AnsInput = new JTextField(getAnsInput());
+            FillBlankPanel.add(AnsInput);
+            FillBlankPanel.add(QuestionStrBack);
+    
+        
+        }
+
+        
         MainPanel.add(FooterPanel);
         FooterPanel.add(Skip);
         FooterPanel.add(Submit);
-        
-        }
+        FillBlankPanel.add(BackB);
 
 
 
