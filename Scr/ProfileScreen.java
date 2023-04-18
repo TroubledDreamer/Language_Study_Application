@@ -63,10 +63,10 @@ public class ProfileScreen extends JFrame{
         Logout.addActionListener(new logoutAction());
         Menu.addActionListener(new MenuBActionListener());
 
-        S.addActionListener(new SActionListner());
+        S.addActionListener(new SActionListener());
         F.addActionListener(new FActionListener());
         //C.addActionListener(new);
-        Edit.addActionListener(new EditActionListner());
+        Edit.addActionListener(new EditActionListener());
         
 
         Color customColor = new Color(68, 65, 242);
@@ -147,7 +147,7 @@ public class ProfileScreen extends JFrame{
         }
     }
 
-    private class SActionListner implements ActionListener
+    private class SActionListener implements ActionListener
     {
 
 
@@ -159,7 +159,7 @@ public class ProfileScreen extends JFrame{
             visibleMethod(false);
         }
     }
-    private class EditActionListner implements ActionListener
+    private class EditActionListener implements ActionListener
     {
 
 
