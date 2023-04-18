@@ -2,12 +2,7 @@
 Spanish - Easy level
 
 
-10010-1001
-10010-0
-10010-Spanish
-10010-Blank
-10010-____ madres
-10010-las
+10010-1001|0|Spanish|Blank|_ madres|las
 
 10020-1002
 10020-0

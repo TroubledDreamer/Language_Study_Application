@@ -19,9 +19,12 @@ import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 
 import javax.naming.Context;
 import javax.swing.BorderFactory;
@@ -35,12 +38,17 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class QuestionPageScreen extends JFrame {
+    private StatusUpdater statusUpdater = new StatusUpdater();
+
+
     private int Qlength;
-    private String questionList;
+    private ArrayList<String> questionList = new ArrayList<>();
     private ArrayList<String[]> answerList;
     private ArrayList<String> correctAnswers;
+    private ArrayList<String> holder;
     private int score;
     private int currentQIndex;
+    private String language;
 
     private JLabel qLabel;
     private ButtonGroup answerGroup;
@@ -71,22 +79,30 @@ public class QuestionPageScreen extends JFrame {
      JCheckBox OptionC = new JCheckBox();
      JCheckBox OptionD = new JCheckBox();
      JTextField AnsInput = new JTextField(getAnsInput());
+
+
+
      
  
 
-    public QuestionPageScreen(String Q) {
-        this.questionList = Q;
+    public QuestionPageScreen(String Language) {
+        this.language = Language;
         currentQIndex = 0;
         score = 0;
         Qlength = 0;
 
+        AddCurrentQuestions();
+        holder = getFile("CurrentQuestion.txt");
+        Collections.shuffle(holder);
+        overideCurrentQuestion("CurrentQuestion.txt",  holder);
+
 
         //main panel
-        JPanel Panel1 = new JPanel();
+        JPanel MainPanel = new JPanel();
         //MCQ panel
-        JPanel Panel2 = new JPanel();
+        JPanel MultiPanel = new JPanel();
         //Fill in Blank panel
-        JPanel Panel3 = new JPanel();
+        JPanel FillBlankPanel = new JPanel();
 
         JPanel FooterPanel = new JPanel();
 
@@ -101,43 +117,165 @@ public class QuestionPageScreen extends JFrame {
 
 
         //Screen view for MCQs
-        //Panel1.add(Panel1);
-        Panel2.add(BackB);
-        Panel2.add(Question);
-        Panel2.add(OptionA);
-        Panel2.add(Ans1);
-        Panel2.add(OptionB);
-        Panel2.add(Ans2);
-        Panel2.add(OptionC);
-        Panel2.add(Ans3);
-        Panel2.add(OptionD);
-        Panel2.add(Ans4);
-        Panel1.add(FooterPanel);
+        //MainPanel.add(MainPanel);
+        MultiPanel.add(BackB);
+        MultiPanel.add(Question);
+        MultiPanel.add(OptionA);
+        MultiPanel.add(Ans1);
+        MultiPanel.add(OptionB);
+        MultiPanel.add(Ans2);
+        MultiPanel.add(OptionC);
+        MultiPanel.add(Ans3);
+        MultiPanel.add(OptionD);
+        MultiPanel.add(Ans4);
+        MultiPanel.add(FooterPanel);
         FooterPanel.add(Skip);
         FooterPanel.add(Submit);
 
         //Screen view for Fill in Blank
-        Panel1.add(Panel3);
-        Panel3.add(BackB);
-        Panel3.add(Question);
+        MainPanel.add(FillBlankPanel);
+        FillBlankPanel.add(BackB);
+        FillBlankPanel.add(Question);
         JTextField AnsInput = new JTextField(getAnsInput());
-        Panel1.add(FooterPanel);
+        MainPanel.add(FooterPanel);
         FooterPanel.add(Skip);
         FooterPanel.add(Submit);
 
 
 
         // make the question panel
-        //Panel1.add(Panel1);
+        //MainPanel.add(MainPanel);
         // make the frame visible
-        this.getContentPane().add(Panel1);
-        this.getContentPane().add(Panel2);
+        this.getContentPane().add(MainPanel);
+        this.getContentPane().add(MultiPanel);
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
         // this.setLayout(null);
         this.pack();
         setVisible(true);
 
     }
+
+
+
+    
+
+
+
+  /*   private String languageChecker(String language)
+    {
+        if (language.equals("Spanish"))
+        {
+
+            return "1";
+
+        }
+        if (language.equals("French"))
+        {
+            return "2";
+        }
+
+        return "1";
+  
+
+  
+    }*/
+
+    private void AddCurrentQuestions()
+    {
+
+        getQuestion("Questions.txt", 0, 1, "CurrentQuestion");
+        AddCurrentQuestion("CurrentQuestion.txt", "CurrentQuestion.txt");
+
+    }
+
+    public void getQuestion(String file, int start, int stop, String unwantedDups){
+ 
+         try {
+             FileReader fileReader = new FileReader(file);
+             
+             BufferedReader reader = new BufferedReader(fileReader);
+ 
+             String line;
+             while ((line = reader.readLine()) != null) {
+                 try{
+                    Question question = new Question(getFileQuestionID(line));
+                    
+                   
+
+ 
+                    if (leveQualified(question) && question.getLanguage().equals(language)  && !getFile(unwantedDups).contains(line))
+                    {
+                         questionList.add(line);
+ 
+                     }
+                     /*else{
+                         fileHolder.add(line);
+                     }*/
+                 }
+                 catch(Exception e){
+ 
+                    // fileHolder.add(line);
+                 }
+             }
+ 
+             reader.close();
+             fileReader.close();
+             
+             
+         } catch (IOException e) {
+             // TODO: handle exception
+         }   
+     }
+
+     public void AddCurrentQuestion(String fileOut, String fileIn){
+
+
+        try {
+            FileWriter writer;
+            /*  = new FileWriter(fileOut, false);
+            writer.write("");
+            writer.close();*/
+
+
+            writer = new FileWriter(fileIn, true);
+            for (String m : questionList){
+                writer.write(m);
+            }
+            writer.close();
+
+
+
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
+
+    }
+
+    public void overideCurrentQuestion(String file,  ArrayList<String> list){
+
+
+        try {
+            FileWriter writer = new FileWriter(file, false);
+            writer.write("");
+            writer.close();
+
+
+            writer = new FileWriter(file, true);
+            for (String m : questionList){
+                writer.write(m);
+            }
+            writer.close();
+
+
+
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
+
+    }
+ 
 
 
 
@@ -222,4 +360,55 @@ public class QuestionPageScreen extends JFrame {
         }
 
     }
+
+
+    private ArrayList getFile(String file)
+    {
+        ArrayList<String> infile = new ArrayList<>();
+        try {
+            FileReader fileReader = new FileReader(file);
+            
+            BufferedReader reader = new BufferedReader(fileReader);
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                try{
+                    infile.add(line);
+
+
+
+  
+                }
+                catch(Exception e){
+
+                   // fileHolder.add(line);
+                }
+            }
+
+            reader.close();
+            fileReader.close();
+
+            
+        } catch (IOException e) {
+            // TODO: handle exception
+        }   
+
+        return infile;
+
+
+
+    }
+
+    public String getFileQuestionID (String line)
+    {
+
+        return line.split("-")[0];
+    }
+
+    public boolean leveQualified(Question question)
+    {
+        return Integer.parseInt(question.getDifficultyLevel()) >= statusUpdater.getScore();
+    }
+
+
 }
