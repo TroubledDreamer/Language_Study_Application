@@ -113,6 +113,8 @@ public class Question {
             for (String m : fileHolder){
                 writer.write(m);
             }
+            writer.close();
+
 
 
         } catch (Exception e) {

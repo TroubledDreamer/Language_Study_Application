@@ -14,6 +14,7 @@ public class StatusUpdater {
     private int score;
     private int hrs_Learning;
     private int accuracy;
+    private int checkID;
 
     private String[] spitter;
     private ArrayList<String> fileHolder = new ArrayList<>();
@@ -23,7 +24,9 @@ public class StatusUpdater {
 
     private ArrayList<String> fileList = new ArrayList<>();
 
-    public StatusUpdater (int checkID){
+    public StatusUpdater (){
+        setID();
+
 
         ArrayList<String> FileHolder = new ArrayList<>();
 
@@ -152,7 +155,22 @@ public class StatusUpdater {
         return accuracy;
     }
 
+    
+    
+    public void setID()
+    {
 
+    try (BufferedReader user = new BufferedReader(new FileReader("user.txt"))) {
+        checkID = Integer.parseInt(user.readLine());
+        user.close();
+    } catch (IOException e) {
+        e.printStackTrace();
+    } catch (Exception e){
+        e.printStackTrace();
+    }
+    }
 
     
+
 }
+

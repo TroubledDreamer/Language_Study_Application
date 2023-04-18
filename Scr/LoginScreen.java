@@ -75,7 +75,10 @@ public class LoginScreen extends JFrame {
 
                 // create a file and save the user to it
                 try {
-                    Files.write(Paths.get("user.txt"), user.getBytes());
+                    //Files.write(Paths.get("user.txt"), user.getBytes());
+                    Files.write(Paths.get("user.txt"), "620157742".getBytes());
+
+
                     //loginInfo.put(user, password);
                     Files.write(Paths.get("loginInfo.txt"), LoginInfo.toString().getBytes());
 

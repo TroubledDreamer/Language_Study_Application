@@ -10,7 +10,7 @@ public class Driver {
 
 
      
-       StatusUpdater statusUpdater = new StatusUpdater(620157742);
+       StatusUpdater statusUpdater = new StatusUpdater();
 
 
      
