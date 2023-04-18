@@ -254,7 +254,7 @@ public class Question {
         return correctAnswer;
     }
 
-    public ArrayList<String> getFileList()
+    public String[] getFileList()
     {
         return fileList;
 

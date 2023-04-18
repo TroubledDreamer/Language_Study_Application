@@ -78,7 +78,6 @@ public class QuestionPageScreen extends JFrame {
  
 
     public QuestionPageScreen(String language) {
-        System.out.print(language);
         this.language = language;
      
 
@@ -90,9 +89,18 @@ public class QuestionPageScreen extends JFrame {
         holder = getFile("CurrentQuestion.txt");
 
 
+
         Collections.shuffle(holder);
+
+
         overideCurrentQuestion("CurrentQuestion.txt",  holder);
-        getQuestion();
+
+
+        getQuestion1();
+
+
+
+
 
 
 
@@ -120,10 +128,16 @@ public class QuestionPageScreen extends JFrame {
         OptionB.addActionListener(new OptionBAction());
         OptionC.addActionListener(new OptionCAction());
         OptionD.addActionListener(new OptionDAction());
+
+
         
 
 
+
         question.getQuestiontype();
+
+        System.out.print("love------------------");
+
         System.out.println( "hhhhhh" +  question.getQuestionID());
        
         if (question.getQuestiontype() == "Multi")
@@ -152,11 +166,16 @@ public class QuestionPageScreen extends JFrame {
             MultiPanel.add(FooterPanel);
             FooterPanel.add(Skip);
             FooterPanel.add(Submit);
+            MainPanel.add(MultiPanel);
+
+
+            System.out.println("sddds");
         }
 
 
 
         else{
+            System.out.println("sddds");
             FillBlankQuestion fillBlankQuestion = new FillBlankQuestion(question.getQuestionID());
             
 
@@ -173,7 +192,6 @@ public class QuestionPageScreen extends JFrame {
         
         }
 
-        System.out.print("love------------------");
 
         MainPanel.add(FooterPanel);
         FooterPanel.add(Skip);
@@ -182,11 +200,12 @@ public class QuestionPageScreen extends JFrame {
 
 
 
+
         // make the question panel
-        //MainPanel.add(MainPanel);
+        MainPanel.add(MainPanel);
         // make the frame visible
-        this.getContentPane().add(MainPanel);
-        this.getContentPane().add(MultiPanel);
+        this.add(MainPanel);
+        this.add(MultiPanel);
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
         // this.setLayout(null);
         this.pack();
@@ -245,7 +264,7 @@ public class QuestionPageScreen extends JFrame {
                     if ( !getFile(unwantedDups).contains(line))
                     {
                          questionList.add(line);
-                         System.out.println("dfffffffffffffffffffffffffff");
+                       
 
 
  
@@ -287,11 +306,9 @@ public class QuestionPageScreen extends JFrame {
             for (String m : questionList){
                 
 
+                writer.write(m + "\n");
              
-                write1.newLine();
-                write1.append(m + "\n");
             }
-            System.out.println("dfffffffffffffffffffffffffff");
 
             writer.close();
 
@@ -312,7 +329,7 @@ public class QuestionPageScreen extends JFrame {
             writer.write("");
             writer.close();
 
-            writer = new FileWriter(fileIn, true);
+            writer = new FileWriter(file, true);
             BufferedWriter write1 = new BufferedWriter(writer);
 
 
@@ -320,16 +337,16 @@ public class QuestionPageScreen extends JFrame {
                 
 
              
-                write1.newLine();
-                write1.append(m + "\n");
+                writer.write(m + "\n");
             }
             writer.close();
 
 
 
         } catch (Exception e) {
-            // TODO: handle exception
-        }
+            // TODO: handle exception 
+
+        } 
 
 
     }
@@ -463,19 +480,25 @@ public class QuestionPageScreen extends JFrame {
         return Integer.parseInt(question.getDifficultyLevel()) >= statusUpdater.getScore();
     }
 
-    public void getQuestion(){
+    public void getQuestion1(){
         
+
 
  
          try {
-             FileReader fileReader = new FileReader("CurrentQestion.txt");
+             FileReader fileReader = new FileReader("CurrentQuestion.txt");
              BufferedReader reader = new BufferedReader(fileReader);
+
 
  
              String line;
              while ((line = reader.readLine()) != null && question == null) {
                  String[] spitter = line.split("-");
                  try{
+
+                    
+
+
  
                     question = new Question(spitter[0]);
                     
