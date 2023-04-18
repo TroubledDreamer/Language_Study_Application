@@ -63,9 +63,9 @@ public class ProfileScreen extends JFrame{
         Logout.addActionListener(new logoutAction());
         Menu.addActionListener(new MenuBActionListener());
 
-        S.addActionListener(new);
-        F.addActionListener(new);
-        C.addActionListener(new);
+        S.addActionListener(new SActionListner());
+        F.addActionListener(new FActionListener());
+        //C.addActionListener(new);
         
 
         Color customColor = new Color(68, 65, 242);
@@ -141,11 +141,12 @@ public class ProfileScreen extends JFrame{
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
             ///edit to create new question screen
-            QuestionPageScreen fQScreen = new QuestionPageScreen("french");
+            QuestionPageScreen fQScreen = new QuestionPageScreen("French");
             visibleMethod(false);
         }
     }
-        private class SActionListener implements ActionListener
+
+        private class SActionListner implements ActionListener
         {
     
     
@@ -153,22 +154,10 @@ public class ProfileScreen extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
     
-                QuestionPageScreen sQScreen = new QuestionPageScreen("spanish");
+                QuestionPageScreen sQScreen = new QuestionPageScreen("Spanish");
                 visibleMethod(false);
             }
         }
-        private class CActionListener implements ActionListener
-    {
-
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            // TODO Auto-generated method stub
-
-            QuestionPageScreen CQScreen = new QuestionPageScreen("chinese");
-            visibleMethod(false);
-        }
-    }
 
     {
 
