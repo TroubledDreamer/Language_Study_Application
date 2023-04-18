@@ -63,6 +63,11 @@ public class ProfileScreen extends JFrame{
         Logout.addActionListener(new logoutAction());
         Menu.addActionListener(new MenuBActionListener());
 
+        S.addActionListener(new);
+        F.addActionListener(new);
+        C.addActionListener(new);
+        
+
         Color customColor = new Color(68, 65, 242);
         Color customColor1 = new Color(117, 115, 145);
 
@@ -164,5 +169,21 @@ public class ProfileScreen extends JFrame{
             visibleMethod(false);
         }
     }
+
+    {
+
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            // TODO Auto-generated method stub
+
+            LoginScreen loginScreen = new LoginScreen(LoginInfo);
+            visibleMethod(false);
+        }
+
+    }
+
+
+
 
 }
