@@ -1,4 +1,4 @@
-package Scr;
+package scr;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -16,10 +16,12 @@ public class Question {
     private String questionString;
     private String correctAnswer;
 
-    private ArrayList<String> fileList = new ArrayList<>();
+    private String[] fileList;
     private ArrayList<String> fileHolder = new ArrayList<>();
 
-    
+
+
+
   
 
 
@@ -29,12 +31,12 @@ public class Question {
         getQuestion(IDQuestion);
 
         
-        this.IDQuestion = fileList.get(0);
-        this.difficultyLevel = fileList.get(1);
-        this.language = fileList.get(2);
-        this.questionType = fileList.get(3);
-        this.questionString = fileList.get(4);
-        this.correctAnswer = fileList.get(5);
+        this.IDQuestion = fileList[1];
+        this.difficultyLevel = fileList[2];
+        this.language = fileList[3];
+        this.questionType = fileList[4];
+        this.questionString = fileList[5];
+        this.correctAnswer = fileList[6];
 
         
 
@@ -42,56 +44,190 @@ public class Question {
 
     }
 
+    public void addQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questionString,  String  correctAnswer){
+        try {
+            FileWriter writer = new FileWriter("Question.txt", true);
+            writer.write(IDQuestion + "-" + IDQuestion);
+            writer.write("-" + difficultyLevel);
+            writer.write("-" + language);
+            writer.write("-" + questionType);
+            writer.write("-" + questionString);
+            writer.write("-" + correctAnswer);
 
-    public void getQuestion(String IDQuestion){
+            writer.close();
+
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
+    }
+
+
+    public void getQuestion(String IDQuestion)
+    {
+        
+       
+
+        ArrayList<String> FileHolder = new ArrayList<>();
+
+        try {
+         
+            
+            FileReader fileReader = new FileReader("Questions.txt");
+            
+            BufferedReader reader = new BufferedReader(fileReader);
+            String line;
+            while ((line = reader.readLine()) != null) {
+
+                String[] spitter = line.split("-");
+                
+
+            
+
+
+            try{ 
+                    
+
+                    if (IDQuestion.equals(spitter[0]))
+                    {
+
+                        fileList = spitter;
+                        System.out.println(spitter[0]);
+
+
+
+                    }
+                    
+                    else{
+                        fileHolder.add(line);
+                    }
+                }
+
+                catch (Exception e){
+
+                }
+            }
+            
+          
+
+                    
+
+
+     
+            reader.close();
+            fileReader.close();
+            
+                
+            } catch (IOException e) {
+                // TODO: handle exception
+            }
+            }
+
+    public void mQuestion(String IDQuestion){
 
 
 
        this.IDQuestion = IDQuestion;
 
         try {
-            FileReader fileReader = new FileReader("Qestions.txt");
+
+            FileReader fileReader = new FileReader("Questions.txt");
             
             BufferedReader reader = new BufferedReader(fileReader);
 
             String line;
             while ((line = reader.readLine()) != null) {
+
                 String[] spitter = line.split("-");
-                try{
+            
+
+                System.out.print("quest 44444----------444444410" + spitter);
+
+                try{ 
+                    
 
                     if (IDQuestion.equals(spitter[0]))
                     {
-                        fileList.add(spitter[1]);
 
-                    }else{
+                        fileList = spitter;
+
+
+
+                    }
+                    
+                    else{
                         fileHolder.add(line);
                     }
                 }
                 catch(Exception e){
 
+                    System.out.print("quest 210");
                     fileHolder.add(line);
                 }
+                reader.close();
+                fileReader.close();
             }
 
-            reader.close();
-            fileReader.close();
+            
             
             
         } catch (IOException e) {
             // TODO: handle exception
+            System.out.print("quest 110");
+            
+
+            
         }
 
         
+
+
         
     }
 
 
+    public void removeHelper(){
+
+        mQuestion(IDQuestion);
+
+        try {
+            FileWriter writer = new FileWriter("Question.txt", true);
+            for (String m : fileHolder){
+                writer.write(m);
+            }
+            writer.close();
+
+
+
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
+    }
+
+
+
+    public void editQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questionString, String answersString, String  correctAnswer)
+    {
+
+        removeHelper();
+        addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
+
+
+    }
 
     public String getFileQuestionID (String line)
     {
 
         return line.split("-")[0];
     }
+
+
+
+
+    
+
+
 
   
     public String getQuestionID(){
@@ -105,6 +241,7 @@ public class Question {
         return language;
     }
     public String getQuestiontype(){
+        System.out.print("L================");
         return questionType;
     }
 
@@ -117,11 +254,11 @@ public class Question {
         return correctAnswer;
     }
 
-    public ArrayList<String> getFileList()
+    public String[] getFileList()
     {
         return fileList;
 
-    }
+}
 
 
 }

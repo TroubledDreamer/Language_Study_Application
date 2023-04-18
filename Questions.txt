@@ -1,362 +1,45 @@
 
-Spanish - Easy level
 
 
-10010-10010|0|Spanish|Blank|_ madres|las
-22150-22150|0|French|Multi|Quel est le mot pour "chapeau" en français?-Chapeau,Chaussures,Chemise,Vêtements|Chapeau
+10010-10010-0-Spanish-Blank-_madres-las
+10020-10020-0-Spanish-Blank-_ trenes-los
+10030-10030-0-Spanish-Blank-_ profesor de mi clase se llama Juan Pérez.-el
+10040-10040-0-Spanish-Blank-¿_ mesas tienes? - How many tables do you have?-Cuántas
+10050-10050-0-Spanish-Blank-¿Dónde_un hotel?-hay
 
 
+10111-10111-0-Spanish-Multi-Adjectives: Carro_-limpia,limpio,cleano,limpios-limpio
+10116-10116-0-Spanish-Multi-Food: Tú pides_.-leche,milko,lecha,lecho-leche
+10121-10121-0-Spanish-Multi-Feelings: Yo estoy_.-contente,contentemos,contento,contenta-contento 
+10126-10126-0-Spanish-Multi-Adverbs affirmative:Nosotros_vamos al colegio.-tambièn,abajo,hoy,soy-tambièn
+10131-10131-0-Spanish-Multi-Adjectives Yo prefiero los libros españoles.-vieja,viejo,viejas,viejos-viejos
 
-10020-10020
-10020-0
-10020-Spanish
-10020-Blank
-10020-_ trenes
-10020-los
 
-10030-10030
-10030-0
-10030-Spanish
-10030-Blank
-10030-____ profesor de mi clase se llama Juan Pérez.
-10030-El
 
 
-10040-10040
-10040-0
-10040-Spanish
-10040-Blank
-10040-¿______ mesas tienes? How many tables do you have?
-10040-Cuántas
+11010-11010-1-Spanish-Blank-Nosotros_una paella de pescado.(comer)-comemos
+11020-11020-1-Spanish-Blank-En mi clase_veinte (20) estudiantes.-hay
+11030-11030-1-Spanish-Blank-Los hermanos de mi madre, son _ tíos.-mis
+11040-11040-1-Spanish-Blank-Rafael no compra la comida en el supermercado,_compra en las tiendas de su barrio.-la
+11050-11050-1-Spanish-Blank-How do you say "Good morning"_?-buenos días
 
+11110-11110-1-Spanish-Multi-¿Cuánto tiempo llevas estudiando español?-Siempre hablo español,Desde hace dos años,He estudiado mucho español.-Desde hace dos años
+11120-11120-1-Spanish-Multi-Antes_ salía a pasear.-un día,a menudo,una vez-a menudo
+11130-11130-1-Spanish-Multi-¿Qué tal_ la pronunciación?-se los da,se les da,os da-se los da
+11140-11140-1-Spanish-Multi-¿En Argentina encontramos como variedad lingüística_.-ustedes,el vocabulario,el voseo-el voseo
+11150-11150-1-Spanish-Multi-Mi amigo Lorenzo es muy_.-sensible y optimista,inteligente y sincera,tolerante y solidaria-sensible y optimista
 
-10050-1005
-10050-0
-10050-Spanish
-10050-Blank
-10050-¿Dónde ____ un hotel?    ¿Dónde ____ el hotel?
-10050-hay está
 
-10060-1006
-10060-0
-10060-Spanish
-10060-Blank
-10060-¿Dónde ____ un taxi? ¿Dónde ____ el taxi?
-10060-hay están
 
-10170-1017
-10170-0
-10170-Spanish
-10170-Blank
-10170-Family: Tía is to Tío, as prima is to-Primè,prímas,Primo,priman  
-10170-Primo
 
-10180-10180
-10180-0
-10180-Spanish
-10180-Blank
-10180-Food: Alguien come una_____-burguesa,jamon,burgera,Hamburguesa
-10180-Hamburguesa
+12010-12010-2-Spanish-Blank-¿_ es el país más pequeño de Hispanoamérica?-cuál
+12020-12020-2-Spanish-Blank-El dueño del bar dice que se _ el vino. ( acabó, quemó, dañó, quedó)-acabó
+12030-12030-2-Spanish-Blank-El equivalente de 'Can you...?' para hablar con un amigo en español es _ (puedo,puede, puedes, poder)-puedes
+12040-12040-2-Spanish-Blank-El opuesto de más pequeño (smaller) es más_.( cómodo, interesante, caro, grande)-grande
+12050-12050-2-Spanish-Blank-El subjuntivo conozca es para el verbo:_(comprender, contratar, conocer, conjugar)-conocer
 
-10190-1019
-10190-0
-10190-Spanish
-10190-Blank
-10190-Clothing: __________ sombreros Nuestra,Nuestro,Nuestras,Nuestros 
-10190-Nuestros
-
-10111-Adjectives: Carro ___
-10112-Limpia
-10113-Limpio
-10114-Cleano
-10115-limpios
-
-10116-Food: Tú pides_______
-10117-Leche 
-10118-Milko
-10119-lecha
-10120lecho
-
-10121-Feelings: Yo estoy ____
-10122-contente
-10123-contentemos
-10124-Contento  
-10125-contenta
-
-10126-Adverbs affirmative:  Nosotros ______vamos al colegio.
-10127-tambièn 
-10128-abajo
-10129-hoy 
-10130-soy
-
-10131-Adjectives Yo prefiero los libros españoles
-10132-vieja
-10133-viejo
-10134-viejas
-10135-Viejos 
-
-Spanish - Begginer level
-
-11010-1101
-11010-1
-11010-Spanish
-11010-Blank
-11010-Nosotros _____ una paella de pescado
-11010-comemos
-
-11020-1102
-11020-1
-11020-Spanish
-11020-Blank
-11020-En mi clase ____ veinte (20) estudiantes
-11020-hay
-
-11030-1103
-11030-1
-11030-Spanish
-11030-Blank
-11030-Los hermanos de mi madre, son ____ tíos
-11030-mis
-
-11040-1104
-11040-1
-11040-Spanish
-11040-Blank
-11040-Rafael no compra la comida en el supermercado, _____ compra en las tiendas de su barrio
-11040-la
-
-
-11050-1105
-11050-1
-11050-Spanish
-11050-Blank
-11050-How do you say "Good morning" _____?
-11050-Buenos días
-
-11050-1105
-11050-1
-11050-Spanish
-11050-Blank
-11050-Hola, me llamo Pablo. ¿Cómo te______ tú? 
-11050-llamas
-
-11060-1106
-11060-1
-11060-Spanish
-11060-Blank
-11060-Quién  ____  Marc Anthony?
-11060-es
-
-11070-1107
-11070-1
-11070-Spanish
-11070-Blank
-11070-Pablo es_____ muchacho,
-11070-un
-
-11080-1108
-11080-1
-11080-Spanish
-11080-Blank
-11080-¿Qué número es: ______?
-11080-noventa y seis
-
-
-11090-1109
-11090-1
-11090-Spanish
-11090-Blank
-11090-_____ levanto a las ocho de la mañana todos los días.
-11090-Me
-
-11010-11010
-11010-1
-11010-Spanish
-11010-Blank
-11010-____ cafè.(beber)
-11010-bebo
-
-Spanish - Intermediate level
-
-12010-1201
-12010-2
-12010-Spanish
-12010-Blank
-12010-¿ _____________ es el país más pequeño de Hispanoamérica?
-12010-cuál
-
-12020-1202
-12020-2
-12020-Spanish
-12020-Multi
-12020-El dueño del bar dice que se _____ el vino. ( acabó, quemó, dañó, quedó)
-12020-acabó
-
-12030-1203
-12030-2
-12030-Spanish
-12030-Multi
-12030-El opuesto de más pequeño (smaller) es más _____. ( cómodo, interesante, caro, grande)
-12030-grande
-
-12040-1204
-12040-2
-12040-Spanish
-12040-Multi
-12040-El equivalente de 'Can you...?' para hablar con un amigo en español es _____ (Puedo, Puede, Puedes, Poder)
-12040-Puedes
-
-12050-1205
-12050-2
-12050-Spanish
-12050-Multi
-12050-El subjuntivo conozca es para el verbo: _____ (comprender, contratar, conocer, conjugar)
-12050-conocer
-
-12060-1206
-12060-2
-12060-Spanish
-12060-Multi
-12060-En las montañas, veo _ (la nieve, la playa)
-12060-la nieve
-
-12070-12070
-12070-2
-12070-Spanish
-12070-Multi
-12070-Siempre _ despierto a las 6 de la mañana. (me, te, se, nos, se, le)
-12070-me
-
-French - Easy level
-
-
-20010-20010
-20010-0
-20010-Blank
-20010-(What is your name?)Quel est ton _____? 
-20010-nom
-
-20020-20020
-20020-0
-20020-Blank
-20020-(Where are you from?)Où ___________ ? 
-20020-habites-tu
-
-20030-20030
-20030-0
-20030-Blank
-20030-(How old are you?)Comment ___________ ? 
-20030-ça va
-
-20040-20040
-20040-0
-20040-Blank
-20040-(When is your birthday?)Quand ___________ ? 
-20040-es-tu né
-
-20050-20050
-20050-0
-20050-Blank
-20050-(Do you speak English?)Tu parles ___________ ? 
-Answer: anglais? (English?)
-
-French - Begginer level
-
-21010-21010
-21010-1
-21010-Blank
-21010-(How much does it cost?)Combien ___________ ? 
-21010-ça coûte
-
-21020-21020
-21020-1
-21020-Blank
-21020-(What is your favorite food?)Quel est ton ___________ préféré ? 
-21020-plat 
-
-21030-21030
-21030-1
-21030-Blank
-21030-(When do you usually wake up?)Quand est-ce que tu ___________ ? 
-21030-te réveilles
-
-French - Intermediate level
-21010-21010
-21010-2
-21010-Blank
-21010-(What is the main activity of this company?)Quel est ___________ principal de cette entreprise ? 
-21010-le domaine
-
-21020-21020
-21020-2
-21020-Blank
-21020-(Why do you want to learn French?)Pourquoi est-ce que tu ___________ français ?
-21020-apprends
-
-21030-21030
-21030-2
-21030-Blank
-21030-(What would you do if you won the lottery?)Que ___________ si tu gagnais à la loterie ? 
-21030-ferais-tu
-
-22110-22110
-22110-0
-22110-French
-22110-Multi
-20110-Quel est le mot pour "chair" en français?-Table,Chaise,Lit,Chair
-20110-Chair
-
-22120-22120
-22120-0
-22120-French
-22120-Multi
-22120-Comment dit-on "grand" en français?-Petit,Grand,Moyen,Haut
-22120-Grand
-
-French - Easy level
-22130-22130
-22130-0
-22130-French
-22130-Multi
-22130-Quel est le mot pour "pomme de terre" en français?-Pomme,Poisson,Pomme de terre,Fromage
-22130-Pomme de terre
-
-22140-22140
-22140-0
-22140-French
-22140-Multi
-22140-Comment dit-on "parapluie" en français?-Parapluie,Pluie,Soleil,Vent
-22140-Parapluie
-
-22150-22150|0|French|Multi|Quel est le mot pour "chapeau" en français?-Chapeau,Chaussures,Chemise,Vêtements|Chapeau
-
-French - Intermediate level
-23110-23110
-23110-2
-23110-Multi
-23110-Quel est le mot pour "inflation" en français?-Expansion,Déflation,Inflation,Dépression
-23110-Inflation
-
-23120-23120
-23120-2
-23120-Multi
-23120-Comment dit-on "réchauffement climatique" en français?-Réchauffement global,Changement climatique,Pollution atmosphérique,Désertification
-23120-Changement climatique
-
-23130-23130
-23130-2
-23130-Multi
-23130-Quel est le mot pour "mécanique quantique" en français?-Mécanique classique,Mécanique quantique,Physique quantique,Physique des particules
-23130-Mécanique quantique
-
-23140-23140
-23140-2
-23140-Multi
-23140-Comment dit-on "séisme" en français?-Tremblement de terre,Éruption volcanique,Ouragan,Tsunami
-23140-Tremblement de terre
-
-23140-23140
-23140-2
-23140-Multi
-23140-Quel est le mot pour "biodiversité" en français?-Biodiversité,Écosystème,Développement durable,Énergie renouvelable
-23140-Biodiversité
+12110-12110-2-Spanish-Multi-Se casaron_.-como tenían muchos intereses comunes,porque tenían un hijo en común,por que tenían ganas-porque tenían un hijo en común
+12120-12120-2-Spanish-Multi-Como no tenían sueño _.-se fueron a pasear,salían de la cama,hablaban mucho-se fueron a pasear
+12130-12130-2-Spanish-Multi-Se conocieron en una fiesta _.-y se iban a la cama,y ni se dieron cuenta, y a los dos años se casaron-y a los dos años se casaron
+12140-12140-2-Spanish-Multi-Cristobal Colón confundió _.-el continente con la India,el tabaco con una especia,al quiché con el náhuatl-el continente con la India
+12150-12150-2-Spanish-Multi-¿_ es el país más pequeño de Hispanoamérica?-donde,cuál,cuando-cuál
