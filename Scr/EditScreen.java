@@ -46,7 +46,7 @@ public class EditScreen extends JFrame {
     "To delete an existing question, just enter ID and click delete)</html>");
     JLabel questionLabel = new JLabel("Question:");
     JTextField questionTextField = new JTextField(10);
-    JLabel qType = new JLabel("MCQ/Fill in Blank");
+    JLabel qType = new JLabel("Multi(MCQ)/Fill in Blank");
     JTextField qTypField = new JTextField(10);
     JLabel difficultyLabel = new JLabel("Difficulty:");
     JTextField difficultyTextField = new JTextField(10);
@@ -84,8 +84,8 @@ public class EditScreen extends JFrame {
         mainPanel1.add(difficultyTextField);
         mainPanel1.add(languageLabel);
         mainPanel1.add(languageTextField);
-        mainPanel1.add(answerLabel);
-        mainPanel1.add(answerTextField);
+        //mainPanel1.add(answerLabel);
+        //mainPanel1.add(answerTextField);
         mainPanel1.add(correctAnswer);
         mainPanel1.add(cAnswerField);
         footerPanel.add(deleteButton);
@@ -122,10 +122,11 @@ public class EditScreen extends JFrame {
             String questionString = questionTextField.getText();
             String difficultyLevel = difficultyTextField.getText();
             String language = languageTextField.getText();
-            String answer = answerTextField.getText();
+            //String answer = answerTextField.getText();
             String correctAnswer = cAnswerField.getText();
             String questionType = qTypField.getText();
-            addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
+            Question question = new Question(IDQuestion);
+            question.addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
             JOptionPane.showMessageDialog(null, "Question with ID " + IDQuestion + " edded successfully.");
         }
     }
@@ -143,7 +144,9 @@ public class EditScreen extends JFrame {
             String questionType = qTypField.getText();
             // Perform editing of existing question using the values in the fields
             // and other validations as needed
-            addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
+            Question question = new Question(IDQuestion);
+
+            question.addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
             JOptionPane.showMessageDialog(null, "Question with ID " + IDQuestion + " edited successfully.");
     }
     }
