@@ -21,10 +21,10 @@ public class ScoreScreen extends JFrame{
     JPanel ScorePanel;
 
     //creation of J//
-    public ScoreScreen(int score, int length){
+    public ScoreScreen(int score, int Qlength){
         
         JLabel Score = new JLabel("You got:" + score);
-        JLabel pcentage = new JLabel("Percentage:" + percentage(score, length) + "%");
+        JLabel pcentage = new JLabel("Percentage:" + percentage(score, Qlength) + "%");
         ScrMainMenu = new JButton("Main Menu");
 
 

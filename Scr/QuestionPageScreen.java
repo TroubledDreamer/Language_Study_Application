@@ -36,7 +36,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class QuestionPageScreen extends JFrame {
-    private int length;
+    private int Qlength;
     private String questionList;
     private ArrayList<String[]> answerList;
     private ArrayList<String> correctAnswers;
@@ -47,8 +47,6 @@ public class QuestionPageScreen extends JFrame {
     private ButtonGroup answerGroup;
     private JRadioButton[] answerBtons;
     private JPanel ScrGrade;
-
-    private JPanel Panel;
 
     public ArrayList<Question> frenchQuestions = new ArrayList<>();
     public ArrayList<Question> spanishQuestions = new ArrayList<>();
@@ -81,6 +79,8 @@ public class QuestionPageScreen extends JFrame {
         this.questionList = Q;
         currentQIndex = 0;
         score = 0;
+        Qlength = 0;
+
 
         //main panel
         JPanel Panel1 = new JPanel();
@@ -150,5 +150,8 @@ public class QuestionPageScreen extends JFrame {
         return null;
     }
 
+    private void showScore(){
+        ScoreScreen ScoreScreen = new ScoreScreen(score, Qlength);
+    }
     
 }
