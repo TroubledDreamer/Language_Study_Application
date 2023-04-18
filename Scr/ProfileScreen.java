@@ -2,6 +2,7 @@ package Scr;
 
 import javax.swing.*;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -15,7 +16,6 @@ public class ProfileScreen extends JFrame{
 
 
     JLabel name = new JLabel();
-
     //Labels
     JLabel Spanish  = new JLabel("Spanish");
     JButton S = new JButton("practice");
@@ -41,8 +41,8 @@ public class ProfileScreen extends JFrame{
     
 
     JPanel ProfilePanel = new JPanel(); //new GridLayout(2,2));
-    JPanel profilePanel1 = new JPanel(new GridLayout(4,3));
-
+   JPanel profilePanel1 = new JPanel(new GridLayout(4,3));
+   //JPanel profilePanel1 = new JPanel(new BorderLayout());   
 
     String Name = new String();
     HashMap<String, String> LoginInfo = new HashMap<String, String>();
@@ -90,7 +90,7 @@ public class ProfileScreen extends JFrame{
         profilePanel1.add(Edit);
 
 
-
+        setSize(800,400);
         this.getContentPane().add(ProfilePanel);
         this.pack();
         this.setVisible(true);

@@ -31,7 +31,7 @@ public class LoginScreen extends JFrame {
     public LoginScreen(HashMap<String, String> LoginInfo) {
         this.LoginInfo = LoginInfo;
         this.setSize(600, 600);
-        logiPanel.setSize(500, 500);
+        
 
         userLabel.setBounds(12, 12, 75, 25);
         passwordLabel.setBounds(12, 12, 75, 25);
@@ -55,6 +55,7 @@ public class LoginScreen extends JFrame {
         logiPanel.add(Login);
         logiPanel.add(Reset);
 
+        setTitle("Language Study");
         this.getContentPane().add(logiPanel);
         this.pack();
         this.setVisible(true);

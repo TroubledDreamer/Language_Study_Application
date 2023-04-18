@@ -4,10 +4,9 @@ package Scr;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
-import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 
-import org.w3c.dom.events.EventException;
+//import org.w3c.dom.events.EventException;
 
 import javax.swing.JPanel;
 import java.awt.event.ActionListener;
@@ -31,12 +30,13 @@ import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class QuestionPageScreen extends JFrame {
-    private int numQues;
+    private int length;
     private String questionList;
     private ArrayList<String[]> answerList;
     private ArrayList<String> correctAnswers;
@@ -60,24 +60,70 @@ public class QuestionPageScreen extends JFrame {
 
     Question question = new Question("22120");
 
+     //Labels
+     JLabel Question  = new JLabel(getQuestion());
+     JButton Submit = new JButton("Submit");
+     JLabel Ans1  = new JLabel(getAnsOptions());
+     JLabel Ans2 = new JLabel(getAnsOptions());
+     JLabel Ans3 = new JLabel(getAnsOptions());
+     JLabel Ans4 = new JLabel(getAnsOptions());
+     JButton Skip = new JButton("skip");
+     JButton BackB = new JButton("<Back");
+     JCheckBox OptionA = new JCheckBox();
+     JCheckBox OptionB = new JCheckBox();
+     JCheckBox OptionC = new JCheckBox();
+     JCheckBox OptionD = new JCheckBox();
+     JTextField AnsInput = new JTextField(getAnsInput());
+     
+ 
+
     public QuestionPageScreen(String Q) {
         this.questionList = Q;
         currentQIndex = 0;
         score = 0;
 
-        Panel = new JPanel();
+        //main panel
+        JPanel Panel1 = new JPanel();
+        //MCQ panel
+        JPanel Panel2 = new JPanel();
+        //Fill in Blank panel
+        JPanel Panel3 = new JPanel();
 
- 
+        JPanel FooterPanel = new JPanel();
 
-        // make the frame
+
+        //Screen view for MCQs
+        //Panel1.add(Panel1);
+        Panel2.add(BackB);
+        Panel2.add(Question);
+        Panel2.add(OptionA);
+        Panel2.add(Ans1);
+        Panel2.add(OptionB);
+        Panel2.add(Ans2);
+        Panel2.add(OptionC);
+        Panel2.add(Ans3);
+        Panel2.add(OptionD);
+        Panel2.add(Ans4);
+        Panel1.add(FooterPanel);
+        FooterPanel.add(Skip);
+        FooterPanel.add(Submit);
+
+        //Screen view for Fill in Blank
+        Panel1.add(Panel3);
+        Panel3.add(BackB);
+        Panel3.add(Question);
+        JTextField AnsInput = new JTextField(getAnsInput());
+        Panel1.add(FooterPanel);
+        FooterPanel.add(Skip);
+        FooterPanel.add(Submit);
+
+
 
         // make the question panel
-        JPanel questionPanel = makeQuestionPanel(questions.toArray(new Question[questions.size()]), 0);
-        Panel.add(questionPanel);
-
-        this.makeFooter();
+        //Panel1.add(Panel1);
         // make the frame visible
-        this.getContentPane().add(Panel);
+        this.getContentPane().add(Panel1);
+        this.getContentPane().add(Panel2);
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
         // this.setLayout(null);
         this.pack();
@@ -85,140 +131,24 @@ public class QuestionPageScreen extends JFrame {
 
     }
 
- 
 
-    // make the footer
-    public void makeFooter() {
-        // make the footer
 
-        Panel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-        Panel.setBounds(50, 50, WIDTH, 50);
 
-        // add the back button use icons
-        JButton back = new JButton("< Back");
-        // add icon to the button
-
-        // listener for the back button
-        back.addActionListener(new ActionListener() {
-  
-
-        back.setBounds(50, 50, WIDTH, 50);
-        Panel.add(back);
-
+    private String getAnsInput() {
+        return null;
     }
 
-    // make the question panel
-    public JPanel makeQuestionPanel(Question[] questions, int i) {
-        // construct the question panel
-        JPanel questionPanel = new JPanel();
-        questionPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-        questionPanel.setBounds(50, 50, 800, 50);
-        questionPanel.setPreferredSize(new Dimension(600, 600));
-        // questionPanel.setLayout(null);
-
-        // add each question to the panel
-
-        // multiple choice
-        if (questions[i].getType() == 1) {
-
-            // add question label
-            JLabel questionLabel = new JLabel("22120");
-            questionLabel.setBounds(50, 50, 800, 50);
-
-            questionPanel.add(questionLabel);
-
-            // new line
-            JLabel newLine = new JLabel(" ");
-            questionPanel.add(newLine);
-
-            // display message if the answer is correct or not
-            JLabel message = new JLabel(" ");
-
-            // add answer buttons
-            ButtonGroup answerGroup = new ButtonGroup();
-            JRadioButton[] answerBtons = new JRadioButton[questions[i].getAnswers().length];
-            for (int j = 0; j < questions[i].getAnswers().length; j++) {
-                answerBtons[j] = new JRadioButton(questions[i].getAnswers()[j]);
-
-                Integer index = j;
-                // listener for the radio buttons
-                answerBtons[index].addActionListener(new ActionListener() {
-
-                    public void actionPerformed(ActionEvent e) {
-                        // set Choice
-                        questions[i].setChoice(index);
-
-                    }
-                });
-
-                answerGroup.add(answerBtons[j]);
-
-                questionPanel.add(answerBtons[j]);
-
-            }
-
-            // add a space above the next button
-            JLabel space = new JLabel(" ");
-            questionPanel.add(space);
-
-            // questionPanel.add(message);
-
-            JPanel action = new JPanel();
-            action.setLayout(new BoxLayout(action, BoxLayout.X_AXIS));
-
-           
 
 
-    
-
-          
-            questionPanel.add(action);
-            // stack each component on top of each other
-            questionPanel.setLayout(new BoxLayout(questionPanel, BoxLayout.Y_AXIS));
-        }
-
-        // fill in the blank
-        if (question.getQuestiontype().equals("Blank")) {
-            // make the question label
-            JLabel questionLabel = new JLabel(questions[i].getQuestion());
-            questionLabel.setBounds(50, 50, 800, 50);
-
-            // insert a text field at each {BLANK}
-            String[] questionParts = questions[i].getQuestion().split("\\{BLANK\\}");
-      
-            for (int j = 0; j < questionParts.length; j++) {
-                JLabel questionPart = new JLabel(questionParts[j]);
-                questionPanel.add(questionPart);
-                if (j != questionParts.length - 1) {
-                    JTextField answer = new JTextField(questions[i].getCorrectAnswerParts()[j].length());
-                    //add a action listener
-                    answer.addActionListener(new ActionListener() {
-                        public void actionPerformed(ActionEvent e) {
-                            // set Choice
-                            questions[i].setChoices(answer.getText(), i);
-                        }
-                    });
-
-                    questionPanel.add(answer);
-                }
-            }
-
-      
-
-
-           
-
-            // add the component
-            questionPanel.add(action);
-            // stack each component on top of each other
-            // questionPanel.setLayout(new BoxLayout(questionPanel, BoxLayout.Y_AXIS));
+    private String getAnsOptions() {
+        return null;
+    }
 
 
 
-
-        }
-
-        return questionPanel;
+    private String getQuestion() {
+        return null;
     }
 
     
+}
