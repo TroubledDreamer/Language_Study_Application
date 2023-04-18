@@ -36,8 +36,6 @@ import javax.swing.JOptionPane;
 
 public class EditScreen extends JFrame {
 
-    private ArrayList<String> fileHolder = new ArrayList<>();
-    public static String IDQuestion;
     JButton newQButton = new JButton("Create New Question");
     JButton editButton = new JButton("Edit Existing Question");
     JLabel idLabel = new JLabel("Question ID:");
@@ -58,7 +56,6 @@ public class EditScreen extends JFrame {
     JTextField answerTextField = new JTextField(10);
     JLabel correctAnswer = new JLabel("CorrectAnswer");
     JTextField cAnswerField = new JTextField(10);
-    
 
 
     JPanel mainPanel = new JPanel(); // Move the declaration of mainPanel outside of the constructor
@@ -132,23 +129,6 @@ public class EditScreen extends JFrame {
             JOptionPane.showMessageDialog(null, "Question with ID " + IDQuestion + " edded successfully.");
         }
     }
-    public void addQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questionString,  String  correctAnswer){
-        try {
-            FileWriter writer = new FileWriter("Question.txt", true);
-            writer.write(IDQuestion + "-" + IDQuestion);
-            writer.write(IDQuestion + "-" + difficultyLevel);
-            writer.write(IDQuestion + "-" + language);
-            writer.write(IDQuestion + "-" + questionType);
-            writer.write(IDQuestion + "-" + questionString);
-            writer.write(IDQuestion + "-" + correctAnswer);
-
-            writer.close();
-
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
-
-    }
 
     private class EditBAction implements ActionListener {
 
@@ -166,31 +146,5 @@ public class EditScreen extends JFrame {
             addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
             JOptionPane.showMessageDialog(null, "Question with ID " + IDQuestion + " edited successfully.");
     }
-    }
-    public void removeHelper(){
-
-        //getQuestion(IDQuestion);
-
-        try {
-            FileWriter writer = new FileWriter("Question.txt", true);
-            for (String m : fileHolder){
-                writer.write(m);
-            }
-            writer.close();
-
-
-
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
-
-    }
-    public void editQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questionString, String answersString, String  correctAnswer)
-    {
-
-        removeHelper();
-        addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
-
-
     }
 }
