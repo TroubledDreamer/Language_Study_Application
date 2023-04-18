@@ -55,23 +55,20 @@ public class QuestionPageScreen extends JFrame {
     private JRadioButton[] answerBtons;
     private JPanel ScrGrade;
 
-    public ArrayList<Question> frenchQuestions = new ArrayList<>();
-    public ArrayList<Question> spanishQuestions = new ArrayList<>();
-    public ArrayList<Question> chineseQuestions = new ArrayList<>();
-    public ArrayList<Question> questions = new ArrayList<>();
+
 
     public int HEIGHT = 800;
     public int WIDTH = 600;
 
-    Question question = new Question("22120");
+    Question question;
 
      //Labels
-     JLabel Question  = new JLabel(getQuestion());
+     JLabel QuestionStr  = new JLabel();
      JButton Submit = new JButton("Submit");
-     JLabel Ans1  = new JLabel(getAnsOptions());
-     JLabel Ans2 = new JLabel(getAnsOptions());
-     JLabel Ans3 = new JLabel(getAnsOptions());
-     JLabel Ans4 = new JLabel(getAnsOptions());
+     JLabel Ans1  = new JLabel();
+     JLabel Ans2 = new JLabel();
+     JLabel Ans3 = new JLabel();
+     JLabel Ans4 = new JLabel();
      JButton Skip = new JButton("skip");
      JButton BackB = new JButton("<Back");
      JCheckBox OptionA = new JCheckBox();
@@ -85,16 +82,26 @@ public class QuestionPageScreen extends JFrame {
      
  
 
-    public QuestionPageScreen(String Language) {
-        this.language = Language;
+    public QuestionPageScreen(String language) {
+        this.language = language;
         currentQIndex = 0;
         score = 0;
         Qlength = 0;
+
+
 
         AddCurrentQuestions();
         holder = getFile("CurrentQuestion.txt");
         Collections.shuffle(holder);
         overideCurrentQuestion("CurrentQuestion.txt",  holder);
+        getQuestion();
+
+
+
+
+        
+        
+        
 
 
         //main panel
@@ -116,30 +123,47 @@ public class QuestionPageScreen extends JFrame {
         OptionD.addActionListener(new OptionDAction());
 
 
-        //Screen view for MCQs
-        //MainPanel.add(MainPanel);
-        MultiPanel.add(BackB);
-        MultiPanel.add(Question);
-        MultiPanel.add(OptionA);
-        MultiPanel.add(Ans1);
-        MultiPanel.add(OptionB);
-        MultiPanel.add(Ans2);
-        MultiPanel.add(OptionC);
-        MultiPanel.add(Ans3);
-        MultiPanel.add(OptionD);
-        MultiPanel.add(Ans4);
-        MultiPanel.add(FooterPanel);
-        FooterPanel.add(Skip);
-        FooterPanel.add(Submit);
+        if (question.getQuestiontype() == "Multi")
+        {
+            
+            MultipleChoiceQuestion multipleChoiceQuestion = new MultipleChoiceQuestion(question.getQuestionID());
+            QuestionStr.setText(multipleChoiceQuestion.getQuestionString());
+
+            Ans1.setText(multipleChoiceQuestion.getOption1());
+            Ans1.setText(multipleChoiceQuestion.getOption1());
+            Ans1.setText(multipleChoiceQuestion.getOption1());
+            Ans1.setText(multipleChoiceQuestion.getOption1());
+
+            MultiPanel.add(BackB);
+            MultiPanel.add(QuestionStr);
+            MultiPanel.add(OptionA);
+            MultiPanel.add(Ans1);
+            MultiPanel.add(OptionB);
+            MultiPanel.add(Ans2);
+            MultiPanel.add(OptionC);
+            MultiPanel.add(Ans3);
+            MultiPanel.add(OptionD);
+            MultiPanel.add(Ans4);
+            MultiPanel.add(FooterPanel);
+            FooterPanel.add(Skip);
+            FooterPanel.add(Submit);
+
+
+
+        else{
+            FillBlankQuestion fillBlankQuestion = new FillBlankQuestion(language, language, language, language)
+            
 
         //Screen view for Fill in Blank
         MainPanel.add(FillBlankPanel);
         FillBlankPanel.add(BackB);
-        FillBlankPanel.add(Question);
+        FillBlankPanel.add(QuestionStr);
         JTextField AnsInput = new JTextField(getAnsInput());
         MainPanel.add(FooterPanel);
         FooterPanel.add(Skip);
         FooterPanel.add(Submit);
+        
+        }
 
 
 
@@ -292,9 +316,7 @@ public class QuestionPageScreen extends JFrame {
 
 
 
-    private String getQuestion() {
-        return null;
-    }
+
 
     private void showScore(){
         ScoreScreen ScoreScreen = new ScoreScreen(score, Qlength);
@@ -409,6 +431,38 @@ public class QuestionPageScreen extends JFrame {
     {
         return Integer.parseInt(question.getDifficultyLevel()) >= statusUpdater.getScore();
     }
+
+    public void getQuestion(){
+        
+
+ 
+         try {
+             FileReader fileReader = new FileReader("CurrentQestion.txt");
+             BufferedReader reader = new BufferedReader(fileReader);
+
+ 
+             String line;
+             while ((line = reader.readLine()) != null && question == null) {
+                 String[] spitter = line.split("-");
+                 try{
+ 
+                    question = new Question(spitter[0]);
+                    
+                 }
+                 catch(Exception e){
+ 
+                 }
+             }
+ 
+             reader.close();
+             fileReader.close();
+             
+             
+         } catch (IOException e) {
+             // TODO: handle exception
+         }
+
+        }
 
 
 }

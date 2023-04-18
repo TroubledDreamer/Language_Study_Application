@@ -8,6 +8,12 @@ public class FillBlankQuestion extends Question {
         
     }
 
+    public FillBlankQuestion (String IDQestion)
+    {
+
+        super(IDQuestion);
+    }
+
     @Override
     public String getQuestionString() 
     {
@@ -26,6 +32,16 @@ public class FillBlankQuestion extends Question {
     {
         return getQuestionString().split("_");
 
+    }
+
+    public String frontString ()
+    {
+        return questionSplitter()[0];
+    }
+
+    public String backString ()
+    {
+        return questionSplitter()[1];
     }
 
 
