@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package scr;
+=======
+package Scr;
+>>>>>>> c1337b25ca723d1463be8639af8b931122422613
 import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -29,7 +33,7 @@ public class ProfileScreen extends JFrame{
    
     
     JPanel ProfilePanel = new JPanel(); //new GridLayout(2,2));
-   JPanel profilePanel1 = new JPanel(new GridLayout(4,3));
+   JPanel profilePanel1 = new JPanel(new GridLayout(3,3));
    //JPanel profilePanel1 = new JPanel(new BorderLayout());   
     String Name = new String();
     HashMap<String, String> LoginInfo = new HashMap<String, String>();
@@ -59,9 +63,15 @@ public class ProfileScreen extends JFrame{
         profilePanel1.add(French);
         profilePanel1.add(F);
         profilePanel1.add(FrenchBar);
+<<<<<<< HEAD
         profilePanel1.add(Chinese);
         profilePanel1.add(C);
         profilePanel1.add(ChineseBar);
+=======
+        //profilePanel1.add(Chinese);
+        //profilePanel1.add(C);
+        //profilePanel1.add(ChineseBar);
+>>>>>>> c1337b25ca723d1463be8639af8b931122422613
         //ProfilePanel.add(Menu);
         profilePanel1.add(Edit);
         setSize(800,400);

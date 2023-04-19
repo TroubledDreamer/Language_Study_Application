@@ -72,17 +72,9 @@ public class QuestionPageScreen extends JFrame {
      JCheckBox OptionD = new JCheckBox();
      JTextField AnsInput = new JTextField(getAnsInput());
 
-
-
-     
- 
-
     public QuestionPageScreen(String language) {
         this.language = language;
      
-
-
-
 
         AddCurrentQuestions();
 
@@ -97,16 +89,6 @@ public class QuestionPageScreen extends JFrame {
 
 
         getQuestion1();
-
-
-
-
-
-
-
-
-        
-        
         
 
 
@@ -128,9 +110,6 @@ public class QuestionPageScreen extends JFrame {
         OptionB.addActionListener(new OptionBAction());
         OptionC.addActionListener(new OptionCAction());
         OptionD.addActionListener(new OptionDAction());
-
-
-        
 
 
 
