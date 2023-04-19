@@ -1,4 +1,4 @@
-package Scr;
+package scr;
 
 public class User {
     private int id;

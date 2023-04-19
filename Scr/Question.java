@@ -1,4 +1,4 @@
-package Scr;
+package scr;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -46,7 +46,7 @@ public class Question {
 
     public void addQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questionString,  String  correctAnswer){
         try {
-            FileWriter writer = new FileWriter("Question.txt", true);
+            FileWriter writer = new FileWriter("Questions.txt", true);
             writer.write(IDQuestion + "-" + IDQuestion);
             writer.write("-" + difficultyLevel);
             writer.write("-" + language);
@@ -189,11 +189,12 @@ public class Question {
     public void removeHelper(){
 
         mQuestion(IDQuestion);
+    
 
         try {
-            FileWriter writer = new FileWriter("Question.txt", true);
+            FileWriter writer = new FileWriter("Questions.txt", true);
             for (String m : fileHolder){
-                writer.write(m);
+                writer.write(m + "\n");;
             }
             writer.close();
 
@@ -207,7 +208,7 @@ public class Question {
 
 
 
-    public void editQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questionString, String answersString, String  correctAnswer)
+    public void editQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questionString, String  correctAnswer)
     {
 
         removeHelper();

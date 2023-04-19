@@ -1,4 +1,4 @@
-package Scr;
+package scr;
 
 
 import javax.swing.JPanel;
@@ -166,7 +166,6 @@ public class QuestionPageScreen extends JFrame {
             MultiPanel.add(FooterPanel);
             FooterPanel.add(Skip);
             FooterPanel.add(Submit);
-            MainPanel.add(MultiPanel);
 
 
             System.out.println("sddds");
@@ -202,7 +201,6 @@ public class QuestionPageScreen extends JFrame {
 
 
         // make the question panel
-        MainPanel.add(MainPanel);
         // make the frame visible
         this.add(MainPanel);
         this.add(MultiPanel);
@@ -245,6 +243,13 @@ public class QuestionPageScreen extends JFrame {
         AddCurrentQuestion("CurrentQuestion.txt", "CurrentQuestion.txt");
 
     }
+
+    /**
+     * 
+     * 
+     * * 
+     * 
+    */
 
     public void getQuestion(String file, int start, int stop, String unwantedDups){
  

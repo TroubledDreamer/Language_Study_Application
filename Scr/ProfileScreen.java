@@ -1,7 +1,5 @@
-package Scr;
-
+package scr;
 import javax.swing.*;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -9,12 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 import javax.swing.ImageIcon;
-
-
-
 public class ProfileScreen extends JFrame{
-
-
     JLabel name = new JLabel();
     //Labels
     JLabel Spanish  = new JLabel("Spanish");
@@ -26,52 +19,33 @@ public class ProfileScreen extends JFrame{
     ImageIcon menuPic = new ImageIcon("pic.jpg");
     JLabel label = new JLabel(menuPic);
     
-
-
     JButton Menu = new JButton("Menu");
     JButton Logout = new JButton("Logout");
     JButton Edit = new JButton("Edit");
-
     JProgressBar SpanishBar = new JProgressBar();
     JProgressBar FrenchBar = new JProgressBar();
     JProgressBar ChineseBar = new JProgressBar();
-
     
    
     
-
     JPanel ProfilePanel = new JPanel(); //new GridLayout(2,2));
    JPanel profilePanel1 = new JPanel(new GridLayout(4,3));
    //JPanel profilePanel1 = new JPanel(new BorderLayout());   
-
     String Name = new String();
     HashMap<String, String> LoginInfo = new HashMap<String, String>();
-
-
-
-
-
-
     public ProfileScreen (String Name, HashMap<String, String> LoginInfo){
-
         this.Name = Name;
         this.LoginInfo = LoginInfo;
         name.setText(Name);
-
-
-
         Logout.addActionListener(new logoutAction());
         Menu.addActionListener(new MenuBActionListener());
-
         S.addActionListener(new SActionListener());
         F.addActionListener(new FActionListener());
-        C.addActionListener(new CActionListener());
+        //C.addActionListener(new);
+        Edit.addActionListener(new EditActionListener());
         
-
         Color customColor = new Color(68, 65, 242);
         Color customColor1 = new Color(117, 115, 145);
-
-
         ProfilePanel.setBackground(customColor);
         profilePanel1.setBackground(customColor1);
         ProfilePanel.add(label);
@@ -82,46 +56,32 @@ public class ProfileScreen extends JFrame{
         profilePanel1.add(Spanish);
         profilePanel1.add(S);
         profilePanel1.add(SpanishBar);
-
         profilePanel1.add(French);
         profilePanel1.add(F);
         profilePanel1.add(FrenchBar);
-
         profilePanel1.add(Chinese);
         profilePanel1.add(C);
         profilePanel1.add(ChineseBar);
-
         //ProfilePanel.add(Menu);
         profilePanel1.add(Edit);
-
-
         setSize(800,400);
         this.getContentPane().add(ProfilePanel);
         this.pack();
         this.setVisible(true);
     }
-
     
     public void visibleMethod(boolean b) 
     {
         this.setVisible(b);
-
     } 
-
-
-
     private class logoutAction implements ActionListener
     {
-
-
         @Override
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
-
             LoginScreen loginScreen = new LoginScreen(LoginInfo);
             visibleMethod(false);
         }
-
     }
     public class MenuBActionListener implements ActionListener
     {
@@ -130,13 +90,10 @@ public class ProfileScreen extends JFrame{
                 visibleMethod(false);
                 MenuScreen menuScreen = new MenuScreen(); 
             }
-
     }
     
     private class FActionListener implements ActionListener
     {
-
-
         @Override
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
@@ -145,46 +102,29 @@ public class ProfileScreen extends JFrame{
             visibleMethod(false);
         }
     }
-
-
     private class SActionListener implements ActionListener
     {
-
-
         @Override
         public void actionPerformed(ActionEvent e) {
-            
-
+            // TODO Auto-generated method stub
             QuestionPageScreen sQScreen = new QuestionPageScreen("Spanish");
             visibleMethod(false);
         }
     }
-
-
+    private class EditActionListener implements ActionListener
+    {
         @Override
         public void actionPerformed(ActionEvent e) {
-
             EditScreen EQScreen = new EditScreen();
             visibleMethod(false);
         }
     }
-
+/* 
     {
-
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            // TODO Auto-generated method stub
-
-            QuestionPageScreen sQScreen = new QuestionPageScreen("Spanish");
-            visibleMethod(false);
+	@@ -183,7 +183,7 @@ public void actionPerformed(ActionEvent e) {
         }
-
     }
-
-
-
-
+*/
 
 
 

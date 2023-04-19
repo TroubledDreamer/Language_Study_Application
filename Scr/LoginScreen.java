@@ -1,4 +1,4 @@
-package Scr;
+package scr;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
