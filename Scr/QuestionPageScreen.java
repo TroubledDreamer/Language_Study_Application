@@ -1,4 +1,4 @@
-package Scr;
+package scr;
 
 
 import javax.swing.JPanel;

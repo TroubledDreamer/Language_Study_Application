@@ -1,4 +1,4 @@
-package Scr;
+package scr;
 
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
@@ -34,7 +34,18 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
+/***
+ * Allows the editting of pages
+ */
 public class EditScreen extends JFrame {
+
+    /***
+     * 
+     * 
+     * 
+     * 
+     */
+  
 
     JButton newQButton = new JButton("Create New Question");
     JButton editButton = new JButton("Edit Existing Question");
@@ -105,9 +116,10 @@ public class EditScreen extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             String id = idTextField.getText();
+            Question question = new Question(id);
+            question.removeHelper();
             // Perform deletion of question using the ID
             // and other validations as needed
-            JOptionPane.showMessageDialog(null, "Question with ID " + id + " deleted successfully.");
     
         }
     }
@@ -125,6 +137,10 @@ public class EditScreen extends JFrame {
             //String answer = answerTextField.getText();
             String correctAnswer = cAnswerField.getText();
             String questionType = qTypField.getText();
+<<<<<<< HEAD
+
+=======
+>>>>>>> c1337b25ca723d1463be8639af8b931122422613
             Question question = new Question(IDQuestion);
             question.addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
             JOptionPane.showMessageDialog(null, "Question with ID " + IDQuestion + " edded successfully.");
@@ -134,7 +150,21 @@ public class EditScreen extends JFrame {
     private class EditBAction implements ActionListener {
 
         @Override
+ 
         public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
+            String id = idTextField.getText();
+            Question question = new Question(id);
+
+            String questiosn = questionTextField.getText();
+            String difficulty = difficultyTextField.getText();
+            String language = languageTextField.getText();
+            String answer = answerTextField.getText();
+
+
+            question.editQuestion(id, difficulty, language, question.getQuestiontype(), questiosn, answer);
+            JOptionPane.showMessageDialog(null, "Question with ID " + id + " edited successfully.");
+=======
             String IDQuestion = idTextField.getText();
             String questionString = questionTextField.getText();
             String difficultyLevel = difficultyTextField.getText();
@@ -148,6 +178,7 @@ public class EditScreen extends JFrame {
 
             question.addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
             JOptionPane.showMessageDialog(null, "Question with ID " + IDQuestion + " edited successfully.");
+>>>>>>> c1337b25ca723d1463be8639af8b931122422613
     }
     }
 }

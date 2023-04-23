@@ -1,4 +1,4 @@
-package Scr;
+package scr;
 
 public class FillBlankQuestion extends Question {
 

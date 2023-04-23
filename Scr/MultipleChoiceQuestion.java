@@ -1,4 +1,4 @@
-package Scr;
+package scr;
 
 import java.util.ArrayList;
 

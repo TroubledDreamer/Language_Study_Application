@@ -1,9 +1,15 @@
-package Scr;
+
+package scr;
 
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class Driver {
+    /***
+     * 
+     * 
+     * Work the code the the driver starting the project.
+     */
 
 
     public static void main(String[] args) {
