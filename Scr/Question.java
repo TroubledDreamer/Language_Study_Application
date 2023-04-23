@@ -260,5 +260,9 @@ public class Question {
 
 }
 
+	public String getAnswerString2() {
+		return null;
+	}
+
 
 }

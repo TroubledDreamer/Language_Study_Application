@@ -39,10 +39,11 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class QuestionPageScreen extends JFrame {
-    private StatusUpdater statusUpdater = new StatusUpdater();
+    //private StatusUpdater statusUpdater = new StatusUpdater();
 
 
     private ArrayList<String> questionList = new ArrayList<>();
+    private int currentIndex;
     private ArrayList<String> holder;
     private int score;
     private String language;
@@ -79,18 +80,9 @@ public class QuestionPageScreen extends JFrame {
         AddCurrentQuestions();
 
         holder = getFile("CurrentQuestion.txt");
-
-
-
         Collections.shuffle(holder);
-
-
         overideCurrentQuestion("CurrentQuestion.txt",  holder);
-
-
         getQuestion1();
-        
-
 
         //main panel
         JPanel MainPanel = new JPanel();
@@ -118,6 +110,20 @@ public class QuestionPageScreen extends JFrame {
         System.out.print("love------------------");
 
         System.out.println( "hhhhhh" +  question.getQuestionID());
+        // create a CardLayout for the main panel
+        CardLayout cardLayout = new CardLayout();
+        MainPanel.setLayout(cardLayout);
+
+        // add the question panels to the main panel
+        MainPanel.add(MultiPanel, "multiPanel");
+        MainPanel.add(FillBlankPanel, "fillBlankPanel");
+
+        // show the question panel based on the question type
+        if (question.getQuestiontype() == "Multi") {
+            cardLayout.show(MainPanel, "multiPanel");
+        } else {
+            cardLayout.show(MainPanel, "fillBlankPanel");
+        }
        
         if (question.getQuestiontype() == "Multi")
         {
@@ -418,7 +424,7 @@ public class QuestionPageScreen extends JFrame {
 
     private ArrayList getFile(String file)
     {
-        ArrayList<String> infile = new ArrayList<>();
+        ArrayList<String> infile = new ArrayList<String>();
         try {
             FileReader fileReader = new FileReader(file);
             
@@ -464,10 +470,7 @@ public class QuestionPageScreen extends JFrame {
         return Integer.parseInt(question.getDifficultyLevel()) >= statusUpdater.getScore();
     }
 
-    public void getQuestion1(){
-        
-
-
+    public Question getQuestion1(){
  
          try {
              FileReader fileReader = new FileReader("CurrentQuestion.txt");
@@ -477,21 +480,18 @@ public class QuestionPageScreen extends JFrame {
  
              String line;
              while ((line = reader.readLine()) != null && question == null) {
-                 String[] spitter = line.split("-");
+                 String[] splitter = line.split("-");
                  try{
-
-                    
 
 
  
-                    question = new Question(spitter[0]);
+                    question = new Question(splitter[0]);
                     
                  }
                  catch(Exception e){
  
                  }
-             }
- 
+             } 
              reader.close();
              fileReader.close();
              
@@ -499,6 +499,7 @@ public class QuestionPageScreen extends JFrame {
          } catch (IOException e) {
              // TODO: handle exception
          }
+        return question;
 
         }
 
