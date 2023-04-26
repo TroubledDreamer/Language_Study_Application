@@ -142,7 +142,6 @@ public class StatusUpdater {
 
     public void setStatus(int inputID, String name, int score, int hrs_Learning, int accuracy)
     {
-        System.out.print("sddsdaaaaaaaaaa");
         this.inputID = inputID;
         this.score = score;
         this.name = name;

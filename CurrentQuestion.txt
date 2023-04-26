@@ -1,0 +1,10 @@
+10010-10010-0-Spanish-Blank-_madres-las
+10020-10020-0-Spanish-Blank-_ trenes-los
+10030-10030-0-Spanish-Blank-_ profesor de mi clase se llama Juan Pérez.-el
+10040-10040-0-Spanish-Blank-¿_ mesas tienes? - How many tables do you have?-Cuántas
+10050-10050-0-Spanish-Blank-¿Dónde_un hotel?-hay
+10111-10111-0-Spanish-Multi-Adjectives: Carro_-limpia,limpio,cleano,limpios-limpio
+10116-10116-0-Spanish-Multi-Food: Tú pides_.-leche,milko,lecha,lecho-leche
+10121-10121-0-Spanish-Multi-Feelings: Yo estoy_.-contente,contentemos,contento,contenta-contento 
+10126-10126-0-Spanish-Multi-Adverbs affirmative:Nosotros_vamos al colegio.-tambièn,abajo,hoy,soy-tambièn
+10131-10131-0-Spanish-Multi-Adjectives Yo prefiero los libros españoles.-vieja,viejo,viejas,viejos-viejos
