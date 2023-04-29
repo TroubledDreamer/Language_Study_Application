@@ -88,11 +88,16 @@ public class ProfileScreen extends JFrame{
     }
     public class MenuBActionListener implements ActionListener
     {
+
+
         public void actionPerformed(ActionEvent e){
                 System.out.println("im in");
                 visibleMethod(false);
                 MenuScreen menuScreen = new MenuScreen(); 
             }
+
+
+            
     }
     
     private class FActionListener implements ActionListener

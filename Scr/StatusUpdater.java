@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.security.Principal;
 import java.util.ArrayList;
 
 
@@ -15,6 +16,7 @@ public class StatusUpdater {
     private int hrs_Learning;
     private int accuracy;
     private int checkID;
+    private String questionID;
 
     private String[] spitter;
     private String[] fileList;
@@ -28,7 +30,7 @@ public class StatusUpdater {
     public StatusUpdater(){
         setID();
         
-        coll();System.out.print("ssss");
+        coll();
 
 
    
@@ -51,7 +53,6 @@ public class StatusUpdater {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] spitter = line.split("-");
-                System.out.println(line.split("-")[0]);
                 try{
                 if (checkID == Integer.parseInt(spitter[0]))
                 {
@@ -91,15 +92,13 @@ public class StatusUpdater {
          */
 
        
-
-        
-         System.out.println(fileList);
-        
+          
         inputID = Integer.parseInt(fileList[1]);
         name = fileList[2];
         score = Integer.parseInt(fileList[3]);
         hrs_Learning = Integer.parseInt(fileList[4]);
         accuracy = Integer.parseInt(fileList[5]);
+        questionID = fileList[6];
         
 
 
@@ -114,6 +113,7 @@ public class StatusUpdater {
         try {
 
 
+
             FileWriter fileWriter = new FileWriter("Status.txt", false);
             
             for (String m: fileHolder)
@@ -123,6 +123,7 @@ public class StatusUpdater {
             }
             fileHolder = null;
             fileWriter.close();
+            
 
             FileWriter writer = new FileWriter("Status.txt", true);
             writer.append( inputID + "-" + inputID);
@@ -130,7 +131,10 @@ public class StatusUpdater {
             writer.append("-" + score);
             writer.append("-" + hrs_Learning);
             writer.append("-" + accuracy);
+            writer.append("-" + questionID + ",");
             writer.close();
+
+
             
             
         } catch (IOException e) {
@@ -146,7 +150,7 @@ public class StatusUpdater {
         this.score = score;
         this.name = name;
         this.hrs_Learning = hrs_Learning;
-        this.accuracy = accuracy;
+        questionID = questionID;
         updater();
 
     }
@@ -192,6 +196,31 @@ public class StatusUpdater {
         e.printStackTrace();
     }
     }
+
+
+    public void scoreUpdator(String difficulty, String questionID)
+    {
+        score +=  1 + Integer.parseInt(difficulty);
+        this.questionID += questionID;
+        updater(); 
+
+    }
+
+    public void addQuestionID(String questionID)
+    {
+        this.questionID += questionID;
+        updater(); 
+
+
+    }
+
+    public String[] getQuestionID()
+    {
+        return questionID.split(",");
+        
+    }
+
+    
     
 
     

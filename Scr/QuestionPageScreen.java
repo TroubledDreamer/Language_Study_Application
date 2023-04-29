@@ -16,9 +16,11 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridBagLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
@@ -33,13 +35,25 @@ import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
-import javax.swing.JCheckBox;
+import javax.swing.JRadioButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class QuestionPageScreen extends JFrame {
-    //private StatusUpdater statusUpdater = new StatusUpdater();
+    GridLayout experimentLayout = new GridLayout(4,0);
+    private StatusUpdater statusUpdater = new StatusUpdater();
+    private JPanel mainPanel = new JPanel();
+    private JPanel blackQuestionPanel = new JPanel();
+    private JTextField AnsInput = new JTextField(8);
+    private JPanel questionOptionPanel = new JPanel();
+    private ButtonGroup buttonGroup = new ButtonGroup();
+    Question subQuestion;
+
+
+    String selectedOption;
+
+    
 
 
     private ArrayList<String> questionList = new ArrayList<>();
@@ -51,13 +65,14 @@ public class QuestionPageScreen extends JFrame {
 
 
 
+
     public int HEIGHT = 800;
     public int WIDTH = 600;
 
     Question question;
 
      //Labels
-     JLabel QuestionStr  = new JLabel();
+     JLabel QuestionStr  = new JLabel("full live");
      JLabel QuestionStrBack  = new JLabel();
 
      JButton Submit = new JButton("Submit");
@@ -67,14 +82,16 @@ public class QuestionPageScreen extends JFrame {
      JLabel Ans4 = new JLabel();
      JButton Skip = new JButton("skip");
      JButton BackB = new JButton("<Back");
-     JCheckBox OptionA = new JCheckBox();
-     JCheckBox OptionB = new JCheckBox();
-     JCheckBox OptionC = new JCheckBox();
-     JCheckBox OptionD = new JCheckBox();
-     JTextField AnsInput = new JTextField(getAnsInput());
+     JRadioButton OptionA = new JRadioButton();
+     JRadioButton OptionB = new JRadioButton();
+     JRadioButton OptionC = new JRadioButton();
+     JRadioButton OptionD = new JRadioButton();
+
 
     public QuestionPageScreen(String language) {
         this.language = language;
+
+
      
 
         AddCurrentQuestions();
@@ -82,7 +99,7 @@ public class QuestionPageScreen extends JFrame {
         holder = getFile("CurrentQuestion.txt");
         Collections.shuffle(holder);
         overideCurrentQuestion("CurrentQuestion.txt",  holder);
-        getQuestion1();
+        question = getQuestion1();
 
         //main panel
         JPanel MainPanel = new JPanel();
@@ -98,18 +115,17 @@ public class QuestionPageScreen extends JFrame {
         BackB.addActionListener(new BackBAction());
         Skip.addActionListener(new SkipBAction());
         Submit.addActionListener(new SubmitAction());
-        OptionA.addActionListener(new OptionAAction());
-        OptionB.addActionListener(new OptionBAction());
-        OptionC.addActionListener(new OptionCAction());
-        OptionD.addActionListener(new OptionDAction());
+        
+        OptionA.addActionListener(new OptionAction());
+        OptionB.addActionListener(new OptionAction());
+        OptionC.addActionListener(new OptionAction());
+        OptionD.addActionListener(new OptionAction());
+        
 
 
 
-        question.getQuestiontype();
 
-        System.out.print("love------------------");
-
-        System.out.println( "hhhhhh" +  question.getQuestionID());
+/*
         // create a CardLayout for the main panel
         CardLayout cardLayout = new CardLayout();
         MainPanel.setLayout(cardLayout);
@@ -123,53 +139,69 @@ public class QuestionPageScreen extends JFrame {
             cardLayout.show(MainPanel, "multiPanel");
         } else {
             cardLayout.show(MainPanel, "fillBlankPanel");
-        }
+        }*/
+
+
+
        
-        if (question.getQuestiontype() == "Multi")
+        if (question.getQuestiontype().equals("Multi"))
         {
+            
 
             
-            MultipleChoiceQuestion multipleChoiceQuestion = new MultipleChoiceQuestion(question.getQuestionID());
-            QuestionStr.setText(multipleChoiceQuestion.getQuestionString());
-            System.out.println( "hhhhhh" +  multipleChoiceQuestion.getQuestionID());
+            MultipleChoiceQuestion subQuestion = new MultipleChoiceQuestion(question.getQuestionID());
+            QuestionStr.setText(subQuestion.getQuestionString());
 
-            Ans1.setText(multipleChoiceQuestion.getOption1());
-            Ans1.setText(multipleChoiceQuestion.getOption1());
-            Ans1.setText(multipleChoiceQuestion.getOption1());
-            Ans1.setText(multipleChoiceQuestion.getOption1());
+            OptionA.setText(subQuestion.getOption1());
+            OptionB.setText(subQuestion.getOption2());
+            OptionC.setText(subQuestion.getOption3());
+            OptionD.setText(subQuestion.getOption4());
+            mainPanel.add(MultiPanel);
 
             MultiPanel.add(BackB);
             MultiPanel.add(QuestionStr);
-            MultiPanel.add(OptionA);
-            MultiPanel.add(Ans1);
-            MultiPanel.add(OptionB);
-            MultiPanel.add(Ans2);
-            MultiPanel.add(OptionC);
-            MultiPanel.add(Ans3);
-            MultiPanel.add(OptionD);
-            MultiPanel.add(Ans4);
+            questionOptionPanel.add(OptionA);
+            questionOptionPanel.add(Ans1);
+            questionOptionPanel.add(OptionB);
+            questionOptionPanel.add(Ans2);
+            questionOptionPanel.add(OptionC);
+            questionOptionPanel.add(Ans3);
+            questionOptionPanel.add(OptionD);
+            questionOptionPanel.add(Ans4);
+            MultiPanel.add(questionOptionPanel);
             MultiPanel.add(FooterPanel);
             FooterPanel.add(Skip);
             FooterPanel.add(Submit);
 
 
-            System.out.println("sddds");
+            
+
+
+            
+            GridLayout experimentLayout1 = new GridLayout(4,1);
+            questionOptionPanel.setLayout(experimentLayout1);
+            MultiPanel.setLayout(experimentLayout);
+
+
         }
 
 
 
         else{
-            System.out.println("sddds");
-            FillBlankQuestion fillBlankQuestion = new FillBlankQuestion(question.getQuestionID());
+            FillBlankQuestion subQuestion = new FillBlankQuestion(question.getQuestionID());
             
+            try {
+                QuestionStrBack.setText(subQuestion.getBackString());
+            } catch(Exception e){}
 
-            QuestionStrBack.setText(fillBlankQuestion.getFrontString());
-            QuestionStr.setText(fillBlankQuestion.getBackString());
+
+            QuestionStr.setText(subQuestion.getFrontString());
 
             //Screen view for Fill in Blank
-            MainPanel.add(FillBlankPanel);
+            mainPanel.add(FillBlankPanel);
+            
+           
             FillBlankPanel.add(QuestionStr);
-            JTextField AnsInput = new JTextField(getAnsInput());
             FillBlankPanel.add(AnsInput);
             FillBlankPanel.add(QuestionStrBack);
     
@@ -177,22 +209,40 @@ public class QuestionPageScreen extends JFrame {
         }
 
 
-        MainPanel.add(FooterPanel);
+        
         FooterPanel.add(Skip);
         FooterPanel.add(Submit);
-        FillBlankPanel.add(BackB);
+        mainPanel.add(BackB);
+
+
+        buttonGroup.add(OptionA);
+        buttonGroup.add(OptionB);
+        buttonGroup.add(OptionC);
+        buttonGroup.add(OptionD);
+
+
 
 
 
 
         // make the question panel
         // make the frame visible
-        this.add(MainPanel);
-        this.add(MultiPanel);
+        
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
         // this.setLayout(null);
+
+
+
+        
+        mainPanel.add(FooterPanel);
+        mainPanel.setLayout(experimentLayout);
+
+        this.add(mainPanel);
+
+
+
         this.pack();
-        setVisible(true);
+        this.setVisible(true);
 
     }
 
@@ -251,7 +301,7 @@ public class QuestionPageScreen extends JFrame {
                    //leveQualified(question) && question.getLanguage().equals(language)  &&
 
  
-                    if ( !getFile(unwantedDups).contains(line))
+                    if ( !getFile(unwantedDups).contains(line) && !Arrays.asList(statusUpdater.getQuestionID()).contains(getFileQuestionID(line)))
                     {
                          questionList.add(line);
                        
@@ -279,10 +329,11 @@ public class QuestionPageScreen extends JFrame {
      }
 
      public void AddCurrentQuestion(String fileOut, String fileIn){
-
-
         try {
             FileWriter writer;
+            writer = new FileWriter(fileIn, false);
+            writer.write("");
+            writer.close();
             /*  = new FileWriter(fileOut, false);
             writer.write("");
             
@@ -323,7 +374,7 @@ public class QuestionPageScreen extends JFrame {
             BufferedWriter write1 = new BufferedWriter(writer);
 
 
-            for (String m : questionList){
+            for (String m : list){
                 
 
              
@@ -359,9 +410,7 @@ public class QuestionPageScreen extends JFrame {
 
 
 
-    public int isCorrect(){
-        return (Integer) null;
-    }
+
 
     private class BackBAction implements ActionListener {
 
@@ -380,22 +429,130 @@ public class QuestionPageScreen extends JFrame {
         }
 
     }
+
+    private boolean isCorrect()
+    {
+
+
+        boolean correct = false;
+        if (question.getCorrectAnswer().equals(selectedOption))
+        {
+            correct = true;
+        }
+
+        if (question.getCorrectAnswer().equals(AnsInput.getText()))
+        {
+            correct = true;
+        }
+
+
+
+
+
+        return correct;
+
+
+
+    }
+
+  /*  private boolean isCorrect(FillBlankQuestion Q)
+    {
+
+        boolean correct = false;
+        if (question.getCorrectAnswer().equals(AnsInput.getText()))
+        {
+            correct = true;
+        }
+
+
+        System.out.println("==============blank==question=================");
+
+        return correct;
+
+
+
+    }*/
+
+
+
     private class SubmitAction implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            System.out.println("Wrong nigga-" + question.getCorrectAnswer());
+
+            if (isCorrect())
+            {
+
+                
+                System.out.println("correct nigga" );
+                statusUpdater.scoreUpdator(question.getDifficultyLevel(), question.getQuestionID()); 
+               
+
+
+                AddCurrentQuestions();
+
+                holder = getFile("CurrentQuestion.txt");
+                Collections.shuffle(holder);
+                overideCurrentQuestion("CurrentQuestion.txt",  holder);
+                question = getQuestion1();
+                getQuestion("Questions.txt", 0, 1, "CurrentQuestion");
+
+
+                if (question.getQuestiontype().equals("Blank"))
+                
+                {
+                    
+                    FillBlankQuestion subQuestion = new FillBlankQuestion(question.getQuestionID());
+                    QuestionStr.setText(subQuestion.getFrontString());
+                    try {
+                        QuestionStrBack.setText(subQuestion.getBackString());
+                    } catch(Exception s){}
+
+                } else 
+                {
+                    
+                    MultipleChoiceQuestion subQuestion = new MultipleChoiceQuestion(question.getQuestionID());
+
+                    QuestionStr.setText(subQuestion.getQuestionString());
+
+
+                    OptionA.setText(subQuestion.getOption1());
+                    OptionB.setText(subQuestion.getOption2());
+                    OptionC.setText(subQuestion.getOption3());
+                    OptionD.setText(subQuestion.getOption4());
+
+
+
+
+                }
+           
+             
+
+
+
+            }
 
         }
 
     }
-    private class OptionAAction implements ActionListener {
+
+
+    
+    
+    
+    private class OptionAction implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            JRadioButton selectedButton = (JRadioButton) e.getSource();
+            System.out.println("slckvmskcvmxokmvoxm");
+            selectedOption = selectedButton.getText();
+          
 
         }
 
-    }
+    }/*
     private class OptionBAction implements ActionListener {
 
         @Override
@@ -411,21 +568,15 @@ public class QuestionPageScreen extends JFrame {
 
         }
 
-    }
-    private class OptionDAction implements ActionListener {
+    }*/
 
-        @Override
-        public void actionPerformed(ActionEvent e) {
-
-        }
-
-    }
 
 
     private ArrayList getFile(String file)
     {
         ArrayList<String> infile = new ArrayList<String>();
         try {
+
             FileReader fileReader = new FileReader(file);
             
             BufferedReader reader = new BufferedReader(fileReader);
@@ -483,25 +634,34 @@ public class QuestionPageScreen extends JFrame {
                  String[] splitter = line.split("-");
                  try{
 
+                    if (!Arrays.asList(statusUpdater.getQuestionID()).contains(splitter[0]))
+                    {
+                        question = new Question(splitter[0]);
+
+
+                    }
 
  
-                    question = new Question(splitter[0]);
                     
                  }
                  catch(Exception e){
  
                  }
              } 
-             reader.close();
-             fileReader.close();
+            reader.close();
+            fileReader.close();
              
              
          } catch (IOException e) {
              // TODO: handle exception
          }
+        
+        System.out.println(question.getQuestionID());
         return question;
 
         }
+
+        
 
 
 }

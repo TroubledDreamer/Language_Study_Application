@@ -14,6 +14,7 @@ public class MultipleChoiceQuestion extends Question {
     {
 
         super(IDQuestion);
+        setOptions(getOptions());
     }
 
     public MultipleChoiceQuestion  (String IDQuestion, String difficultyLevel, String language, String questionType){
@@ -38,10 +39,13 @@ public class MultipleChoiceQuestion extends Question {
     public ArrayList<String> getOptions()
     {
          
-        for (String m : super.getFileList().get(2).split(","))
+        String list = super.getFileList()[5].split("/")[1]; 
+        for (String m : list.split(","))
         {
             options.add(m);
+            System.out.println(m);
         }
+        
         return options;
 
     }
@@ -50,10 +54,11 @@ public class MultipleChoiceQuestion extends Question {
     {
 
 
+    
         option1 = options.get(0);
         option2 = options.get(1);
-        option3 = options.get(3);
-        option4 = options.get(4);
+        option3 = options.get(2);
+        option4 = options.get(3);
 
     }
 

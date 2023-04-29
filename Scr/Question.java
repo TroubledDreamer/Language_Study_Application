@@ -92,7 +92,6 @@ public class Question {
                     {
 
                         fileList = spitter;
-                        System.out.println(spitter[0]);
 
 
 
@@ -141,7 +140,6 @@ public class Question {
                 String[] spitter = line.split("-");
             
 
-                System.out.print("quest 44444----------444444410" + spitter);
 
                 try{ 
                     
@@ -161,7 +159,6 @@ public class Question {
                 }
                 catch(Exception e){
 
-                    System.out.print("quest 210");
                     fileHolder.add(line);
                 }
                 reader.close();
@@ -173,7 +170,6 @@ public class Question {
             
         } catch (IOException e) {
             // TODO: handle exception
-            System.out.print("quest 110");
             
 
             
@@ -242,7 +238,6 @@ public class Question {
         return language;
     }
     public String getQuestiontype(){
-        System.out.print("L================");
         return questionType;
     }
 
