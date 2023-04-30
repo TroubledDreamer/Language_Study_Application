@@ -16,8 +16,6 @@ public class Driver {
 
 
 
-        QuestionPageScreen sQScreen = new QuestionPageScreen("Spanish");
-
 
         Login login = new Login();
 

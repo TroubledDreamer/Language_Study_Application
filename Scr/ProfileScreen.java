@@ -106,7 +106,7 @@ public class ProfileScreen extends JFrame{
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
             ///edit to create new question screen
-            QuestionPageScreen fQScreen = new QuestionPageScreen("French");
+            QuestionFrame fQScreen = new QuestionFrame("French",Name ,LoginInfo);
             visibleMethod(false);
         }
     }
@@ -115,7 +115,7 @@ public class ProfileScreen extends JFrame{
         @Override
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
-            QuestionPageScreen sQScreen = new QuestionPageScreen("Spanish");
+            QuestionFrame sQScreen = new QuestionFrame("Spanish",Name ,LoginInfo);
             visibleMethod(false);
         }
     }

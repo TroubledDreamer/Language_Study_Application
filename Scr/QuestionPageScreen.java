@@ -40,7 +40,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-public class QuestionPageScreen extends JFrame {
+public class QuestionPageScreen extends JPanel {
     GridLayout experimentLayout = new GridLayout(4,0);
     private StatusUpdater statusUpdater = new StatusUpdater();
     private JPanel mainPanel = new JPanel();
@@ -91,6 +91,9 @@ public class QuestionPageScreen extends JFrame {
     public QuestionPageScreen(String language) {
         this.language = language;
 
+        this.setSize(14, 14);
+        questionOptionPanel.setSize(14, 14);
+
 
      
 
@@ -129,11 +132,9 @@ public class QuestionPageScreen extends JFrame {
         // create a CardLayout for the main panel
         CardLayout cardLayout = new CardLayout();
         MainPanel.setLayout(cardLayout);
-
         // add the question panels to the main panel
         MainPanel.add(MultiPanel, "multiPanel");
         MainPanel.add(FillBlankPanel, "fillBlankPanel");
-
         // show the question panel based on the question type
         if (question.getQuestiontype() == "Multi") {
             cardLayout.show(MainPanel, "multiPanel");
@@ -158,7 +159,7 @@ public class QuestionPageScreen extends JFrame {
             OptionD.setText(subQuestion.getOption4());
             mainPanel.add(MultiPanel);
 
-            MultiPanel.add(BackB);
+            //FooterPanel.add(BackB);
             MultiPanel.add(QuestionStr);
             questionOptionPanel.add(OptionA);
             questionOptionPanel.add(Ans1);
@@ -169,9 +170,9 @@ public class QuestionPageScreen extends JFrame {
             questionOptionPanel.add(OptionD);
             questionOptionPanel.add(Ans4);
             MultiPanel.add(questionOptionPanel);
-            MultiPanel.add(FooterPanel);
-            FooterPanel.add(Skip);
-            FooterPanel.add(Submit);
+            //MultiPanel.add(FooterPanel);
+            //FooterPanel.add(Skip);
+            //FooterPanel.add(Submit);
 
 
             
@@ -179,7 +180,8 @@ public class QuestionPageScreen extends JFrame {
 
             
             GridLayout experimentLayout1 = new GridLayout(4,1);
-            questionOptionPanel.setLayout(experimentLayout1);
+            GridLayout experimentLayout11 = new GridLayout(4,1);
+
             MultiPanel.setLayout(experimentLayout);
 
 
@@ -210,9 +212,9 @@ public class QuestionPageScreen extends JFrame {
 
 
         
-        FooterPanel.add(Skip);
-        FooterPanel.add(Submit);
-        mainPanel.add(BackB);
+        //FooterPanel.add(Skip);
+        //FooterPanel.add(Submit);
+        //FooterPanel.add(BackB);
 
 
         buttonGroup.add(OptionA);
@@ -234,14 +236,13 @@ public class QuestionPageScreen extends JFrame {
 
 
         
-        mainPanel.add(FooterPanel);
+        //mainPanel.add(FooterPanel);
         mainPanel.setLayout(experimentLayout);
 
         this.add(mainPanel);
 
 
 
-        this.pack();
         this.setVisible(true);
 
     }
@@ -256,18 +257,14 @@ public class QuestionPageScreen extends JFrame {
     {
         if (language.equals("Spanish"))
         {
-
             return "1";
-
         }
         if (language.equals("French"))
         {
             return "2";
         }
-
         return "1";
   
-
   
     }*/
 
@@ -430,7 +427,7 @@ public class QuestionPageScreen extends JFrame {
 
     }
 
-    private boolean isCorrect()
+    public boolean isCorrect()
     {
 
 
@@ -448,6 +445,8 @@ public class QuestionPageScreen extends JFrame {
 
 
 
+        statusUpdater.scoreUpdator(question.getDifficultyLevel(), question.getQuestionID()); 
+
 
         return correct;
 
@@ -457,20 +456,13 @@ public class QuestionPageScreen extends JFrame {
 
   /*  private boolean isCorrect(FillBlankQuestion Q)
     {
-
         boolean correct = false;
         if (question.getCorrectAnswer().equals(AnsInput.getText()))
         {
             correct = true;
         }
-
-
         System.out.println("==============blank==question=================");
-
         return correct;
-
-
-
     }*/
 
 
@@ -486,7 +478,6 @@ public class QuestionPageScreen extends JFrame {
 
                 
                 System.out.println("correct nigga" );
-                statusUpdater.scoreUpdator(question.getDifficultyLevel(), question.getQuestionID()); 
                
 
 
@@ -554,20 +545,14 @@ public class QuestionPageScreen extends JFrame {
 
     }/*
     private class OptionBAction implements ActionListener {
-
         @Override
         public void actionPerformed(ActionEvent e) {
-
         }
-
     }
     private class OptionCAction implements ActionListener {
-
         @Override
         public void actionPerformed(ActionEvent e) {
-
         }
-
     }*/
 
 

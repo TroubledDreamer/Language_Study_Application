@@ -1,43 +1,22 @@
-22210-21240-2-French-Blank-Quel est le mot pour "chair_" en français?(Table,Chaise,Lit,Chair)-Chair
-21010-21010-1-French-Blank-(How much does it cost?)Combien _?-ça coûte
-21050-21050-1-French-Blank-Ma mère _ très bien cuisiner.-sait
-22220-21240-2-French-Blank-Comment diton "grand_" en français?(Petit,Grand,Moyen,Haut)-Grand
+21220-21220-2-French-Blank-(Why do you want to learn French?) Pourquoi est-ce que tu _ français ?-apprends
 21120-21120-1-French-Multi-Quelle est la traduction correcte de "He is tall and handsome" en français?/Il est petit et laid,Il est grand et beau,Il est court et laid,Il est grand et laid-Il est grand et beau
+20040-20040-0-French-Blank-(When is your birthday?)Quand _?-es-tu né
+21110-21110-1-French-Multi-Quelle est la traduction correcte de "I am going to the park" en français?/Je vais à la maison,Je vais à l'école,Je vais au parc,Je vais au cinéma-Je vais au parc
+21020-21020-1-French-Blank-(What is your favorite food?)Quel est ton _ préféré ?-plat 
+21040-21040-1-French-Blank-Nous avons _ nos valises pour partir en vacances.-préparé
+22130-22130-0-French-Multi-Quel est le mot pour "pomme de terre" en français?/Pomme,Poisson,Pomme de terre,Fromage-Pomme de terre
 21130-21130-1-French-Multi-Quelle est la traduction correcte de "I would like a coffee, please" en français?/Je voudrais un thé s'il vous plaît,Je voudrais un jus d'orange s'il vous plaît, Je voudrais un café s'il vous plaît,Je voudrais un sandwich s'il vous plaît-Je voudrais un café s'il vous plaît
-22150-22150-0-French-Multi-Quel est le mot pour "chapeau" en français?-Chapeau,Chaussures,Chemise,Vêtements-Chapeau
+22210-21240-2-French-Blank-Quel est le mot pour "chair_" en français?(Table,Chaise,Lit,Chair)-Chair
+21050-21050-1-French-Blank-Ma mère _ très bien cuisiner.-sait
 20020-20020-0-French-Blank-(Where are you from?)Où _?-habites-tu
-20010-20010-0-French-Blank-(What is your name?)Quel est ton _?-nom
-21020-21020-1-French-Blank-(What is your favorite food?)Quel est ton _ préféré ?-plat 
-21110-21110-1-French-Multi-Quelle est la traduction correcte de "I am going to the park" en français?/Je vais à la maison,Je vais à l'école,Je vais au parc,Je vais au cinéma-Je vais au parc
-21030-21030-1-French-Blank-(When do you usually wake up?)Quand estce que tu _?-te réveilles
-21040-21040-1-French-Blank-Nous avons _ nos valises pour partir en vacances.-préparé
-22130-22130-0-French-Multi-Quel est le mot pour "pomme de terre" en français?-Pomme,Poisson,Pomme de terre,Fromage-Pomme de terre
-21220-21220-2-French-Blank-(Why do you want to learn French?) Pourquoi est-ce que tu _ français ?-apprends
-21050-21050-1-French-Blank-Ma mère _ très bien cuisiner.-sait
-21220-21220-2-French-Blank-(Why do you want to learn French?) Pourquoi est-ce que tu _ français ?-apprends
-22140-22140-0-French-Multi-Comment diton "parapluie" en français?-Parapluie,Pluie,Soleil,Vent-Parapluie
-21110-21110-1-French-Multi-Quelle est la traduction correcte de "I am going to the park" en français?/Je vais à la maison,Je vais à l'école,Je vais au parc,Je vais au cinéma-Je vais au parc
 21010-21010-1-French-Blank-(How much does it cost?)Combien _?-ça coûte
 21150-21150-1-French-Multi-Quelle est la traduction correcte de "They are playing soccer in the park" en français?/Ils jouent au tennis dans le parc,Ils jouent au football dans le parc,Ils jouent au basket dans le parc,Ils jouent au volley dans le parc-Ils jouent au football dans le parc
-22150-22150-0-French-Multi-Quel est le mot pour "chapeau" en français?-Chapeau,Chaussures,Chemise,Vêtements-Chapeau
-21210-21210-2-French-Blank-(What is the main activity of this company?) Quel est _ principal de cette entreprise?-le domaine
-22210-21240-2-French-Blank-Quel est le mot pour "chair_" en français?(Table,Chaise,Lit,Chair)-Chair
-21030-21030-1-French-Blank-(When do you usually wake up?)Quand estce que tu _?-te réveilles
-21150-21150-1-French-Multi-Quelle est la traduction correcte de "They are playing soccer in the park" en français?/Ils jouent au tennis dans le parc,Ils jouent au football dans le parc,Ils jouent au basket dans le parc,Ils jouent au volley dans le parc-Ils jouent au football dans le parc
-23110-23110-2-French-Multi-Quel est le mot pour "inflation" en français?/Expansion,Déflation,Inflation,Dépression-Inflation
-23140-23140-2-French-Multi-Comment diton "séisme" en français?/Tremblement de terre,Éruption volcanique,Ouragan,Tsunami-Tremblement de terre
-21120-21120-1-French-Multi-Quelle est la traduction correcte de "He is tall and handsome" en français?/Il est petit et laid,Il est grand et beau,Il est court et laid,Il est grand et laid-Il est grand et beau
-21020-21020-1-French-Blank-(What is your favorite food?)Quel est ton _ préféré ?-plat 
-20040-20040-0-French-Blank-(When is your birthday?)Quand _?-es-tu né
-23140-23140-2-French-Multi-Quel est le mot pour "biodiversité" en français?/Biodiversité,Écosystème,Développement durable,Énergie renouvelable-Biodiversité
-22130-22130-0-French-Multi-Quel est le mot pour "pomme de terre" en français?-Pomme,Poisson,Pomme de terre,Fromage-Pomme de terre
-21210-21210-2-French-Blank-(What is the main activity of this company?) Quel est _ principal de cette entreprise?-le domaine
-21130-21130-1-French-Multi-Quelle est la traduction correcte de "I would like a coffee, please" en français?/Je voudrais un thé s'il vous plaît,Je voudrais un jus d'orange s'il vous plaît, Je voudrais un café s'il vous plaît,Je voudrais un sandwich s'il vous plaît-Je voudrais un café s'il vous plaît
-20010-20010-0-French-Blank-(What is your name?)Quel est ton _?-nom
-23140-23140-2-French-Multi-Quel est le mot pour "biodiversité" en français?/Biodiversité,Écosystème,Développement durable,Énergie renouvelable-Biodiversité
-23110-23110-2-French-Multi-Quel est le mot pour "inflation" en français?/Expansion,Déflation,Inflation,Dépression-Inflation
-20040-20040-0-French-Blank-(When is your birthday?)Quand _?-es-tu né
-22140-22140-0-French-Multi-Comment diton "parapluie" en français?-Parapluie,Pluie,Soleil,Vent-Parapluie
-23140-23140-2-French-Multi-Comment diton "séisme" en français?/Tremblement de terre,Éruption volcanique,Ouragan,Tsunami-Tremblement de terre
 22220-21240-2-French-Blank-Comment diton "grand_" en français?(Petit,Grand,Moyen,Haut)-Grand
-21040-21040-1-French-Blank-Nous avons _ nos valises pour partir en vacances.-préparé
+22140-22140-0-French-Multi-Comment diton "parapluie" en français?/Parapluie,Pluie,Soleil,Vent-Parapluie
+21210-21210-2-French-Blank-(What is the main activity of this company?) Quel est _ principal de cette entreprise?-le domaine
+21230-21230-2-French-Blank-(What would you do if you won the lottery?) Que _ si tu gagnais à la loterie?-ferais-tu
+20050-20050-0-French-Blank-(Do you speak English?)Tu parles_?-anglais?
+20010-20010-0-French-Blank-(What is your name?)Quel est ton _?-nom
+21030-21030-1-French-Blank-(When do you usually wake up?)Quand estce que tu _?-te réveilles
+23110-23110-2-French-Multi-Quel est le mot pour "inflation" en français?/Expansion,Déflation,Inflation,Dépression-Inflation
+23120-23120-2-French-Multi-Comment diton "réchauffement climatique" en français?/Réchauffement global,Changement climatique,Pollution atmosphérique,Désertification-Changement climatique
