@@ -198,13 +198,23 @@ public class StatusUpdater {
     }
 
 
-    public void scoreUpdator(String difficulty, String questionID)
+    public void scoreUpdator(String difficulty, String questionID, String language)
     {
-        score +=  1 + Integer.parseInt(difficulty);
+        if (language.equals("Spanish"))
+        {
+            hrs_Learning +=  1 + Integer.parseInt(difficulty);
+            
+        }
+        else
+        {
+            score +=  1 + Integer.parseInt(difficulty);
+        }
         this.questionID += questionID;
         updater(); 
 
     }
+
+ 
 
     public void addQuestionID(String questionID)
     {
@@ -218,6 +228,34 @@ public class StatusUpdater {
     {
         return questionID.split(",");
         
+    }
+
+
+    public int getlevel(String language)
+    {
+        int num;
+        if (language.equals("Spanish"))
+        {
+            num = hrs_Learning;
+            
+        }
+        else
+        {
+            num = score;
+        }
+
+        int level = 0;
+
+        if (num > 10)
+        {
+            level = 1;
+        }
+        if(num > 20)
+        {
+            level = 2;
+
+        }
+        return level;
     }
 
     

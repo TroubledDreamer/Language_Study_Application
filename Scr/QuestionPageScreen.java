@@ -445,7 +445,7 @@ public class QuestionPageScreen extends JPanel {
 
 
 
-        statusUpdater.scoreUpdator(question.getDifficultyLevel(), question.getQuestionID()); 
+        statusUpdater.scoreUpdator(question.getDifficultyLevel(), question.getQuestionID(), question.getLanguage()); 
 
 
         return correct;
@@ -619,7 +619,7 @@ public class QuestionPageScreen extends JPanel {
                  String[] splitter = line.split("-");
                  try{
 
-                    if (!Arrays.asList(statusUpdater.getQuestionID()).contains(splitter[0]))
+                    if (!Arrays.asList(statusUpdater.getQuestionID()).contains(splitter[0]) && (statusUpdater.getlevel(language) >= Integer.parseInt(splitter[2])))
                     {
                         question = new Question(splitter[0]);
 
