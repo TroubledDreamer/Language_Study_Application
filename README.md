@@ -5,10 +5,10 @@ Introducing our innovative language learning solution! Our team has developed an
 
 Carlyon Jones-Armour - Lead Programmer
 
-Candace Hendricks - researcher/Programmer
+Candace Hendricks - Researcher/Programmer
 
 Tristan thompson - Gui designer
 
-nicholas garner -Gui designer
+nicholas garner - Gui designer
 
 
