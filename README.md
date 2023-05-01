@@ -9,6 +9,6 @@ Candace Hendricks - Researcher/Programmer
 
 Tristan thompson - Gui designer
 
-nicholas garner - Gui designer
+Nicholas garner - Gui designer
 
 
