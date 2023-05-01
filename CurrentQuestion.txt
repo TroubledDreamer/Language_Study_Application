@@ -1,22 +1,55 @@
-21150-21150-1-French-Multi-Quelle est la traduction correcte de "They are playing soccer in the park" en français?/Ils jouent au tennis dans le parc,Ils jouent au football dans le parc,Ils jouent au basket dans le parc,Ils jouent au volley dans le parc-Ils jouent au football dans le parc
-21050-21050-1-French-Blank-Ma mère _ très bien cuisiner.-sait
-21210-21210-2-French-Blank-(What is the main activity of this company?) Quel est _ principal de cette entreprise?-le domaine
-22220-21240-2-French-Blank-Comment diton "grand_" en français?(Petit,Grand,Moyen,Haut)-Grand
-21230-21230-2-French-Blank-(What would you do if you won the lottery?) Que _ si tu gagnais à la loterie?-ferais-tu
-21130-21130-1-French-Multi-Quelle est la traduction correcte de "I would like a coffee, please" en français?/Je voudrais un thé s'il vous plaît,Je voudrais un jus d'orange s'il vous plaît, Je voudrais un café s'il vous plaît,Je voudrais un sandwich s'il vous plaît-Je voudrais un café s'il vous plaît
-23120-23120-2-French-Multi-Comment diton "réchauffement climatique" en français?/Réchauffement global,Changement climatique,Pollution atmosphérique,Désertification-Changement climatique
-21220-21220-2-French-Blank-(Why do you want to learn French?) Pourquoi est-ce que tu _ français ?-apprends
-20040-20040-0-French-Blank-(When is your birthday?)Quand _?-es-tu né
-22210-21240-2-French-Blank-Quel est le mot pour "chair_" en français?(Table,Chaise,Lit,Chair)-Chair
-20020-20020-0-French-Blank-(Where are you from?)Où _?-habites-tu
-21120-21120-1-French-Multi-Quelle est la traduction correcte de "He is tall and handsome" en français?/Il est petit et laid,Il est grand et beau,Il est court et laid,Il est grand et laid-Il est grand et beau
-21110-21110-1-French-Multi-Quelle est la traduction correcte de "I am going to the park" en français?/Je vais à la maison,Je vais à l'école,Je vais au parc,Je vais au cinéma-Je vais au parc
-22130-22130-0-French-Multi-Quel est le mot pour "pomme de terre" en français?/Pomme,Poisson,Pomme de terre,Fromage-Pomme de terre
-21020-21020-1-French-Blank-(What is your favorite food?)Quel est ton _ préféré ?-plat 
-20010-20010-0-French-Blank-(What is your name?)Quel est ton _?-nom
-21040-21040-1-French-Blank-Nous avons _ nos valises pour partir en vacances.-préparé
-20050-20050-0-French-Blank-(Do you speak English?)Tu parles_?-anglais?
-21030-21030-1-French-Blank-(When do you usually wake up?)Quand estce que tu _?-te réveilles
-22140-22140-0-French-Multi-Comment diton "parapluie" en français?/Parapluie,Pluie,Soleil,Vent-Parapluie
-23110-23110-2-French-Multi-Quel est le mot pour "inflation" en français?/Expansion,Déflation,Inflation,Dépression-Inflation
 21010-21010-1-French-Blank-(How much does it cost?)Combien _?-ça coûte
+21030-21030-1-French-Blank-(When do you usually wake up?)Quand estce que tu _?-te réveilles
+22210-21240-2-French-Blank-Quel est le mot pour "chair_" en français?(Table,Chaise,Lit,Chair)-Chair
+23140-23140-2-French-Multi-Comment diton "séisme" en français?/Tremblement de terre,Éruption volcanique,Ouragan,Tsunami-Tremblement de terre
+12110-12110-2-Spanish-Multi-Se casaron_./como tenían muchos intereses comunes,porque tenían un hijo en común,por que tenían ganas-porque tenían un hijo en común
+22130-22130-0-French-Multi-Quel est le mot pour "pomme de terre" en français?/Pomme,Poisson,Pomme de terre,Fromage-Pomme de terre
+10020-10020-0-Spanish-Blank-_ trenes-los
+23120-23120-2-French-Multi-Comment diton "réchauffement climatique" en français?/Réchauffement global,Changement climatique,Pollution atmosphérique,Désertification-Changement climatique
+11150-11150-1-Spanish-Multi-Mi amigo Lorenzo es muy_./sensible y optimista,inteligente y sincera,tolerante y solidaria-sensible y optimista
+12150-12150-2-Spanish-Multi-¿_ es el país más pequeño de Hispanoamérica?/donde,cuál,cuando-cuál
+20010-20010-0-French-Blank-(What is your name?)Quel est ton _?-nom
+10050-10050-0-Spanish-Blank-¿Dónde_un hotel?-hay
+12050-12050-2-Spanish-Blank-El subjuntivo conozca es para el verbo:_(comprender, contratar, conocer, conjugar)-conocer
+12130-12130-2-Spanish-Multi-Se conocieron en una fiesta _./y se iban a la cama,y ni se dieron cuenta, y a los dos años se casaron-y a los dos años se casaron
+11130-11130-1-Spanish-Multi-¿Qué tal_ la pronunciación?/se los da,se les da,os da-se los da
+12040-12040-2-Spanish-Blank-El opuesto de más pequeño (smaller) es más_.( cómodo, interesante, caro, grande)-grande
+12120-12120-2-Spanish-Multi-Como no tenían sueño _./se fueron a pasear,salían de la cama,hablaban mucho-se fueron a pasear
+11010-11010-1-Spanish-Blank-Nosotros_una paella de pescado.(comer)-comemos
+23130-23130-2-French-Multi-Quel est le mot pour "mécanique quantique" en français?/Mécanique classique,Mécanique quantique,Physique quantique,Physique des particules-Mécanique quantique
+21120-21120-1-French-Multi-Quelle est la traduction correcte de "He is tall and handsome" en français?/Il est petit et laid,Il est grand et beau,Il est court et laid,Il est grand et laid-Il est grand et beau
+10010-10010-0-Spanish-Blank-_madres-las
+21210-21210-2-French-Blank-(What is the main activity of this company?) Quel est _ principal de cette entreprise?-le domaine
+20040-20040-0-French-Blank-(When is your birthday?)Quand _?-es-tu né
+11120-11120-1-Spanish-Multi-Antes_ salía a pasear./un día,a menudo,una vez-a menudo
+21130-21130-1-French-Multi-Quelle est la traduction correcte de "I would like a coffee, please" en français?/Je voudrais un thé s'il vous plaît,Je voudrais un jus d'orange s'il vous plaît, Je voudrais un café s'il vous plaît,Je voudrais un sandwich s'il vous plaît-Je voudrais un café s'il vous plaît
+10126-10126-0-Spanish-Multi-Adverbs affirmative:Nosotros_vamos al colegio./tambièn,abajo,hoy,soy-tambièn
+10131-10131-0-Spanish-Multi-Adjectives Yo prefiero los libros españoles./vieja,viejo,viejas,viejos-viejos
+20050-20050-0-French-Blank-(Do you speak English?)Tu parles_?-anglais?
+22220-21240-2-French-Blank-Comment diton "grand_" en français?(Petit,Grand,Moyen,Haut)-Grand
+10030-10030-0-Spanish-Blank-_ profesor de mi clase se llama Juan Pérez.-el
+10121-10121-0-Spanish-Multi-Feelings: Yo estoy_./contente,contentemos,contento,contenta-contento 
+21150-21150-1-French-Multi-Quelle est la traduction correcte de "They are playing soccer in the park" en français?/Ils jouent au tennis dans le parc,Ils jouent au football dans le parc,Ils jouent au basket dans le parc,Ils jouent au volley dans le parc-Ils jouent au football dans le parc
+22150-22150-0-French-Multi-Quel est le mot pour "chapeau" en français?/Chapeau,Chaussures,Chemise,Vêtements-Chapeau
+10116-10116-0-Spanish-Multi-Food: Tú pides_./leche,milko,lecha,lecho-leche
+11020-11020-1-Spanish-Blank-En mi clase_veinte (20) estudiantes.-hay
+11040-11040-1-Spanish-Blank-Rafael no compra la comida en el supermercado,_compra en las tiendas de su barrio.-la
+22140-22140-0-French-Multi-Comment diton "parapluie" en français?/Parapluie,Pluie,Soleil,Vent-Parapluie
+11110-11110-1-Spanish-Multi-¿Cuánto tiempo llevas estudiando español?/Siempre hablo español,Desde hace dos años,He estudiado mucho español.-Desde hace dos años
+21040-21040-1-French-Blank-Nous avons _ nos valises pour partir en vacances.-préparé
+11030-11030-1-Spanish-Blank-Los hermanos de mi madre, son _ tíos.-mis
+21220-21220-2-French-Blank-(Why do you want to learn French?) Pourquoi est-ce que tu _ français ?-apprends
+10111-10111-0-Spanish-Multi-Adjectives: Carro_/limpia,limpio,cleano,limpios-limpio
+23110-23110-2-French-Multi-Quel est le mot pour "inflation" en français?/Expansion,Déflation,Inflation,Dépression-Inflation
+21050-21050-1-French-Blank-Ma mère _ très bien cuisiner.-sait
+12140-12140-2-Spanish-Multi-Cristobal Colón confundió _./el continente con la India,el tabaco con una especia,al quiché con el náhuatl-el continente con la India
+21110-21110-1-French-Multi-Quelle est la traduction correcte de "I am going to the park" en français?/Je vais à la maison,Je vais à l'école,Je vais au parc,Je vais au cinéma-Je vais au parc
+12030-12030-2-Spanish-Blank-El equivalente de 'Can you...?' para hablar con un amigo en español es _ (puedo,puede, puedes, poder)-puedes
+23140-23140-2-French-Multi-Quel est le mot pour "biodiversité" en français?/Biodiversité,Écosystème,Développement durable,Énergie renouvelable-Biodiversité
+11050-11050-1-Spanish-Blank-How do you say "Good morning"_?-buenos días
+12010-12010-2-Spanish-Blank-¿_ es el país más pequeño de Hispanoamérica?-cuál
+11140-11140-1-Spanish-Multi-¿En Argentina encontramos como variedad lingüística_./ustedes,el vocabulario,el voseo-el voseo
+10040-10040-0-Spanish-Blank-¿_ mesas tienes? - How many tables do you have?-Cuántas
+12020-12020-2-Spanish-Blank-El dueño del bar dice que se _ el vino. ( acabó, quemó, dañó, quedó)-acabó
+21020-21020-1-French-Blank-(What is your favorite food?)Quel est ton _ préféré ?-plat 
+21230-21230-2-French-Blank-(What would you do if you won the lottery?) Que _ si tu gagnais à la loterie?-ferais-tu

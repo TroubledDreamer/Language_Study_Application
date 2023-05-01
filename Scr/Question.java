@@ -22,7 +22,10 @@ public class Question {
 
 
 
-  
+    public Question ()
+    {
+        
+    }
 
 
     public Question (String IDQuestion)
@@ -47,7 +50,7 @@ public class Question {
     public void addQuestion(String IDQuestion, String difficultyLevel, String language, String questionType, String questionString,  String  correctAnswer){
         try {
             FileWriter writer = new FileWriter("Questions.txt", true);
-            writer.write(IDQuestion + "-" + IDQuestion);
+            writer.write("\n" + IDQuestion + "-" + IDQuestion);
             writer.write("-" + difficultyLevel);
             writer.write("-" + language);
             writer.write("-" + questionType);
@@ -188,7 +191,11 @@ public class Question {
     
 
         try {
-            FileWriter writer = new FileWriter("Questions.txt", true);
+            FileWriter writer = new FileWriter("Questions.txt", false);
+            writer.write("");
+            writer.close();
+
+            writer = new FileWriter("Questions.txt", true);
             for (String m : fileHolder){
                 writer.write(m + "\n");;
             }

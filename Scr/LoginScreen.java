@@ -68,15 +68,19 @@ public class LoginScreen extends JFrame {
     }
 
     public void validInfo(String user, String password) {
+        System.out.println(password);
+        String id = LoginInfo.get(user).split("/")[1];
+        String infopassword = LoginInfo.get(user).split("/")[0];
+
         if (LoginInfo.containsKey(user)) {
-            if (LoginInfo.get(user).equals(password)) {
+            if (infopassword.equals(password)) {
                 System.out.println("Login Success");
                 visibleMethod(false);
 
                 // create a file and save the user to it
                 try {
                     //Files.write(Paths.get("user.txt"), user.getBytes());
-                    Files.write(Paths.get("user.txt"), "620157742".getBytes());
+                    Files.write(Paths.get("user.txt"), id.getBytes());
 
 
                     //loginInfo.put(user, password);

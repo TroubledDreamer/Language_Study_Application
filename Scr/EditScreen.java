@@ -63,7 +63,7 @@ public class EditScreen extends JFrame {
     JTextField difficultyTextField = new JTextField(10);
     JLabel languageLabel = new JLabel("Language:");
     JTextField languageTextField = new JTextField(10);
-    JLabel answerLabel = new JLabel("Answer:");
+    JLabel answerLabel = new JLabel("Options:");
     JTextField answerTextField = new JTextField(10);
     JLabel correctAnswer = new JLabel("CorrectAnswer");
     JTextField cAnswerField = new JTextField(10);
@@ -95,8 +95,8 @@ public class EditScreen extends JFrame {
         mainPanel1.add(difficultyTextField);
         mainPanel1.add(languageLabel);
         mainPanel1.add(languageTextField);
-        //mainPanel1.add(answerLabel);
-        //mainPanel1.add(answerTextField);
+        mainPanel1.add(answerLabel);
+        mainPanel1.add(answerTextField);
         mainPanel1.add(correctAnswer);
         mainPanel1.add(cAnswerField);
         footerPanel.add(deleteButton);
@@ -130,16 +130,21 @@ public class EditScreen extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             // Implement action for creating new question
-            String IDQuestion = idTextField.getText();
-            String questionString = questionTextField.getText();
-            String difficultyLevel = difficultyTextField.getText();
+            String id = idTextField.getText();
+            Question question = new Question();
+            System.out.println("dfdfdf");
+            String questiosn = questionTextField.getText();
+
+            if (qTypField.getText().equals("Multi")){
+                questiosn = questionTextField.getText() + "/" + answerTextField.getText();
+            } 
+
+            String difficulty = difficultyTextField.getText();
             String language = languageTextField.getText();
-            //String answer = answerTextField.getText();
-            String correctAnswer = cAnswerField.getText();
-            String questionType = qTypField.getText();
-            Question question = new Question(IDQuestion);
-            question.addQuestion(IDQuestion, difficultyLevel, language, questionType, questionString, correctAnswer);
-            JOptionPane.showMessageDialog(null, "Question with ID " + IDQuestion + " edded successfully.");
+            String answer = answerTextField.getText();
+
+            question.addQuestion(id, difficulty, language, qTypField.getText(), questiosn, cAnswerField.getText());
+            JOptionPane.showMessageDialog(null, "Question with ID " + id + " edded successfully.");
         }
     }
 
@@ -150,14 +155,19 @@ public class EditScreen extends JFrame {
         public void actionPerformed(ActionEvent e) {
             String id = idTextField.getText();
             Question question = new Question(id);
-
+            System.out.println("dfdfdf");
             String questiosn = questionTextField.getText();
+
+            if (qTypField.getText().equals("Multi")){
+                questiosn = questionTextField.getText() + "/" + answerTextField.getText();
+            } 
+
             String difficulty = difficultyTextField.getText();
             String language = languageTextField.getText();
             String answer = answerTextField.getText();
 
 
-            question.editQuestion(id, difficulty, language, question.getQuestiontype(), questiosn, answer);
+            question.editQuestion(id, difficulty, language, qTypField.getText(), questiosn, cAnswerField.getText());
             JOptionPane.showMessageDialog(null, "Question with ID " + id + " edited successfully.");
     }
     }

@@ -23,9 +23,10 @@ public class ProfileScreen extends JFrame{
     JButton Menu = new JButton("Menu");
     JButton Logout = new JButton("Logout");
     JButton Edit = new JButton("Edit");
-    JProgressBar SpanishBar = new JProgressBar();
-    JProgressBar FrenchBar = new JProgressBar();
-    JProgressBar ChineseBar = new JProgressBar();
+    JProgressBar SpanishBar = new JProgressBar(0,100);
+    
+    JProgressBar FrenchBar = new JProgressBar(0,100);
+    JProgressBar ChineseBar = new JProgressBar(0,100);
     
    
     
@@ -34,7 +35,15 @@ public class ProfileScreen extends JFrame{
    //JPanel profilePanel1 = new JPanel(new BorderLayout());   
     String Name = new String();
     HashMap<String, String> LoginInfo = new HashMap<String, String>();
+    private StatusUpdater statusUpdater = new StatusUpdater();
+
+
+
     public ProfileScreen (String Name, HashMap<String, String> LoginInfo){
+        SpanishBar.setValue(statusUpdater.getHrs_Learning());
+        FrenchBar.setValue(statusUpdater.getScore());
+
+
         this.Name = Name;
         this.LoginInfo = LoginInfo;
         name.setText(Name);
@@ -61,9 +70,9 @@ public class ProfileScreen extends JFrame{
         profilePanel1.add(F);
         profilePanel1.add(FrenchBar);
 
-        profilePanel1.add(Chinese);
-        profilePanel1.add(C);
-        profilePanel1.add(ChineseBar);
+        //profilePanel1.add(Chinese);
+        //profilePanel1.add(C);
+        //profilePanel1.add(ChineseBar);
 
 
         profilePanel1.add(Edit);

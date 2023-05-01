@@ -619,7 +619,8 @@ public class QuestionPageScreen extends JPanel {
                  String[] splitter = line.split("-");
                  try{
 
-                    if (!Arrays.asList(statusUpdater.getQuestionID()).contains(splitter[0]) && (statusUpdater.getlevel(language) >= Integer.parseInt(splitter[2])))
+                    if (!Arrays.asList(statusUpdater.getQuestionID()).contains(splitter[0]) && (statusUpdater.getlevel(language) >= Integer.parseInt(splitter[2]))
+                    && language.equals(splitter[3]))
                     {
                         question = new Question(splitter[0]);
 
