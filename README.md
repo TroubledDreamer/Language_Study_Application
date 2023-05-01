@@ -7,8 +7,8 @@ Carlyon Jones-Armour - Lead Programmer
 
 Candace Hendricks - Researcher/Programmer
 
-Tristan thompson - Gui designer
+Tristan Thompson - Gui designer
 
-Nicholas garner - Gui designer
+Nicholas Garner - Gui designer
 
 
