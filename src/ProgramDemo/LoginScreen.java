@@ -60,8 +60,8 @@ public class LoginScreen extends JFrame {
 
         Login.addActionListener(new loginAction());
 
-        userPanel.setBackground(Color.decode("#181818")); 
-        passPanel.setBackground(Color.decode("#181818")); 
+        userPanel.setBackground(Color.decode("#00001a")); 
+        passPanel.setBackground(Color.decode("#00001a")); 
         buttonPanel.setBackground(Color.decode("#181818")); 
 
 

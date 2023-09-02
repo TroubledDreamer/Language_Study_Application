@@ -54,9 +54,11 @@ public class ProfileScreen extends JFrame{
         //C.addActionListener(new);
         Edit.addActionListener(new EditActionListener());
         
-        Color customColor1 = new Color(117, 115, 145);
-        ProfilePanel.setBackground(Color.decode("#1F1F1F"));
+        Color customColor1 = new Color(0, 0, 26);
+        ProfilePanel.setBackground(Color.decode("#2a2a2a"));
         profilePanel1.setBackground(customColor1);
+        Spanish.setForeground(Color.white);
+        French.setForeground(Color.white);
         ProfilePanel.add(label);
         ProfilePanel.add(name);
         ProfilePanel.add(Logout);

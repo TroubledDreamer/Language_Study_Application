@@ -61,6 +61,7 @@ public class EditScreen extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainPanel.setSize(400, 300);
 
+        qType.setForeground(Color.white);
         questionLabel.setForeground(Color.WHITE);
         difficultyLabel.setForeground(Color.WHITE);
         languageLabel.setForeground(Color.WHITE);
@@ -107,9 +108,9 @@ public class EditScreen extends JFrame {
   
         // to set the box layout
         mainPanel.setLayout(boxlayout);
-        headerPanel.setBackground(Color.decode("#000080")); 
-        mainPanel1.setBackground(Color.decode("#1F1F1F")); 
-        footerPanel.setBackground(Color.decode("#000080")); 
+        headerPanel.setBackground(Color.decode("#00001a")); 
+        mainPanel1.setBackground(Color.decode("#2a2a2a")); 
+        footerPanel.setBackground(Color.decode("#00001a")); 
         this.setSize(700, 500);
         this.setVisible(true);
     }
