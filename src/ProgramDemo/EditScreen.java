@@ -107,9 +107,9 @@ public class EditScreen extends JFrame {
   
         // to set the box layout
         mainPanel.setLayout(boxlayout);
-        headerPanel.setBackground(Color.decode("#1F1F1F")); 
+        headerPanel.setBackground(Color.decode("#000080")); 
         mainPanel1.setBackground(Color.decode("#1F1F1F")); 
-        footerPanel.setBackground(Color.decode("#1F1F1F")); 
+        footerPanel.setBackground(Color.decode("#000080")); 
         this.setSize(700, 500);
         this.setVisible(true);
     }
