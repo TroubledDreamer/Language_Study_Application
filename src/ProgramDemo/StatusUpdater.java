@@ -26,6 +26,7 @@ public class StatusUpdater {
     //private ArrayList<String> fileList = new ArrayList<>();
 
     public StatusUpdater(){
+
         setID();
         
         coll();
@@ -111,7 +112,7 @@ public class StatusUpdater {
 
 
 
-            FileWriter fileWriter = new FileWriter("Status.txt", false);
+            FileWriter fileWriter = new FileWriter("Status.txt", true);
             
             for (String m: fileHolder)
             {
